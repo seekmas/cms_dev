@@ -3,7 +3,7 @@
 	    	class XiFileTreeProvider
 	    	{
 	    		static $_filetree =  array (
-  '\\components\\com_payplans\\' => 
+  '/components/com_payplans/' => 
   array (
     'files' => 
     array (
@@ -26,7 +26,7 @@
       11 => 'xiframework',
     ),
   ),
-  '\\components\\com_payplans\\apps\\' => 
+  '/components/com_payplans/apps/' => 
   array (
     'files' => 
     array (
@@ -37,7 +37,7 @@
       1 => 'payment',
     ),
   ),
-  '\\components\\com_payplans\\apps\\access\\' => 
+  '/components/com_payplans/apps/access/' => 
   array (
     'files' => 
     array (
@@ -47,7 +47,7 @@
       0 => 'contentacl',
     ),
   ),
-  '\\components\\com_payplans\\apps\\access\\contentacl\\' => 
+  '/components/com_payplans/apps/access/contentacl/' => 
   array (
     'files' => 
     array (
@@ -58,7 +58,7 @@
       0 => 'elements',
     ),
   ),
-  '\\components\\com_payplans\\apps\\access\\contentacl\\elements\\' => 
+  '/components/com_payplans/apps/access/contentacl/elements/' => 
   array (
     'files' => 
     array (
@@ -70,7 +70,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\apps\\payment\\' => 
+  '/components/com_payplans/apps/payment/' => 
   array (
     'files' => 
     array (
@@ -82,7 +82,7 @@
       2 => 'paypal',
     ),
   ),
-  '\\components\\com_payplans\\apps\\payment\\adminpay\\' => 
+  '/components/com_payplans/apps/payment/adminpay/' => 
   array (
     'files' => 
     array (
@@ -93,7 +93,7 @@
       0 => 'tmpl',
     ),
   ),
-  '\\components\\com_payplans\\apps\\payment\\adminpay\\tmpl\\' => 
+  '/components/com_payplans/apps/payment/adminpay/tmpl/' => 
   array (
     'files' => 
     array (
@@ -104,7 +104,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\apps\\payment\\offlinepay\\' => 
+  '/components/com_payplans/apps/payment/offlinepay/' => 
   array (
     'files' => 
     array (
@@ -115,7 +115,7 @@
       0 => 'tmpl',
     ),
   ),
-  '\\components\\com_payplans\\apps\\payment\\offlinepay\\tmpl\\' => 
+  '/components/com_payplans/apps/payment/offlinepay/tmpl/' => 
   array (
     'files' => 
     array (
@@ -127,7 +127,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\apps\\payment\\paypal\\' => 
+  '/components/com_payplans/apps/payment/paypal/' => 
   array (
     'files' => 
     array (
@@ -138,7 +138,7 @@
       0 => 'tmpl',
     ),
   ),
-  '\\components\\com_payplans\\apps\\payment\\paypal\\tmpl\\' => 
+  '/components/com_payplans/apps/payment/paypal/tmpl/' => 
   array (
     'files' => 
     array (
@@ -151,7 +151,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\controllers\\' => 
+  '/components/com_payplans/controllers/' => 
   array (
     'files' => 
     array (
@@ -170,7 +170,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\elements\\' => 
+  '/components/com_payplans/elements/' => 
   array (
     'files' => 
     array (
@@ -209,7 +209,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\helpers\\' => 
+  '/components/com_payplans/helpers/' => 
   array (
     'files' => 
     array (
@@ -240,7 +240,7 @@
       0 => 'patch',
     ),
   ),
-  '\\components\\com_payplans\\helpers\\patch\\' => 
+  '/components/com_payplans/helpers/patch/' => 
   array (
     'files' => 
     array (
@@ -250,7 +250,7 @@
       0 => 'sql',
     ),
   ),
-  '\\components\\com_payplans\\helpers\\patch\\sql\\' => 
+  '/components/com_payplans/helpers/patch/sql/' => 
   array (
     'files' => 
     array (
@@ -259,7 +259,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\includes\\' => 
+  '/components/com_payplans/includes/' => 
   array (
     'files' => 
     array (
@@ -272,7 +272,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\libraries\\' => 
+  '/components/com_payplans/libraries/' => 
   array (
     'files' => 
     array (
@@ -289,7 +289,7 @@
       7 => 'table',
     ),
   ),
-  '\\components\\com_payplans\\libraries\\app\\' => 
+  '/components/com_payplans/libraries/app/' => 
   array (
     'files' => 
     array (
@@ -307,7 +307,7 @@
       8 => 'xiprofiletype',
     ),
   ),
-  '\\components\\com_payplans\\libraries\\app\\assignplan\\' => 
+  '/components/com_payplans/libraries/app/assignplan/' => 
   array (
     'files' => 
     array (
@@ -317,7 +317,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\libraries\\app\\content\\' => 
+  '/components/com_payplans/libraries/app/content/' => 
   array (
     'files' => 
     array (
@@ -327,7 +327,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\libraries\\app\\corewidget\\' => 
+  '/components/com_payplans/libraries/app/corewidget/' => 
   array (
     'files' => 
     array (
@@ -337,7 +337,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\libraries\\app\\docman\\' => 
+  '/components/com_payplans/libraries/app/docman/' => 
   array (
     'files' => 
     array (
@@ -349,7 +349,7 @@
       1 => 'tmpl',
     ),
   ),
-  '\\components\\com_payplans\\libraries\\app\\docman\\elements\\' => 
+  '/components/com_payplans/libraries/app/docman/elements/' => 
   array (
     'files' => 
     array (
@@ -359,7 +359,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\libraries\\app\\docman\\tmpl\\' => 
+  '/components/com_payplans/libraries/app/docman/tmpl/' => 
   array (
     'files' => 
     array (
@@ -369,7 +369,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\libraries\\app\\email\\' => 
+  '/components/com_payplans/libraries/app/email/' => 
   array (
     'files' => 
     array (
@@ -380,7 +380,7 @@
       0 => 'tmpl',
     ),
   ),
-  '\\components\\com_payplans\\libraries\\app\\email\\tmpl\\' => 
+  '/components/com_payplans/libraries/app/email/tmpl/' => 
   array (
     'files' => 
     array (
@@ -395,7 +395,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\libraries\\app\\jsmultiprofile\\' => 
+  '/components/com_payplans/libraries/app/jsmultiprofile/' => 
   array (
     'files' => 
     array (
@@ -405,7 +405,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\libraries\\app\\jusertype\\' => 
+  '/components/com_payplans/libraries/app/jusertype/' => 
   array (
     'files' => 
     array (
@@ -416,7 +416,7 @@
       0 => 'tmpl',
     ),
   ),
-  '\\components\\com_payplans\\libraries\\app\\jusertype\\tmpl\\' => 
+  '/components/com_payplans/libraries/app/jusertype/tmpl/' => 
   array (
     'files' => 
     array (
@@ -426,7 +426,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\libraries\\app\\userpreferences\\' => 
+  '/components/com_payplans/libraries/app/userpreferences/' => 
   array (
     'files' => 
     array (
@@ -437,7 +437,7 @@
       0 => 'tmpl',
     ),
   ),
-  '\\components\\com_payplans\\libraries\\app\\userpreferences\\tmpl\\' => 
+  '/components/com_payplans/libraries/app/userpreferences/tmpl/' => 
   array (
     'files' => 
     array (
@@ -447,7 +447,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\libraries\\app\\xiprofiletype\\' => 
+  '/components/com_payplans/libraries/app/xiprofiletype/' => 
   array (
     'files' => 
     array (
@@ -457,7 +457,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\libraries\\event\\' => 
+  '/components/com_payplans/libraries/event/' => 
   array (
     'files' => 
     array (
@@ -476,7 +476,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\libraries\\formatter\\' => 
+  '/components/com_payplans/libraries/formatter/' => 
   array (
     'files' => 
     array (
@@ -486,7 +486,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\libraries\\iface\\' => 
+  '/components/com_payplans/libraries/iface/' => 
   array (
     'files' => 
     array (
@@ -501,7 +501,7 @@
       1 => 'app',
     ),
   ),
-  '\\components\\com_payplans\\libraries\\iface\\api\\' => 
+  '/components/com_payplans/libraries/iface/api/' => 
   array (
     'files' => 
     array (
@@ -521,7 +521,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\libraries\\iface\\app\\' => 
+  '/components/com_payplans/libraries/iface/app/' => 
   array (
     'files' => 
     array (
@@ -533,7 +533,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\libraries\\lib\\' => 
+  '/components/com_payplans/libraries/lib/' => 
   array (
     'files' => 
     array (
@@ -556,7 +556,7 @@
       0 => 'app',
     ),
   ),
-  '\\components\\com_payplans\\libraries\\lib\\app\\' => 
+  '/components/com_payplans/libraries/lib/app/' => 
   array (
     'files' => 
     array (
@@ -568,7 +568,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\libraries\\model\\' => 
+  '/components/com_payplans/libraries/model/' => 
   array (
     'files' => 
     array (
@@ -598,7 +598,7 @@
       0 => 'xml',
     ),
   ),
-  '\\components\\com_payplans\\libraries\\model\\xml\\' => 
+  '/components/com_payplans/libraries/model/xml/' => 
   array (
     'files' => 
     array (
@@ -607,7 +607,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\libraries\\setup\\' => 
+  '/components/com_payplans/libraries/setup/' => 
   array (
     'files' => 
     array (
@@ -629,7 +629,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\libraries\\table\\' => 
+  '/components/com_payplans/libraries/table/' => 
   array (
     'files' => 
     array (
@@ -658,7 +658,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\media\\' => 
+  '/components/com_payplans/media/' => 
   array (
     'files' => 
     array (
@@ -672,7 +672,7 @@
       4 => 'themes',
     ),
   ),
-  '\\components\\com_payplans\\media\\css\\' => 
+  '/components/com_payplans/media/css/' => 
   array (
     'files' => 
     array (
@@ -681,7 +681,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\media\\images\\' => 
+  '/components/com_payplans/media/images/' => 
   array (
     'files' => 
     array (
@@ -690,7 +690,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\media\\js\\' => 
+  '/components/com_payplans/media/js/' => 
   array (
     'files' => 
     array (
@@ -699,7 +699,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\media\\premium_themes\\' => 
+  '/components/com_payplans/media/premium_themes/' => 
   array (
     'files' => 
     array (
@@ -714,7 +714,7 @@
       5 => 'red_dark',
     ),
   ),
-  '\\components\\com_payplans\\media\\premium_themes\\blue\\' => 
+  '/components/com_payplans/media/premium_themes/blue/' => 
   array (
     'files' => 
     array (
@@ -723,7 +723,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\media\\premium_themes\\blue_dark\\' => 
+  '/components/com_payplans/media/premium_themes/blue_dark/' => 
   array (
     'files' => 
     array (
@@ -732,7 +732,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\media\\premium_themes\\green\\' => 
+  '/components/com_payplans/media/premium_themes/green/' => 
   array (
     'files' => 
     array (
@@ -741,7 +741,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\media\\premium_themes\\green_dark\\' => 
+  '/components/com_payplans/media/premium_themes/green_dark/' => 
   array (
     'files' => 
     array (
@@ -750,7 +750,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\media\\premium_themes\\red\\' => 
+  '/components/com_payplans/media/premium_themes/red/' => 
   array (
     'files' => 
     array (
@@ -759,7 +759,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\media\\premium_themes\\red_dark\\' => 
+  '/components/com_payplans/media/premium_themes/red_dark/' => 
   array (
     'files' => 
     array (
@@ -768,7 +768,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\media\\themes\\' => 
+  '/components/com_payplans/media/themes/' => 
   array (
     'files' => 
     array (
@@ -779,7 +779,7 @@
       1 => 'default_ef723b',
     ),
   ),
-  '\\components\\com_payplans\\media\\themes\\dark_ef723b\\' => 
+  '/components/com_payplans/media/themes/dark_ef723b/' => 
   array (
     'files' => 
     array (
@@ -788,7 +788,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\media\\themes\\default_ef723b\\' => 
+  '/components/com_payplans/media/themes/default_ef723b/' => 
   array (
     'files' => 
     array (
@@ -797,7 +797,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\payplans\\' => 
+  '/components/com_payplans/payplans/' => 
   array (
     'files' => 
     array (
@@ -815,7 +815,7 @@
       1 => 'statistics',
     ),
   ),
-  '\\components\\com_payplans\\payplans\\html\\' => 
+  '/components/com_payplans/payplans/html/' => 
   array (
     'files' => 
     array (
@@ -844,7 +844,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\payplans\\statistics\\' => 
+  '/components/com_payplans/payplans/statistics/' => 
   array (
     'files' => 
     array (
@@ -859,7 +859,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\sef_ext\\' => 
+  '/components/com_payplans/sef_ext/' => 
   array (
     'files' => 
     array (
@@ -869,7 +869,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\templates\\' => 
+  '/components/com_payplans/templates/' => 
   array (
     'files' => 
     array (
@@ -879,7 +879,7 @@
       0 => 'default',
     ),
   ),
-  '\\components\\com_payplans\\templates\\default\\' => 
+  '/components/com_payplans/templates/default/' => 
   array (
     'files' => 
     array (
@@ -887,136 +887,20 @@
     ),
     'folders' => 
     array (
-      0 => 'dashboard',
-      1 => 'invoice',
-      2 => 'order',
-      3 => 'payment',
-      4 => 'plan',
-      5 => 'subscription',
-      6 => 'support',
-      7 => 'user',
-      8 => 'wallet',
-      9 => '_media',
-      10 => '_partials',
+      0 => '_media',
+      1 => '_partials',
+      2 => 'dashboard',
+      3 => 'invoice',
+      4 => 'order',
+      5 => 'payment',
+      6 => 'plan',
+      7 => 'subscription',
+      8 => 'support',
+      9 => 'user',
+      10 => 'wallet',
     ),
   ),
-  '\\components\\com_payplans\\templates\\default\\dashboard\\' => 
-  array (
-    'files' => 
-    array (
-      0 => 'default.php',
-      1 => 'default_frontview.php',
-      2 => 'default_noaccess.php',
-      3 => 'default_template_action.php',
-      4 => 'default_template_footer.php',
-      5 => 'default_template_message.php',
-      6 => 'default_template_right.php',
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\components\\com_payplans\\templates\\default\\invoice\\' => 
-  array (
-    'files' => 
-    array (
-      0 => 'default.php',
-      1 => 'default_complete.php',
-      2 => 'default_confirm.php',
-      3 => 'default_confirm_details.php',
-      4 => 'default_discount.php',
-      5 => 'default_invoice_action.php',
-      6 => 'default_plan_details.php',
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\components\\com_payplans\\templates\\default\\order\\' => 
-  array (
-    'files' => 
-    array (
-      0 => 'default_terminate.php',
-      1 => 'default_terminate_confirm.php',
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\components\\com_payplans\\templates\\default\\payment\\' => 
-  array (
-    'files' => 
-    array (
-      0 => 'default_complete_cancel.php',
-      1 => 'default_complete_error.php',
-      2 => 'default_pay.php',
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\components\\com_payplans\\templates\\default\\plan\\' => 
-  array (
-    'files' => 
-    array (
-      0 => 'default.php',
-      1 => 'default_group.php',
-      2 => 'default_login.php',
-      3 => 'default_login_plan.php',
-      4 => 'default_plan.php',
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\components\\com_payplans\\templates\\default\\subscription\\' => 
-  array (
-    'files' => 
-    array (
-      0 => 'default_display.php',
-      1 => 'default_order_cancel.php',
-      2 => 'default_subscription_action.php',
-      3 => 'default_view.php',
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\components\\com_payplans\\templates\\default\\support\\' => 
-  array (
-    'files' => 
-    array (
-      0 => 'default_emailform.php',
-      1 => 'default_error.php',
-      2 => 'default_sent.php',
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\components\\com_payplans\\templates\\default\\user\\' => 
-  array (
-    'files' => 
-    array (
-      0 => 'default_login.php',
-      1 => 'default_user_authentication.php',
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\components\\com_payplans\\templates\\default\\wallet\\' => 
-  array (
-    'files' => 
-    array (
-      0 => 'default.php',
-      1 => 'default_recharge_request_details.php',
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\components\\com_payplans\\templates\\default\\_media\\' => 
+  '/components/com_payplans/templates/default/_media/' => 
   array (
     'files' => 
     array (
@@ -1028,7 +912,7 @@
       1 => 'js',
     ),
   ),
-  '\\components\\com_payplans\\templates\\default\\_media\\css\\' => 
+  '/components/com_payplans/templates/default/_media/css/' => 
   array (
     'files' => 
     array (
@@ -1038,7 +922,7 @@
       0 => 'images',
     ),
   ),
-  '\\components\\com_payplans\\templates\\default\\_media\\css\\images\\' => 
+  '/components/com_payplans/templates/default/_media/css/images/' => 
   array (
     'files' => 
     array (
@@ -1047,7 +931,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\templates\\default\\_media\\js\\' => 
+  '/components/com_payplans/templates/default/_media/js/' => 
   array (
     'files' => 
     array (
@@ -1056,7 +940,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\templates\\default\\_partials\\' => 
+  '/components/com_payplans/templates/default/_partials/' => 
   array (
     'files' => 
     array (
@@ -1078,7 +962,123 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\views\\' => 
+  '/components/com_payplans/templates/default/dashboard/' => 
+  array (
+    'files' => 
+    array (
+      0 => 'default.php',
+      1 => 'default_frontview.php',
+      2 => 'default_noaccess.php',
+      3 => 'default_template_action.php',
+      4 => 'default_template_footer.php',
+      5 => 'default_template_message.php',
+      6 => 'default_template_right.php',
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/components/com_payplans/templates/default/invoice/' => 
+  array (
+    'files' => 
+    array (
+      0 => 'default.php',
+      1 => 'default_complete.php',
+      2 => 'default_confirm.php',
+      3 => 'default_confirm_details.php',
+      4 => 'default_discount.php',
+      5 => 'default_invoice_action.php',
+      6 => 'default_plan_details.php',
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/components/com_payplans/templates/default/order/' => 
+  array (
+    'files' => 
+    array (
+      0 => 'default_terminate.php',
+      1 => 'default_terminate_confirm.php',
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/components/com_payplans/templates/default/payment/' => 
+  array (
+    'files' => 
+    array (
+      0 => 'default_complete_cancel.php',
+      1 => 'default_complete_error.php',
+      2 => 'default_pay.php',
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/components/com_payplans/templates/default/plan/' => 
+  array (
+    'files' => 
+    array (
+      0 => 'default.php',
+      1 => 'default_group.php',
+      2 => 'default_login.php',
+      3 => 'default_login_plan.php',
+      4 => 'default_plan.php',
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/components/com_payplans/templates/default/subscription/' => 
+  array (
+    'files' => 
+    array (
+      0 => 'default_display.php',
+      1 => 'default_order_cancel.php',
+      2 => 'default_subscription_action.php',
+      3 => 'default_view.php',
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/components/com_payplans/templates/default/support/' => 
+  array (
+    'files' => 
+    array (
+      0 => 'default_emailform.php',
+      1 => 'default_error.php',
+      2 => 'default_sent.php',
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/components/com_payplans/templates/default/user/' => 
+  array (
+    'files' => 
+    array (
+      0 => 'default_login.php',
+      1 => 'default_user_authentication.php',
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/components/com_payplans/templates/default/wallet/' => 
+  array (
+    'files' => 
+    array (
+      0 => 'default.php',
+      1 => 'default_recharge_request_details.php',
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/components/com_payplans/views/' => 
   array (
     'files' => 
     array (
@@ -1096,7 +1096,7 @@
       8 => 'wallet',
     ),
   ),
-  '\\components\\com_payplans\\views\\dashboard\\' => 
+  '/components/com_payplans/views/dashboard/' => 
   array (
     'files' => 
     array (
@@ -1107,7 +1107,7 @@
       0 => 'tmpl',
     ),
   ),
-  '\\components\\com_payplans\\views\\dashboard\\tmpl\\' => 
+  '/components/com_payplans/views/dashboard/tmpl/' => 
   array (
     'files' => 
     array (
@@ -1116,37 +1116,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\views\\invoice\\' => 
-  array (
-    'files' => 
-    array (
-      0 => 'view.html.php',
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\components\\com_payplans\\views\\order\\' => 
-  array (
-    'files' => 
-    array (
-      0 => 'view.html.php',
-    ),
-    'folders' => 
-    array (
-      0 => 'tmpl',
-    ),
-  ),
-  '\\components\\com_payplans\\views\\order\\tmpl\\' => 
-  array (
-    'files' => 
-    array (
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\components\\com_payplans\\views\\payment\\' => 
+  '/components/com_payplans/views/invoice/' => 
   array (
     'files' => 
     array (
@@ -1156,7 +1126,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\views\\plan\\' => 
+  '/components/com_payplans/views/order/' => 
   array (
     'files' => 
     array (
@@ -1167,7 +1137,7 @@
       0 => 'tmpl',
     ),
   ),
-  '\\components\\com_payplans\\views\\plan\\tmpl\\' => 
+  '/components/com_payplans/views/order/tmpl/' => 
   array (
     'files' => 
     array (
@@ -1176,7 +1146,17 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\views\\subscription\\' => 
+  '/components/com_payplans/views/payment/' => 
+  array (
+    'files' => 
+    array (
+      0 => 'view.html.php',
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/components/com_payplans/views/plan/' => 
   array (
     'files' => 
     array (
@@ -1187,7 +1167,7 @@
       0 => 'tmpl',
     ),
   ),
-  '\\components\\com_payplans\\views\\subscription\\tmpl\\' => 
+  '/components/com_payplans/views/plan/tmpl/' => 
   array (
     'files' => 
     array (
@@ -1196,7 +1176,27 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\views\\support\\' => 
+  '/components/com_payplans/views/subscription/' => 
+  array (
+    'files' => 
+    array (
+      0 => 'view.html.php',
+    ),
+    'folders' => 
+    array (
+      0 => 'tmpl',
+    ),
+  ),
+  '/components/com_payplans/views/subscription/tmpl/' => 
+  array (
+    'files' => 
+    array (
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/components/com_payplans/views/support/' => 
   array (
     'files' => 
     array (
@@ -1206,7 +1206,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\views\\user\\' => 
+  '/components/com_payplans/views/user/' => 
   array (
     'files' => 
     array (
@@ -1216,7 +1216,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\views\\wallet\\' => 
+  '/components/com_payplans/views/wallet/' => 
   array (
     'files' => 
     array (
@@ -1226,7 +1226,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\' => 
+  '/components/com_payplans/xiframework/' => 
   array (
     'files' => 
     array (
@@ -1245,7 +1245,7 @@
       4 => 'media',
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\base\\' => 
+  '/components/com_payplans/xiframework/base/' => 
   array (
     'files' => 
     array (
@@ -1288,7 +1288,7 @@
       5 => 'render',
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\base\\abstract\\' => 
+  '/components/com_payplans/xiframework/base/abstract/' => 
   array (
     'files' => 
     array (
@@ -1306,7 +1306,7 @@
       2 => 'j35',
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\base\\abstract\\helper\\' => 
+  '/components/com_payplans/xiframework/base/abstract/helper/' => 
   array (
     'files' => 
     array (
@@ -1318,7 +1318,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\base\\abstract\\j16\\' => 
+  '/components/com_payplans/xiframework/base/abstract/j16/' => 
   array (
     'files' => 
     array (
@@ -1332,7 +1332,7 @@
       0 => 'helper',
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\base\\abstract\\j16\\helper\\' => 
+  '/components/com_payplans/xiframework/base/abstract/j16/helper/' => 
   array (
     'files' => 
     array (
@@ -1344,7 +1344,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\base\\abstract\\j35\\' => 
+  '/components/com_payplans/xiframework/base/abstract/j35/' => 
   array (
     'files' => 
     array (
@@ -1358,7 +1358,7 @@
       0 => 'helper',
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\base\\abstract\\j35\\helper\\' => 
+  '/components/com_payplans/xiframework/base/abstract/j35/helper/' => 
   array (
     'files' => 
     array (
@@ -1370,7 +1370,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\base\\ajax\\' => 
+  '/components/com_payplans/xiframework/base/ajax/' => 
   array (
     'files' => 
     array (
@@ -1380,7 +1380,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\base\\helper\\' => 
+  '/components/com_payplans/xiframework/base/helper/' => 
   array (
     'files' => 
     array (
@@ -1398,7 +1398,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\base\\html\\' => 
+  '/components/com_payplans/xiframework/base/html/' => 
   array (
     'files' => 
     array (
@@ -1417,7 +1417,7 @@
       1 => 'daterange',
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\base\\html\\autocomplete\\' => 
+  '/components/com_payplans/xiframework/base/html/autocomplete/' => 
   array (
     'files' => 
     array (
@@ -1426,7 +1426,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\base\\html\\daterange\\' => 
+  '/components/com_payplans/xiframework/base/html/daterange/' => 
   array (
     'files' => 
     array (
@@ -1435,7 +1435,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\base\\plugin\\' => 
+  '/components/com_payplans/xiframework/base/plugin/' => 
   array (
     'files' => 
     array (
@@ -1446,7 +1446,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\base\\render\\' => 
+  '/components/com_payplans/xiframework/base/render/' => 
   array (
     'files' => 
     array (
@@ -1458,7 +1458,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\elements\\' => 
+  '/components/com_payplans/xiframework/elements/' => 
   array (
     'files' => 
     array (
@@ -1467,7 +1467,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\includes\\' => 
+  '/components/com_payplans/xiframework/includes/' => 
   array (
     'files' => 
     array (
@@ -1477,7 +1477,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\lib\\' => 
+  '/components/com_payplans/xiframework/lib/' => 
   array (
     'files' => 
     array (
@@ -1486,7 +1486,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\media\\' => 
+  '/components/com_payplans/xiframework/media/' => 
   array (
     'files' => 
     array (
@@ -1497,7 +1497,7 @@
       1 => 'js',
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\media\\css\\' => 
+  '/components/com_payplans/xiframework/media/css/' => 
   array (
     'files' => 
     array (
@@ -1507,7 +1507,7 @@
       0 => 'images',
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\media\\css\\images\\' => 
+  '/components/com_payplans/xiframework/media/css/images/' => 
   array (
     'files' => 
     array (
@@ -1516,7 +1516,7 @@
     array (
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\media\\js\\' => 
+  '/components/com_payplans/xiframework/media/js/' => 
   array (
     'files' => 
     array (
@@ -1526,7 +1526,7 @@
       0 => 'nvd3',
     ),
   ),
-  '\\components\\com_payplans\\xiframework\\media\\js\\nvd3\\' => 
+  '/components/com_payplans/xiframework/media/js/nvd3/' => 
   array (
     'files' => 
     array (
@@ -1535,7 +1535,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\' => 
+  '/administrator/components/com_payplans/' => 
   array (
     'files' => 
     array (
@@ -1551,7 +1551,7 @@
       4 => 'views',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\controllers\\' => 
+  '/administrator/components/com_payplans/controllers/' => 
   array (
     'files' => 
     array (
@@ -1576,7 +1576,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\includes\\' => 
+  '/administrator/components/com_payplans/includes/' => 
   array (
     'files' => 
     array (
@@ -1588,7 +1588,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\' => 
+  '/administrator/components/com_payplans/installer/' => 
   array (
     'files' => 
     array (
@@ -1600,7 +1600,7 @@
       0 => 'apps',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\' => 
+  '/administrator/components/com_payplans/installer/apps/' => 
   array (
     'files' => 
     array (
@@ -1610,17 +1610,17 @@
       0 => 'languagepack_en_GB',
       1 => 'mod_payplans_quickicon',
       2 => 'mod_payplans_subscription',
-      3 => 'plg_payplansregistration_auto',
-      4 => 'plg_payplansregistration_joomla',
-      5 => 'plg_payplans_appmanager',
-      6 => 'plg_payplans_discount',
-      7 => 'plg_payplans_renewal',
-      8 => 'plg_payplans_sample',
-      9 => 'plg_payplans_system',
-      10 => 'plg_payplans_upgrade',
+      3 => 'plg_payplans_appmanager',
+      4 => 'plg_payplans_discount',
+      5 => 'plg_payplans_renewal',
+      6 => 'plg_payplans_sample',
+      7 => 'plg_payplans_system',
+      8 => 'plg_payplans_upgrade',
+      9 => 'plg_payplansregistration_auto',
+      10 => 'plg_payplansregistration_joomla',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\languagepack_en_GB\\' => 
+  '/administrator/components/com_payplans/installer/apps/languagepack_en_GB/' => 
   array (
     'files' => 
     array (
@@ -1630,7 +1630,7 @@
       0 => 'plg_payplans',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\languagepack_en_GB\\plg_payplans\\' => 
+  '/administrator/components/com_payplans/installer/apps/languagepack_en_GB/plg_payplans/' => 
   array (
     'files' => 
     array (
@@ -1639,7 +1639,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\mod_payplans_quickicon\\' => 
+  '/administrator/components/com_payplans/installer/apps/mod_payplans_quickicon/' => 
   array (
     'files' => 
     array (
@@ -1649,7 +1649,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\mod_payplans_subscription\\' => 
+  '/administrator/components/com_payplans/installer/apps/mod_payplans_subscription/' => 
   array (
     'files' => 
     array (
@@ -1663,7 +1663,7 @@
       2 => 'tmpl',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\mod_payplans_subscription\\css\\' => 
+  '/administrator/components/com_payplans/installer/apps/mod_payplans_subscription/css/' => 
   array (
     'files' => 
     array (
@@ -1672,7 +1672,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\mod_payplans_subscription\\images\\' => 
+  '/administrator/components/com_payplans/installer/apps/mod_payplans_subscription/images/' => 
   array (
     'files' => 
     array (
@@ -1681,7 +1681,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\mod_payplans_subscription\\tmpl\\' => 
+  '/administrator/components/com_payplans/installer/apps/mod_payplans_subscription/tmpl/' => 
   array (
     'files' => 
     array (
@@ -1691,69 +1691,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplansregistration_auto\\' => 
-  array (
-    'files' => 
-    array (
-      0 => 'auto.php',
-    ),
-    'folders' => 
-    array (
-      0 => 'auto',
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplansregistration_auto\\auto\\' => 
-  array (
-    'files' => 
-    array (
-    ),
-    'folders' => 
-    array (
-      0 => 'tmpl',
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplansregistration_auto\\auto\\tmpl\\' => 
-  array (
-    'files' => 
-    array (
-      0 => 'registration.php',
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplansregistration_joomla\\' => 
-  array (
-    'files' => 
-    array (
-      0 => 'joomla.php',
-    ),
-    'folders' => 
-    array (
-      0 => 'joomla',
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplansregistration_joomla\\joomla\\' => 
-  array (
-    'files' => 
-    array (
-    ),
-    'folders' => 
-    array (
-      0 => 'tmpl',
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplansregistration_joomla\\joomla\\tmpl\\' => 
-  array (
-    'files' => 
-    array (
-      0 => 'registration.php',
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_appmanager\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_appmanager/' => 
   array (
     'files' => 
     array (
@@ -1764,7 +1702,7 @@
       0 => 'appmanager',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_appmanager\\appmanager\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_appmanager/appmanager/' => 
   array (
     'files' => 
     array (
@@ -1777,7 +1715,7 @@
       0 => 'tmpl',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_appmanager\\appmanager\\tmpl\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_appmanager/appmanager/tmpl/' => 
   array (
     'files' => 
     array (
@@ -1793,7 +1731,7 @@
       0 => '_media',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_appmanager\\appmanager\\tmpl\\_media\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_appmanager/appmanager/tmpl/_media/' => 
   array (
     'files' => 
     array (
@@ -1805,7 +1743,7 @@
       2 => 'js',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_appmanager\\appmanager\\tmpl\\_media\\css\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_appmanager/appmanager/tmpl/_media/css/' => 
   array (
     'files' => 
     array (
@@ -1814,7 +1752,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_appmanager\\appmanager\\tmpl\\_media\\images\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_appmanager/appmanager/tmpl/_media/images/' => 
   array (
     'files' => 
     array (
@@ -1823,7 +1761,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_appmanager\\appmanager\\tmpl\\_media\\js\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_appmanager/appmanager/tmpl/_media/js/' => 
   array (
     'files' => 
     array (
@@ -1832,7 +1770,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_discount\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_discount/' => 
   array (
     'files' => 
     array (
@@ -1843,7 +1781,7 @@
       0 => 'discount',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_discount\\discount\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_discount/discount/' => 
   array (
     'files' => 
     array (
@@ -1853,7 +1791,7 @@
       0 => 'app',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_discount\\discount\\app\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_discount/discount/app/' => 
   array (
     'files' => 
     array (
@@ -1863,7 +1801,7 @@
       0 => 'discount',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_discount\\discount\\app\\discount\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_discount/discount/app/discount/' => 
   array (
     'files' => 
     array (
@@ -1873,7 +1811,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_renewal\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_renewal/' => 
   array (
     'files' => 
     array (
@@ -1884,7 +1822,7 @@
       0 => 'renewal',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_renewal\\renewal\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_renewal/renewal/' => 
   array (
     'files' => 
     array (
@@ -1894,7 +1832,7 @@
       0 => 'app',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_renewal\\renewal\\app\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_renewal/renewal/app/' => 
   array (
     'files' => 
     array (
@@ -1904,7 +1842,7 @@
       0 => 'renewal',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_renewal\\renewal\\app\\renewal\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_renewal/renewal/app/renewal/' => 
   array (
     'files' => 
     array (
@@ -1915,7 +1853,7 @@
       0 => 'tmpl',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_renewal\\renewal\\app\\renewal\\tmpl\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_renewal/renewal/app/renewal/tmpl/' => 
   array (
     'files' => 
     array (
@@ -1925,7 +1863,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_sample\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_sample/' => 
   array (
     'files' => 
     array (
@@ -1936,7 +1874,7 @@
       0 => 'sample',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_sample\\sample\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_sample/sample/' => 
   array (
     'files' => 
     array (
@@ -1946,7 +1884,7 @@
       0 => 'tmpl',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_sample\\sample\\tmpl\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_sample/sample/tmpl/' => 
   array (
     'files' => 
     array (
@@ -1958,7 +1896,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_system\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_system/' => 
   array (
     'files' => 
     array (
@@ -1968,7 +1906,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_upgrade\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_upgrade/' => 
   array (
     'files' => 
     array (
@@ -1979,7 +1917,7 @@
       0 => 'upgrade',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_upgrade\\upgrade\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_upgrade/upgrade/' => 
   array (
     'files' => 
     array (
@@ -1990,7 +1928,7 @@
       1 => 'tmpl',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_upgrade\\upgrade\\app\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_upgrade/upgrade/app/' => 
   array (
     'files' => 
     array (
@@ -2000,7 +1938,7 @@
       0 => 'upgrade',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_upgrade\\upgrade\\app\\upgrade\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_upgrade/upgrade/app/upgrade/' => 
   array (
     'files' => 
     array (
@@ -2012,7 +1950,7 @@
       0 => 'tmpl',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_upgrade\\upgrade\\app\\upgrade\\tmpl\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_upgrade/upgrade/app/upgrade/tmpl/' => 
   array (
     'files' => 
     array (
@@ -2022,7 +1960,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\installer\\apps\\plg_payplans_upgrade\\upgrade\\tmpl\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplans_upgrade/upgrade/tmpl/' => 
   array (
     'files' => 
     array (
@@ -2036,7 +1974,69 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\templates\\' => 
+  '/administrator/components/com_payplans/installer/apps/plg_payplansregistration_auto/' => 
+  array (
+    'files' => 
+    array (
+      0 => 'auto.php',
+    ),
+    'folders' => 
+    array (
+      0 => 'auto',
+    ),
+  ),
+  '/administrator/components/com_payplans/installer/apps/plg_payplansregistration_auto/auto/' => 
+  array (
+    'files' => 
+    array (
+    ),
+    'folders' => 
+    array (
+      0 => 'tmpl',
+    ),
+  ),
+  '/administrator/components/com_payplans/installer/apps/plg_payplansregistration_auto/auto/tmpl/' => 
+  array (
+    'files' => 
+    array (
+      0 => 'registration.php',
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/administrator/components/com_payplans/installer/apps/plg_payplansregistration_joomla/' => 
+  array (
+    'files' => 
+    array (
+      0 => 'joomla.php',
+    ),
+    'folders' => 
+    array (
+      0 => 'joomla',
+    ),
+  ),
+  '/administrator/components/com_payplans/installer/apps/plg_payplansregistration_joomla/joomla/' => 
+  array (
+    'files' => 
+    array (
+    ),
+    'folders' => 
+    array (
+      0 => 'tmpl',
+    ),
+  ),
+  '/administrator/components/com_payplans/installer/apps/plg_payplansregistration_joomla/joomla/tmpl/' => 
+  array (
+    'files' => 
+    array (
+      0 => 'registration.php',
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/administrator/components/com_payplans/templates/' => 
   array (
     'files' => 
     array (
@@ -2046,7 +2046,7 @@
       0 => 'default',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\' => 
+  '/administrator/components/com_payplans/templates/default/' => 
   array (
     'files' => 
     array (
@@ -2058,27 +2058,185 @@
     ),
     'folders' => 
     array (
-      0 => 'app',
-      1 => 'config',
-      2 => 'dashboard',
-      3 => 'group',
-      4 => 'invoice',
-      5 => 'log',
-      6 => 'order',
-      7 => 'payment',
-      8 => 'plan',
-      9 => 'reports',
-      10 => 'resource',
-      11 => 'subscription',
-      12 => 'support',
-      13 => 'transaction',
-      14 => 'user',
-      15 => 'wallet',
-      16 => '_media',
-      17 => '_partials',
+      0 => '_media',
+      1 => '_partials',
+      2 => 'app',
+      3 => 'config',
+      4 => 'dashboard',
+      5 => 'group',
+      6 => 'invoice',
+      7 => 'log',
+      8 => 'order',
+      9 => 'payment',
+      10 => 'plan',
+      11 => 'reports',
+      12 => 'resource',
+      13 => 'subscription',
+      14 => 'support',
+      15 => 'transaction',
+      16 => 'user',
+      17 => 'wallet',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\app\\' => 
+  '/administrator/components/com_payplans/templates/default/_media/' => 
+  array (
+    'files' => 
+    array (
+    ),
+    'folders' => 
+    array (
+      0 => 'css',
+      1 => 'images',
+      2 => 'js',
+    ),
+  ),
+  '/administrator/components/com_payplans/templates/default/_media/css/' => 
+  array (
+    'files' => 
+    array (
+    ),
+    'folders' => 
+    array (
+      0 => 'images',
+    ),
+  ),
+  '/administrator/components/com_payplans/templates/default/_media/css/images/' => 
+  array (
+    'files' => 
+    array (
+    ),
+    'folders' => 
+    array (
+      0 => 'icons',
+      1 => 'install',
+      2 => 'setup',
+    ),
+  ),
+  '/administrator/components/com_payplans/templates/default/_media/css/images/icons/' => 
+  array (
+    'files' => 
+    array (
+    ),
+    'folders' => 
+    array (
+      0 => '16',
+      1 => '48',
+    ),
+  ),
+  '/administrator/components/com_payplans/templates/default/_media/css/images/icons/16/' => 
+  array (
+    'files' => 
+    array (
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/administrator/components/com_payplans/templates/default/_media/css/images/icons/48/' => 
+  array (
+    'files' => 
+    array (
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/administrator/components/com_payplans/templates/default/_media/css/images/install/' => 
+  array (
+    'files' => 
+    array (
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/administrator/components/com_payplans/templates/default/_media/css/images/setup/' => 
+  array (
+    'files' => 
+    array (
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/administrator/components/com_payplans/templates/default/_media/images/' => 
+  array (
+    'files' => 
+    array (
+    ),
+    'folders' => 
+    array (
+      0 => 'icons',
+      1 => 'setup',
+    ),
+  ),
+  '/administrator/components/com_payplans/templates/default/_media/images/icons/' => 
+  array (
+    'files' => 
+    array (
+    ),
+    'folders' => 
+    array (
+      0 => '16',
+      1 => '48',
+    ),
+  ),
+  '/administrator/components/com_payplans/templates/default/_media/images/icons/16/' => 
+  array (
+    'files' => 
+    array (
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/administrator/components/com_payplans/templates/default/_media/images/icons/48/' => 
+  array (
+    'files' => 
+    array (
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/administrator/components/com_payplans/templates/default/_media/images/setup/' => 
+  array (
+    'files' => 
+    array (
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/administrator/components/com_payplans/templates/default/_media/js/' => 
+  array (
+    'files' => 
+    array (
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/administrator/components/com_payplans/templates/default/_partials/' => 
+  array (
+    'files' => 
+    array (
+      0 => 'default_partial_amount.php',
+      1 => 'default_partial_invoice_table.php',
+      2 => 'default_partial_modifier_table.php',
+      3 => 'default_partial_order.php',
+      4 => 'default_partial_resource_table.php',
+      5 => 'default_partial_search.php',
+      6 => 'default_partial_subscription.php',
+      7 => 'default_partial_transaction_table.php',
+      8 => 'default_partial_user.php',
+      9 => 'default_partial_wallet_table.php',
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/administrator/components/com_payplans/templates/default/app/' => 
   array (
     'files' => 
     array (
@@ -2091,7 +2249,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\config\\' => 
+  '/administrator/components/com_payplans/templates/default/config/' => 
   array (
     'files' => 
     array (
@@ -2105,7 +2263,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\dashboard\\' => 
+  '/administrator/components/com_payplans/templates/default/dashboard/' => 
   array (
     'files' => 
     array (
@@ -2125,7 +2283,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\group\\' => 
+  '/administrator/components/com_payplans/templates/default/group/' => 
   array (
     'files' => 
     array (
@@ -2137,7 +2295,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\invoice\\' => 
+  '/administrator/components/com_payplans/templates/default/invoice/' => 
   array (
     'files' => 
     array (
@@ -2155,7 +2313,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\log\\' => 
+  '/administrator/components/com_payplans/templates/default/log/' => 
   array (
     'files' => 
     array (
@@ -2167,7 +2325,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\order\\' => 
+  '/administrator/components/com_payplans/templates/default/order/' => 
   array (
     'files' => 
     array (
@@ -2184,7 +2342,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\payment\\' => 
+  '/administrator/components/com_payplans/templates/default/payment/' => 
   array (
     'files' => 
     array (
@@ -2199,7 +2357,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\plan\\' => 
+  '/administrator/components/com_payplans/templates/default/plan/' => 
   array (
     'files' => 
     array (
@@ -2212,7 +2370,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\reports\\' => 
+  '/administrator/components/com_payplans/templates/default/reports/' => 
   array (
     'files' => 
     array (
@@ -2222,7 +2380,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\resource\\' => 
+  '/administrator/components/com_payplans/templates/default/resource/' => 
   array (
     'files' => 
     array (
@@ -2234,7 +2392,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\subscription\\' => 
+  '/administrator/components/com_payplans/templates/default/subscription/' => 
   array (
     'files' => 
     array (
@@ -2249,7 +2407,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\support\\' => 
+  '/administrator/components/com_payplans/templates/default/support/' => 
   array (
     'files' => 
     array (
@@ -2260,7 +2418,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\transaction\\' => 
+  '/administrator/components/com_payplans/templates/default/transaction/' => 
   array (
     'files' => 
     array (
@@ -2277,7 +2435,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\user\\' => 
+  '/administrator/components/com_payplans/templates/default/user/' => 
   array (
     'files' => 
     array (
@@ -2294,7 +2452,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\wallet\\' => 
+  '/administrator/components/com_payplans/templates/default/wallet/' => 
   array (
     'files' => 
     array (
@@ -2305,165 +2463,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\_media\\' => 
-  array (
-    'files' => 
-    array (
-    ),
-    'folders' => 
-    array (
-      0 => 'css',
-      1 => 'images',
-      2 => 'js',
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\_media\\css\\' => 
-  array (
-    'files' => 
-    array (
-    ),
-    'folders' => 
-    array (
-      0 => 'images',
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\_media\\css\\images\\' => 
-  array (
-    'files' => 
-    array (
-    ),
-    'folders' => 
-    array (
-      0 => 'icons',
-      1 => 'install',
-      2 => 'setup',
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\_media\\css\\images\\icons\\' => 
-  array (
-    'files' => 
-    array (
-    ),
-    'folders' => 
-    array (
-      0 => '16',
-      1 => '48',
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\_media\\css\\images\\icons\\16\\' => 
-  array (
-    'files' => 
-    array (
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\_media\\css\\images\\icons\\48\\' => 
-  array (
-    'files' => 
-    array (
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\_media\\css\\images\\install\\' => 
-  array (
-    'files' => 
-    array (
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\_media\\css\\images\\setup\\' => 
-  array (
-    'files' => 
-    array (
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\_media\\images\\' => 
-  array (
-    'files' => 
-    array (
-    ),
-    'folders' => 
-    array (
-      0 => 'icons',
-      1 => 'setup',
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\_media\\images\\icons\\' => 
-  array (
-    'files' => 
-    array (
-    ),
-    'folders' => 
-    array (
-      0 => '16',
-      1 => '48',
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\_media\\images\\icons\\16\\' => 
-  array (
-    'files' => 
-    array (
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\_media\\images\\icons\\48\\' => 
-  array (
-    'files' => 
-    array (
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\_media\\images\\setup\\' => 
-  array (
-    'files' => 
-    array (
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\_media\\js\\' => 
-  array (
-    'files' => 
-    array (
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\templates\\default\\_partials\\' => 
-  array (
-    'files' => 
-    array (
-      0 => 'default_partial_amount.php',
-      1 => 'default_partial_invoice_table.php',
-      2 => 'default_partial_modifier_table.php',
-      3 => 'default_partial_order.php',
-      4 => 'default_partial_resource_table.php',
-      5 => 'default_partial_search.php',
-      6 => 'default_partial_subscription.php',
-      7 => 'default_partial_transaction_table.php',
-      8 => 'default_partial_user.php',
-      9 => 'default_partial_wallet_table.php',
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\views\\' => 
+  '/administrator/components/com_payplans/views/' => 
   array (
     'files' => 
     array (
@@ -2489,7 +2489,7 @@
       16 => 'wallet',
     ),
   ),
-  '\\administrator\\components\\com_payplans\\views\\app\\' => 
+  '/administrator/components/com_payplans/views/app/' => 
   array (
     'files' => 
     array (
@@ -2499,7 +2499,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\views\\config\\' => 
+  '/administrator/components/com_payplans/views/config/' => 
   array (
     'files' => 
     array (
@@ -2509,7 +2509,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\views\\dashboard\\' => 
+  '/administrator/components/com_payplans/views/dashboard/' => 
   array (
     'files' => 
     array (
@@ -2519,7 +2519,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\views\\group\\' => 
+  '/administrator/components/com_payplans/views/group/' => 
   array (
     'files' => 
     array (
@@ -2529,7 +2529,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\views\\invoice\\' => 
+  '/administrator/components/com_payplans/views/invoice/' => 
   array (
     'files' => 
     array (
@@ -2539,7 +2539,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\views\\log\\' => 
+  '/administrator/components/com_payplans/views/log/' => 
   array (
     'files' => 
     array (
@@ -2549,7 +2549,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\views\\manage\\' => 
+  '/administrator/components/com_payplans/views/manage/' => 
   array (
     'files' => 
     array (
@@ -2558,17 +2558,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\views\\order\\' => 
-  array (
-    'files' => 
-    array (
-      0 => 'view.html.php',
-    ),
-    'folders' => 
-    array (
-    ),
-  ),
-  '\\administrator\\components\\com_payplans\\views\\payment\\' => 
+  '/administrator/components/com_payplans/views/order/' => 
   array (
     'files' => 
     array (
@@ -2578,7 +2568,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\views\\plan\\' => 
+  '/administrator/components/com_payplans/views/payment/' => 
   array (
     'files' => 
     array (
@@ -2588,7 +2578,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\views\\reports\\' => 
+  '/administrator/components/com_payplans/views/plan/' => 
   array (
     'files' => 
     array (
@@ -2598,7 +2588,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\views\\resource\\' => 
+  '/administrator/components/com_payplans/views/reports/' => 
   array (
     'files' => 
     array (
@@ -2608,7 +2598,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\views\\subscription\\' => 
+  '/administrator/components/com_payplans/views/resource/' => 
   array (
     'files' => 
     array (
@@ -2618,7 +2608,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\views\\support\\' => 
+  '/administrator/components/com_payplans/views/subscription/' => 
   array (
     'files' => 
     array (
@@ -2628,7 +2618,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\views\\transaction\\' => 
+  '/administrator/components/com_payplans/views/support/' => 
   array (
     'files' => 
     array (
@@ -2638,7 +2628,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\views\\user\\' => 
+  '/administrator/components/com_payplans/views/transaction/' => 
   array (
     'files' => 
     array (
@@ -2648,7 +2638,7 @@
     array (
     ),
   ),
-  '\\administrator\\components\\com_payplans\\views\\wallet\\' => 
+  '/administrator/components/com_payplans/views/user/' => 
   array (
     'files' => 
     array (
@@ -2658,7 +2648,17 @@
     array (
     ),
   ),
-  '/plugins\\payplans\\' => 
+  '/administrator/components/com_payplans/views/wallet/' => 
+  array (
+    'files' => 
+    array (
+      0 => 'view.html.php',
+    ),
+    'folders' => 
+    array (
+    ),
+  ),
+  '/plugins/payplans/' => 
   array (
     'files' => 
     array (
@@ -2671,7 +2671,7 @@
       3 => 'upgrade',
     ),
   ),
-  '/plugins\\payplans\\appmanager\\' => 
+  '/plugins/payplans/appmanager/' => 
   array (
     'files' => 
     array (
@@ -2682,7 +2682,7 @@
       0 => 'appmanager',
     ),
   ),
-  '/plugins\\payplans\\appmanager\\appmanager\\' => 
+  '/plugins/payplans/appmanager/appmanager/' => 
   array (
     'files' => 
     array (
@@ -2695,7 +2695,7 @@
       0 => 'tmpl',
     ),
   ),
-  '/plugins\\payplans\\appmanager\\appmanager\\tmpl\\' => 
+  '/plugins/payplans/appmanager/appmanager/tmpl/' => 
   array (
     'files' => 
     array (
@@ -2711,7 +2711,7 @@
       0 => '_media',
     ),
   ),
-  '/plugins\\payplans\\appmanager\\appmanager\\tmpl\\_media\\' => 
+  '/plugins/payplans/appmanager/appmanager/tmpl/_media/' => 
   array (
     'files' => 
     array (
@@ -2723,7 +2723,7 @@
       2 => 'js',
     ),
   ),
-  '/plugins\\payplans\\appmanager\\appmanager\\tmpl\\_media\\css\\' => 
+  '/plugins/payplans/appmanager/appmanager/tmpl/_media/css/' => 
   array (
     'files' => 
     array (
@@ -2732,7 +2732,7 @@
     array (
     ),
   ),
-  '/plugins\\payplans\\appmanager\\appmanager\\tmpl\\_media\\images\\' => 
+  '/plugins/payplans/appmanager/appmanager/tmpl/_media/images/' => 
   array (
     'files' => 
     array (
@@ -2741,7 +2741,7 @@
     array (
     ),
   ),
-  '/plugins\\payplans\\appmanager\\appmanager\\tmpl\\_media\\js\\' => 
+  '/plugins/payplans/appmanager/appmanager/tmpl/_media/js/' => 
   array (
     'files' => 
     array (
@@ -2750,7 +2750,7 @@
     array (
     ),
   ),
-  '/plugins\\payplans\\discount\\' => 
+  '/plugins/payplans/discount/' => 
   array (
     'files' => 
     array (
@@ -2761,7 +2761,7 @@
       0 => 'discount',
     ),
   ),
-  '/plugins\\payplans\\discount\\discount\\' => 
+  '/plugins/payplans/discount/discount/' => 
   array (
     'files' => 
     array (
@@ -2771,7 +2771,7 @@
       0 => 'app',
     ),
   ),
-  '/plugins\\payplans\\discount\\discount\\app\\' => 
+  '/plugins/payplans/discount/discount/app/' => 
   array (
     'files' => 
     array (
@@ -2781,7 +2781,7 @@
       0 => 'discount',
     ),
   ),
-  '/plugins\\payplans\\discount\\discount\\app\\discount\\' => 
+  '/plugins/payplans/discount/discount/app/discount/' => 
   array (
     'files' => 
     array (
@@ -2791,7 +2791,7 @@
     array (
     ),
   ),
-  '/plugins\\payplans\\renewal\\' => 
+  '/plugins/payplans/renewal/' => 
   array (
     'files' => 
     array (
@@ -2802,7 +2802,7 @@
       0 => 'renewal',
     ),
   ),
-  '/plugins\\payplans\\renewal\\renewal\\' => 
+  '/plugins/payplans/renewal/renewal/' => 
   array (
     'files' => 
     array (
@@ -2812,7 +2812,7 @@
       0 => 'app',
     ),
   ),
-  '/plugins\\payplans\\renewal\\renewal\\app\\' => 
+  '/plugins/payplans/renewal/renewal/app/' => 
   array (
     'files' => 
     array (
@@ -2822,7 +2822,7 @@
       0 => 'renewal',
     ),
   ),
-  '/plugins\\payplans\\renewal\\renewal\\app\\renewal\\' => 
+  '/plugins/payplans/renewal/renewal/app/renewal/' => 
   array (
     'files' => 
     array (
@@ -2833,7 +2833,7 @@
       0 => 'tmpl',
     ),
   ),
-  '/plugins\\payplans\\renewal\\renewal\\app\\renewal\\tmpl\\' => 
+  '/plugins/payplans/renewal/renewal/app/renewal/tmpl/' => 
   array (
     'files' => 
     array (
@@ -2843,7 +2843,7 @@
     array (
     ),
   ),
-  '/plugins\\payplans\\upgrade\\' => 
+  '/plugins/payplans/upgrade/' => 
   array (
     'files' => 
     array (
@@ -2854,7 +2854,7 @@
       0 => 'upgrade',
     ),
   ),
-  '/plugins\\payplans\\upgrade\\upgrade\\' => 
+  '/plugins/payplans/upgrade/upgrade/' => 
   array (
     'files' => 
     array (
@@ -2865,7 +2865,7 @@
       1 => 'tmpl',
     ),
   ),
-  '/plugins\\payplans\\upgrade\\upgrade\\app\\' => 
+  '/plugins/payplans/upgrade/upgrade/app/' => 
   array (
     'files' => 
     array (
@@ -2875,7 +2875,7 @@
       0 => 'upgrade',
     ),
   ),
-  '/plugins\\payplans\\upgrade\\upgrade\\app\\upgrade\\' => 
+  '/plugins/payplans/upgrade/upgrade/app/upgrade/' => 
   array (
     'files' => 
     array (
@@ -2887,7 +2887,7 @@
       0 => 'tmpl',
     ),
   ),
-  '/plugins\\payplans\\upgrade\\upgrade\\app\\upgrade\\tmpl\\' => 
+  '/plugins/payplans/upgrade/upgrade/app/upgrade/tmpl/' => 
   array (
     'files' => 
     array (
@@ -2897,7 +2897,7 @@
     array (
     ),
   ),
-  '/plugins\\payplans\\upgrade\\upgrade\\tmpl\\' => 
+  '/plugins/payplans/upgrade/upgrade/tmpl/' => 
   array (
     'files' => 
     array (
@@ -2911,7 +2911,7 @@
     array (
     ),
   ),
-  '/plugins\\payplansregistration\\' => 
+  '/plugins/payplansregistration/' => 
   array (
     'files' => 
     array (
@@ -2922,7 +2922,7 @@
       1 => 'joomla',
     ),
   ),
-  '/plugins\\payplansregistration\\auto\\' => 
+  '/plugins/payplansregistration/auto/' => 
   array (
     'files' => 
     array (
@@ -2933,7 +2933,7 @@
       0 => 'auto',
     ),
   ),
-  '/plugins\\payplansregistration\\auto\\auto\\' => 
+  '/plugins/payplansregistration/auto/auto/' => 
   array (
     'files' => 
     array (
@@ -2943,7 +2943,7 @@
       0 => 'tmpl',
     ),
   ),
-  '/plugins\\payplansregistration\\auto\\auto\\tmpl\\' => 
+  '/plugins/payplansregistration/auto/auto/tmpl/' => 
   array (
     'files' => 
     array (
@@ -2953,7 +2953,7 @@
     array (
     ),
   ),
-  '/plugins\\payplansregistration\\joomla\\' => 
+  '/plugins/payplansregistration/joomla/' => 
   array (
     'files' => 
     array (
@@ -2964,7 +2964,7 @@
       0 => 'joomla',
     ),
   ),
-  '/plugins\\payplansregistration\\joomla\\joomla\\' => 
+  '/plugins/payplansregistration/joomla/joomla/' => 
   array (
     'files' => 
     array (
@@ -2974,7 +2974,7 @@
       0 => 'tmpl',
     ),
   ),
-  '/plugins\\payplansregistration\\joomla\\joomla\\tmpl\\' => 
+  '/plugins/payplansregistration/joomla/joomla/tmpl/' => 
   array (
     'files' => 
     array (
@@ -2985,7 +2985,7 @@
     ),
   ),
 ) ;
-		    	static $_fileroot =  'D:\htdocs\cms' ;
+		    	static $_fileroot =  '/Applications/XAMPP/xamppfiles/htdocs/cms_dev' ;
 		    	
 		    	static public function get($index)
     			{

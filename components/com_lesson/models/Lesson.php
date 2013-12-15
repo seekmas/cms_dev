@@ -40,7 +40,8 @@ class LessonModelLesson extends JModelLegacy
 
 		$query->select( $db->quoteName('id') . ',' . $db->quoteName('title') .','. $db->quoteName('path') . ',' . $db->quoteName('file') .','. $db->quoteName('description'))
 			  ->from( $db->quoteName('#__lessons_unit'))
-			  ->where( 'parent_id = '.$id);
+			  ->where( 'parent_id = '.$id)
+			  ->order_by('sort'  , 'asc');
 		
 		$q = $db->setQuery( $query)->execute();
 

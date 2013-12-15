@@ -1,5 +1,5 @@
 <div class="btn-group">
-    <a href="<?php echo JURI::base() . 'index.php?option=com_lesson&view=editlesson';?>">新建课程</a>
+    <a href="<?php echo JURI::base() . 'index.php?option=com_lesson&view=generatelesson';?>" class="btn btn-primary">新建课程</a>
     <a href="<?php echo JURI::base() . 'index.php?option=com_lesson';?>" class="btn btn-primary">总览</a>
     <a href="<?php echo JURI::base() . 'index.php?option=com_lesson&view=editlesson&id='.$this->info['parent_id'];?>" class="btn btn-primary">管理课程</a>
     <a href="#" class="btn btn-primary active">管理单元</a>

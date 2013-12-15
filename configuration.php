@@ -15,7 +15,7 @@ class JConfig {
 	public $host = 'localhost';
 	public $user = 'root';
 	public $password = '';
-	public $db = 'hero';
+	public $db = 'cms';
 	public $dbprefix = 'm_';
 	public $live_site = '';
 	public $secret = 'HAZ16alrfuQPwzPO';
@@ -53,8 +53,8 @@ class JConfig {
 	public $sef_suffix = '0';
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
-	public $log_path = 'D:\\htdocs\\cms/logs';
-	public $tmp_path = 'D:\\htdocs\\cms/tmp';
+	public $log_path = '/Applications/XAMPP/htdocs/cms_dev/logs';
+	public $tmp_path = '/Applications/XAMPP/htdocs/cms_dev/tmp';
 	public $lifetime = '30';
 	public $session_handler = 'database';
 	public $mailonline = '1';
