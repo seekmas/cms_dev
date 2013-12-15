@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<name>Notification Emailer</name>
+	<version>0.0.101</version>
+	<creationDate>Sep 2010</creationDate>
+	<author>JoomlaXi.com</author>
+	<authorEmail>shyam@joomlaxi.com</authorEmail>
+	<authorUrl>http://www.joomlaxi.com</authorUrl>
+	<copyright>2009 JoomlaXi.com</copyright>
+	<copyrightHolder>JoomlaXi.com</copyrightHolder>
+	<license>GNU General Public License v2</license>
+	<icon>email.png</icon>
+    <tags>reporting</tags>
+	<description>
+	   Using this app, administrator can send automatic email notifications to the subscribed users when their
+	   subscription status changes.&lt;br/&gt;&lt;br/&gt;
+	   
+	  You need to select on which plans you want to apply this Application Instance.
+	   For e.g. You want to send different Email to users of Plan1 and Plan2, then you 
+	   should create 2 instance of this application with different content.
+
+	   Reference Link: &lt;a href="http://www.jpayplans.com/app-ville/item/notification-emailer.html?category_id=96" target="_blank" &gt; Notification Emailer  &lt;/a&gt;
+	</description>
+	<help>
+	For adding an attachment with the e-mail,place all attachments in Root/media/payplans/app/email folder.
+	You can select the attachment that you want to send through "Add an attachment" option.
+	
+	For customizing template for sending mails you need to override templates at Root/components/com_payplans/libraries/app/email/tmpl.
+	For example: for changing template of On Subscription active, you have to override OnSubscriptionActive.php and similarly with all other cases.
+	
+	</help>
+	<fields name="app_params">
+     <fieldset name="app_params">
+		<field	name="when_to_email"
+				type="parammanipulator" 
+				label="COM_PAYPLANS_APP_EMAIL_WHEN_TO_EMAIL"  
+				description="COM_PAYPLANS_EMAIL_WHEN_TO_EMAIL_DESC"
+				default="on_status">
+				<option value="on_status" params="on_status">COM_PAYPLANS_APP_EMAIL_WHEN_TO_EMAIL_OPTION_ON_STATUS</option>
+				<option value="on_preexpiry" params="on_preexpiry,on_lastcycle">COM_PAYPLANS_APP_EMAIL_WHEN_TO_EMAIL_OPTION_ON_PRE_EXPIRY</option>
+				<option value="on_postexpiry" params="on_postexpiry">COM_PAYPLANS_APP_EMAIL_WHEN_TO_EMAIL_OPTION_ON_POST_EXPIRY</option>
+				<option value="on_postactivation" params="on_postactivation">COM_PAYPLANS_APP_EMAIL_WHEN_TO_EMAIL_OPTION_ON_POST_ACTIVATION</option>
+				<option value="on_cart_abondonment" params="on_cart_abondonment">COM_PAYPLANS_APP_EMAIL_WHEN_TO_EMAIL_OPTION_ON_CART_ABONDONMENT</option>
+		</field>
+		
+		<field name="on_preexpiry" type="timer" 
+			label="COM_PAYPLANS_APP_EMAIL_ON_PRE_EXPIRY_LABEL"
+			default="" description="COM_PAYPLANS_APP_EMAIL_ON_PRE_EXPIRY_DESC" />
+		
+		<field	name="on_lastcycle" 	
+				type="radio" 
+				class="btn-group"	
+				label="COM_PAYPLANS_APP_EMAIL_LAST_CYCLE_LABEL"  
+				description="COM_PAYPLANS_APP_EMAIL_LAST_CYCLE_LABEL_DESC" 
+				default="0">
+				<option value="0">COM_PAYPLANS_NO</option>
+				<option value="1">COM_PAYPLANS_YES</option>
+		</field>
+		
+		<field name="on_postexpiry" type="timer" 
+			label="COM_PAYPLANS_APP_EMAIL_ON_POST_EXPIRY_LABEL"
+			default="" description="COM_PAYPLANS_APP_EMAIL_ON_POST_EXPIRY_DESC" />
+			
+		<field name="on_postactivation" type="timer" 
+			label="COM_PAYPLANS_APP_EMAIL_ON_POST_ACTIVATION_LABEL"
+			default="" description="COM_PAYPLANS_APP_EMAIL_ON_POST_ACTIVATION_DESC" />
+
+		<field name="on_status" type="xistatus" exclude="payment"
+			label="COM_PAYPLANS_APP_EMAIL_ON_STATUS_LABEL"
+			default="" description="COM_PAYPLANS_APP_EMAIL_ON_STATUS_DESC" />
+			
+		<field name="on_cart_abondonment" type="timer" 
+			label="COM_PAYPLANS_APP_EMAIL_ON_CART_ABONDONMENT_LABEL"
+			default="" description="COM_PAYPLANS_APP_EMAIL_ON_CART_ABONDONMENT_DESC" />
+			
+
+		<field name="send_cc" type="textarea" label="COM_PAYPLANS_APP_EMAIL_SEND_CC_LABEL"
+			rows="2" cols="50" default="" description="COM_PAYPLANS_APP_EMAIL_SEND_CC_DESC" />
+
+		<field name="send_bcc" type="textarea" label="COM_PAYPLANS_APP_EMAIL_SEND_BCC_LABEL"
+			rows="2" cols="50" default="" description="COM_PAYPLANS_APP_EMAIL_SEND_BCC_DESC" />
+			
+		<field name="subject" type="textarea" label="COM_PAYPLANS_APP_EMAIL_SUBJECT_LABEL"
+			rows="2" cols="50" default="" description="COM_PAYPLANS_APP_EMAIL_SUBJECT_DESC" 
+			class="required" />
+		<field name="attachment"		
+			   label="COM_PAYPLANS_APP_EMAIL_ATTACHMENT_LABEL"
+			   description="COM_PAYPLANS_APP_EMAIL_ATTACHMENT_DESC"
+			   type="FileList" directory="media/payplans/app/email"
+			/>
+		
+		<field	name="send_invoice" 	
+				type="radio" 	
+				class="btn-group"
+				label="COM_PAYPLANS_APP_EMAIL_SEND_INVOICE_LABEL"  
+				description="COM_PAYPLANS_APP_EMAIL_SEND_INVOICE_DESC" 
+				default="0">
+				<option value="0">COM_PAYPLANS_NO</option>
+				<option value="1">COM_PAYPLANS_YES</option>
+		</field>
+		
+		<field name="email_template"
+			   label="COM_PAYPLANS_APP_EMAIL_CHOOSE_TEMPLATE"
+			   description="COM_PAYPLANS_APP_EMAIL_CHOOSE_TEMPLATE_DESC"
+			   type="parammanipulator" default="custom">
+			  <option value="custom" params="html_format,content,rewriter">COM_PAYPLANS_APP_EMAIL_CUSTOM_TEMPLATE</option>
+			  <option value="choose_template" params="choose_template">COM_PAYPLANS_APP_EMAIL_CHOOSE_TEMPLATE</option>
+		</field>  
+			
+		<field name="html_format" 
+			   type="radio" 
+			   class="btn-group"
+			   label="COM_PAYPLANS_APP_EMAIL_EMAIL_FORMAT"
+			   description="COM_PAYPLANS_APP_EMAIL_EMAIL_FORMAT_DESC" 
+			   default="1">
+				<option value="0">COM_PAYPLANS_EMAIL_APP_EMAIL_FORMAT_TEXT</option>
+			    <option value="1">COM_PAYPLANS_EMAIL_APP_EMAIL_FORMAT_HTML</option>
+		</field>
+		
+		<field name="" 
+			   type="xijssrc" 
+			   label=""
+			   description="including jQuery"
+			   path="components/com_payplans/libraries/app/email/tmpl"
+			   filename="email.js"
+			   default="">
+		</field>
+		 
+		<field name="content" type="xieditor" label="COM_PAYPLANS_APP_EMAIL_CONTENT_LABEL"
+			   description="COM_PAYPLANS_APP_EMAIL_CONTENT_DESC" 
+			   class="required" />
+			
+		<field name="choose_template" 
+			   label="COM_PAYPLANS_APP_EMAIL_TEMPLATE_LABEL"
+			   description="COM_PAYPLANS_APP_EMAIL_TEMPLATE_DESC"
+			   type="FileList" directory="components/com_payplans/libraries/app/email/tmpl"
+			   stripext=".php"
+			   hide_default="true"
+			   exclude=".js"
+			   default="subscriptionactive"/>
+			   
+		<field  name="rewriter" 
+				type="rewriter" 
+				label="COM_PAYPLANS_APP_EMAIL_REWRITER_LABEL"
+				description="COM_PAYPLANS_APP_EMAIL_REWRITER_DESC" />
+	</fieldset>
+	</fields>
+</config>

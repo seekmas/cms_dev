@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+    <name>PayPlans</name>
+    <version>3.0.6.4045</version>
+    <creationDate>Jan 2010</creationDate>
+    <author>Team JoomlaXi</author>
+    <authorEmail>shyam@joomlaxi.com</authorEmail>
+    <authorUrl>http://www.joomlaxi.com</authorUrl>
+    <copyright>2009-11 Ready Bytes Software Labs Pvt. Ltd.</copyright>
+    <license>GNU General Public License v2</license>
+    <description>PayPlans : Paid Membership and Subscription System for Joomla</description>
+
+	<files folder="site">
+		<file>payplans.php</file>
+		<file>index.html</file>
+		<file>router.php</file>
+		<folder>apps</folder>
+		<folder>media</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>includes</folder>
+		<folder>libraries</folder>
+		<folder>templates</folder>
+		<folder>views</folder>
+		<folder>elements</folder>
+		<folder>sef_ext</folder>
+		<folder>payplans</folder>
+		<folder>xiframework</folder>
+	</files>
+
+	<languages>
+		<language tag="en-GB">languages/site/en-GB.com_payplans.ini</language>
+	</languages>
+	
+	<administration>
+		<menu img="components/com_payplans/templates/default/_media/images/icons/16/pppayplans.png">COM_PAYPLANS</menu>
+		<submenu>
+			<menu 	view="config" 		img="components/com_payplans/templates/default/_media/images/icons/16/ppconfig.png">COM_PAYPLANS_CONFIGURATION</menu>
+			<menu 	view="plan"	  		img="components/com_payplans/templates/default/_media/images/icons/16/ppplan.png">COM_PAYPLANS_PLANS</menu>
+			<menu 	view="app"			img="components/com_payplans/templates/default/_media/images/icons/16/ppapp.png">COM_PAYPLANS_APPS</menu>
+			<menu 	view="subscription" img="components/com_payplans/templates/default/_media/images/icons/16/ppsubscription.png">COM_PAYPLANS_SUBSCRIPTIONS</menu>
+			<menu   view="invoice"      img="components/com_payplans/templates/default/_media/images/icons/16/ppinvoice.png">COM_PAYPLANS_INVOICE</menu>
+			<menu   view="transaction"  img="components/com_payplans/templates/default/_media/images/icons/16/pptransaction.png">COM_PAYPLANS_TRANSACTION</menu>
+			<menu 	view="user"		  	img="components/com_payplans/templates/default/_media/images/icons/16/ppuser.png">COM_PAYPLANS_USERS</menu>
+			<menu 	view="log"		  	img="components/com_payplans/templates/default/_media/images/icons/16/pplog.png">COM_PAYPLANS_LOGS</menu>
+		</submenu>
+		
+		<files folder="admin">
+			<file>payplans.php</file>
+			<file>config.xml</file>
+			<file>index.html</file>
+			<folder>installer</folder>
+			<folder>controllers</folder>
+			<folder>includes</folder>
+			<folder>templates</folder>
+			<folder>views</folder>
+		</files>
+
+		<languages>
+			<language tag="en-GB">languages/admin/en-GB.com_payplans.ini</language>
+			<language tag="en-GB">languages/admin/en-GB.com_payplans.menu.ini</language>
+			<language tag="en-GB">languages/admin/en-GB.com_payplans.sys.ini</language>
+		</languages>
+	</administration>
+
+	<scriptfile>script.payplans.php</scriptfile>
+</extension>

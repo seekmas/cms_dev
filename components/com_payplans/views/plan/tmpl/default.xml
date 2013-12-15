@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<!-- Joomla 1.6 -->
+	<layout title="COM_PAYPLANS_PLAN_DEFAULT_LAYOUT_TITLE" option="com_payplans_plan_view_default_option">
+		<message><![CDATA[COM_PAYPLANS_PLAN_DEFAULT_LAYOUT_MESSAGE]]></message>
+	</layout>
+	
+	<fields name="request">
+		<fieldset name="request" addfieldpath="/components/com_payplans/elements"
+			label="Basic Parameters">
+			<field name="task" type="hidden" default="subscribe" />
+			<field name="plan_id" type="plans" default="0"
+				label="Plan" addnone="true" description="If you set both Plan and Group in Parameters then higher priority will be given to the Plan"/>
+			<field name="group_id" type="xigroup" default="0"
+				label="Group" addnone="true" description="If you set both Plan and Group in Parameters then higher priority will be given to the Plan"/>	
+		</fieldset>
+	</fields>
+	<!-- Joomla 1.6 -->
+
+	<!-- Joomla 1.5 -->
+	<state>
+		<name>COM_PAYPLANS_PLAN_DEFAULT_LAYOUT_TITLE</name>
+		<description>COM_PAYPLANS_PLAN_DEFAULT_LAYOUT_MESSAGE</description>
+		<url addpath="/components/com_payplans/elements">
+			<param name="task" type="hidden" default="subscribe" />
+			<param name="plan_id" type="plans" label="Plan" description="If you set both Plan and Group in Parameters then higher priority will be given to the Plan" addnone="true" />
+			<param name="group_id" type="xigroup" label="Group" description="If you set both Plan and Group in Parameters then higher priority will be given to the Plan" addnone="true" />
+		</url>
+	</state>
+	<!-- Joomla 1.5 -->
+
+</metadata>

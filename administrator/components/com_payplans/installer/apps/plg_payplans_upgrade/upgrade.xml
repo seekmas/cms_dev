@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="payplans" method="upgrade">
+    <name>PayPlans-Upgrade</name>
+    <version>3.0.6.4045</version>
+    <creationDate>Jan 2010</creationDate>
+    <author>Team Payplans</author>
+    <authorEmail>team@readybytes.in</authorEmail>
+    <authorUrl>http://www.jpayplans.com</authorUrl>
+    <copyright>2009-11 Ready Bytes Software Labs Pvt. Ltd.</copyright>
+    <license>GNU General Public License v2</license>
+    <description>PayPlans : Upgrade</description>
+	<files>
+		<filename plugin="upgrade">upgrade.php</filename>
+		<folder>upgrade</folder>
+	</files>
+</extension>

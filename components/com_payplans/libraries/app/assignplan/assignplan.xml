@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<name>Assign Plan</name>
+	<version>3.0.6.4045</version>
+	<creationDate>Sep 2010</creationDate>
+	<author>JoomlaXi.com</author>
+	<authorEmail>shyam@joomlaxi.com</authorEmail>
+	<authorUrl>http://www.joomlaxi.com</authorUrl>
+	<copyright>2009 JoomlaXi.com</copyright>
+	<copyrightHolder>JoomlaXi.com</copyrightHolder>
+	<license>GNU General Public License v2</license>
+	<icon>assign-plan.png</icon>
+	<description>
+		This app can be used to assign additional plans to customers who subscribe a particular plan.
+		The administrators can decide the additional plans to assign depending on the subscription 
+		status &lt;br/&gt; (Active, Hold or Expired) of the plan.&lt;br/&gt;&lt;br/&gt;
+		Reference Link: &lt;a href="http://www.jpayplans.com/app-ville/item/assign-plan.html?category_id=96" target="_blank" &gt; Assign plan  &lt;/a&gt;
+		
+	</description>
+    <tags>advance</tags>
+	<help>
+		This app allows you to set any plan to the user on its subscription status.
+		&lt;br/&gt;
+		For eg. if you want to assign a plan on user's subscription expiration 
+		then set on status update to subscription-expired
+		and set plan parameter to any plan of your choice.
+		&lt;br/&gt;
+		&lt;span style="color:red"&gt;This app will not work if set as Core App. And make sure that you have not created a loop by these apps, like plan1 is assigned on plan2 subscription status change and plan2 assigned on plan1 subscription status change.&lt;/span&gt; 
+	</help>
+	<fields name="app_params">
+	<fieldset name="app_params">
+		<!-- On Subscription active -->
+		<field  type="xispacer" default="COM_PAYPLANS_APP_ASSIGNPLAN_ON_ACTIVE_DESC"/>
+		<field	
+			name="assignPlan"		
+			label="COM_PAYPLANS_ASSIGNPLAN_PLAN_ON_ACTIVE_LABEL"
+			description="COM_PAYPLANS_ASSIGNPLAN_PLAN_ON_ACTIVE_DESC"
+			type="plans"
+			default="0"
+			multiple="true"
+		/>
+	
+		<!-- On Subscription hold -->
+		<field  type="xispacer" default="COM_PAYPLANS_APP_ASSIGNPLAN_ON_HOLD_DESC"/>
+		
+		<field name="setPlanOnHold" type="plans" label="COM_PAYPLANS_ASSIGNPLAN_PLAN_ON_HOLD_LABEL"
+			default="" description="COM_PAYPLANS_ASSIGNPLAN_PLAN_ON_HOLD_DESC" multiple="true"/>
+	
+	
+		<!-- On Subscription expire -->
+		<field  type="xispacer" default="COM_PAYPLANS_APP_ASSIGNPLAN_ON_EXPIRE_DESC" />
+		
+		<field name="setPlanOnExpire" type="plans" label="COM_PAYPLANS_ASSIGNPLAN_PLAN_ON_EXPIRE_LABEL"
+			default="" description="COM_PAYPLANS_ASSIGNPLAN_PLAN_ON_EXPIRE_DESC" multiple="true"/>
+
+	</fieldset>
+	</fields>
+</config>

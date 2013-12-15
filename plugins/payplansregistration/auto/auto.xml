@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="payplansregistration" method="upgrade">
+    <name>PayPlans-Registration-Quick</name>
+    <version>3.0.6.4045</version>
+    <creationDate>Jan 2010</creationDate>
+    <author>Team JoomlaXi</author>
+    <authorEmail>shyam@joomlaxi.com</authorEmail>
+    <authorUrl>http://www.joomlaxi.com</authorUrl>
+    <copyright>2009-11 Ready Bytes Software Labs Pvt. Ltd.</copyright>
+    <license>GNU General Public License v2</license>
+    <description>PayPlans : Paid Membership and Subscription System for Joomla</description>
+	<files>
+		<filename plugin="auto">auto.php</filename>
+		<folder>auto</folder>
+	</files>
+	
+	<!-- For J1.6 -->
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field 
+						name="acc_verification" 
+						default="always_email" 
+						type="list" 
+						label="PLG_PAYPLANSREGISTRATION_AUTO_ACC_VERIFICATION_LABEL"
+						description="PLG_PAYPLANSREGISTRATION_AUTO_ACC_VERIFICATION_DESC">
+						<option value="always_email">PLG_PAYPLANSREGISTRATION_AUTO_ALWAYS_AND_EMAIL</option>
+						<option value="freeplan_email">PLG_PAYPLANSREGISTRATION_AUTO_FREEPLAN_AND_EMAIL</option>
+						<option value="never_acc_creation">PLG_PAYPLANSREGISTRATION_AUTO_NEVER_AND_ACCOUNT_CREATION</option>
+						<option value="never_sub_active">PLG_PAYPLANSREGISTRATION_AUTO_NEVER_AND_SUBSCRIPTION_ACTIVE</option>
+						<option value="manual_acc_active">PLG_PAYPLANSREGISTRATION_AUTO_MANUAL_ACCOUNT_ACTIVE</option>
+				</field>
+				<field	name="show_captcha"
+						default="0" 	
+						type="radio" 	
+						label="PLG_PAYPLANSREGISTRATION_AUTO_SHOW_CAPTCHA"  
+						description="PLG_PAYPLANSREGISTRATION_AUTO_SHOW_CAPTCHA" 
+						class="btn-group required">
+						<option value="0">PLG_PAYPLANSREGISTRATION_AUTO_NO</option>
+						<option value="1">PLG_PAYPLANSREGISTRATION_AUTO_YES</option>
+				</field>
+				<field	name="activation_redirect_url"
+						default="" 	
+						type="xitext" 	
+						label="PLG_PAYPLANSREGISTRATION_AUTO_REDIRECT_URL"  
+						description="PLG_PAYPLANSREGISTRATION_AUTO_REDIRECT_URL_DESC" 
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

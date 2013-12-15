@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<fields name="gateway_params">
+
+	<fieldset name="gateway_params">
+		<field	name="from"
+				type="list" 
+				default="cash" 
+				label="COM_PAYPLANS_APP_ADMINPAY_TRANSACTION_FROM_LABEL" 
+				description="COM_PAYPLANS_APP_ADMINPAY_TRANSACTION_FROM_DESC">
+				<option value="cash">COM_PAYPLANS_Cash</option>
+				<option value="cheque">COM_PAYPLANS_Cheque</option>
+				<option value="dd">COM_PAYPLANS_Demand_Draft</option>
+		</field>
+			
+		<field	name="id"
+				type="text" 
+				size="50" 
+				default="" 
+				label="COM_PAYPLANS_APP_ADMINPAY_TRANSACTION_ID_LABEL" 
+				description="COM_PAYPLANS_APP_ADMINPAY_TRANSACTION_ID_DESC"
+				/>
+				
+		<field	name="amount"
+				type="price" 
+				size="50" 
+				default="0.00" 
+				label="COM_PAYPLANS_APP_ADMINPAY_TRANSACTION_AMOUNT_LABEL" 
+				description="COM_PAYPLANS_APP_ADMINPAY_TRANSACTION_AMOUNT_DESC"
+				class="number required"
+				/>
+				
+		<field	
+				name="currency"		
+				label="COM_PAYPLANS_APP_ADMINPAY_TRANSACTION_CURRENCY_LABEL"
+				description="COM_PAYPLANS_APP_ADMINPAY_TRANSACTION_CURRENCY_DESC"
+				type="currency"
+				default="USD"
+				readonly="true"
+				/>
+	</fieldset>
+</fields>
+</config>

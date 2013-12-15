@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<form>
+<fields name="preference">
+	<fieldset name="preference">
+		<field					
+			name="business_purpose"	
+			label="COM_PAYPLANS_USER_PREFERENCE_BUSINESS_PURPOSE_LABEL"
+			description="COM_PAYPLANS_USER_PREFERENCE_BUSINESS_PURPOSE_DESC"
+			type="radio"
+			default="2"
+			class="btn-group"
+			>
+				<option value="1">COM_PAYPLANS_APP_EUVAT_USE_PURPOSE_PERSONAL</option>
+				<option value="2">COM_PAYPLANS_APP_EUVAT_USE_PURPOSE_BUSINESS</option>
+			</field>	
+			
+		<field					
+			name="business_name"	
+			label="COM_PAYPLANS_USER_PREFERENCE_BUSINESS_NAME_LABEL"
+			description="COM_PAYPLANS_USER_PREFERENCE_BUSINESS_NAME_DESC"
+			type="text"
+			default=""
+			/>	
+		<field					
+			name="tin"	
+			label="COM_PAYPLANS_USER_PREFERENCE_TIN_LABEL"
+			description="COM_PAYPLANS_USER_PREFERENCE_TIN_DESC"
+			type="text"
+			default=""
+			/>
+			
+		<field					
+			name="shipping_address"		
+			label="COM_PAYPLANS_USER_PREFERENCE_SHIPPING_ADDRESS_LABEL"
+			description="COM_PAYPLANS_USER_PREFERENCE_SHIPPING_ADDRESS_DESC"
+			type="textarea"
+			rows="3" cols="30"
+			default=""
+			/>	
+				
+		<field	
+			name="business_address"	
+			label="COM_PAYPLANS_USER_PREFERENCE_BUSINESS_ADDRESS_LABEL"
+			description="COM_PAYPLANS_USER_PREFERENCE_BUSINESS_ADDRESS_DESC"
+			type="textarea"
+			rows="3" cols="30"
+			default=""
+			/>
+			
+<!--		<param					-->
+<!--			name="invoice_preference"	-->
+<!--			label="COM_PAYPLANS_USER_PREFERENCE_INVOICE_PREFERENCE_LABEL"-->
+<!--			description="COM_PAYPLANS_USER_PREFERENCE_INVOICE_PREFERENCE_DESC"-->
+<!--			type="text"-->
+<!--			default=""-->
+<!--			/>-->
+	</fieldset>
+</fields>
+</form>
+</config>

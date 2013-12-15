@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>Subscription</name>
+	<version>3.0.6.4045</version>
+	<author>Team JoomlaXi</author>
+	<creationDate>Feb 2011</creationDate>
+	<copyright>Copyright (C) 2008 - 2011 Ready Bytes Software Labs Pvt. Ltd. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>payplans@readybytes.in</authorEmail>
+	<authorUrl>http://www.jpayplans.com</authorUrl>
+	<description>MOD_PAYPLANS_SUBSCRIPTION_DESC</description>
+	<files>
+		<filename module="mod_payplans_subscription">mod_payplans_subscription.php</filename>
+		<filename module="mod_payplans_subscription">index.html</filename>
+		<filename module="mod_payplans_subscription">helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+	</files>
+	
+	<!-- For J1.6 -->
+	<config>
+		<fields name="params" addpath="/components/com_payplans/elements">
+			<fieldset name="basic">
+
+				<field 
+						name="subscribe_status" 
+						type="xistatus" 
+						entity="SUBSCRIPTION" 
+						multiple="true"
+						useautocomplete="0"
+						default=""
+						label="MOD_PAYPLANS_SUBSCRIPTION_PARAM_SUBSCRIBE_STATUS_LABEL"
+						description="MOD_PAYPLANS_SUBSCRIPTION_PARAM_SUBSCRIBE_STATUS_DESCRIPTION">
+				</field> 				
+
+				<field 
+						name="moduleclass_sfx" 
+						default="" 
+						type="xitext"
+						label="MOD_PAYPLANS_SUBSCRIPTION_PARAM_CLASS_SUFFIX_LABEL"
+						description="MOD_PAYPLANS_SUBSCRIPTION_PARAM_CLASS_SUFFIX_DESCRIPTION">
+				</field>
+				
+				<field 
+						name="date_format_list" 
+						default="%B %d, %A %Y" 
+						type="list"
+						label="MOD_PAYPLANS_SUBSCRIPTION_PARAM_DATE_FORMATE_LABEL"
+						description="MOD_PAYPLANS_SUBSCRIPTION_PARAM_DATE_FORMATE_DESCRIPTION">
+					<option value="%B %d, %A %Y">MOD_PAYPLANS_SUBSCRIPTION_PARAM_DATE_FORMATE_STRING</option>
+
+					<option value="%m %d %y">MOD_PAYPLANS_SUBSCRIPTION_PARAM_DATE_FORMATE_MM_DD_YY</option>
+					<option value="%m/%d/%Y">MOD_PAYPLANS_SUBSCRIPTION_PARAM_DATE_FORMATE_MM_DD_YYYY</option>
+					
+					<option value="%d %B %y">MOD_PAYPLANS_SUBSCRIPTION_PARAM_DATE_FORMATE_DD_MON_YY</option>
+					<option value="%d %B %Y">MOD_PAYPLANS_SUBSCRIPTION_PARAM_DATE_FORMATE_DD_MON_YYYY</option>
+					
+					<option value="%B %d %y">MOD_PAYPLANS_SUBSCRIPTION_PARAM_DATE_FORMATE_MON_DD_YY</option>
+					<option value="%B %d %Y">MOD_PAYPLANS_SUBSCRIPTION_PARAM_DATE_FORMATE_MON_DD_YYYY</option>
+					
+					<option value="%d %m %y">MOD_PAYPLANS_SUBSCRIPTION_PARAM_DATE_FORMATE_DD_MM_YY</option>
+					<option value="%d %m %Y">MOD_PAYPLANS_SUBSCRIPTION_PARAM_DATE_FORMATE_DD_MM_YYYY</option>
+				</field>
+				
+				<field 
+						name="date_format_text" 
+						default="" 
+						type="xitext"
+						label="MOD_PAYPLANS_SUBSCRIPTION_PARAM_DATE_CUSTOMIZE_FORMATE_LABEL"
+						description="MOD_PAYPLANS_SUBSCRIPTION_PARAM_DATE_CUSTOMIZE_FORMATE_DESCRIPTION">
+				</field>
+				
+				
+				<field 
+						name="no_subscription" 
+						default="5" 
+						type="xitext" 
+						label="MOD_PAYPLANS_SUBSCRIPTION_PARAM_NO_OF_SUBSCRIPTION_LABEL"
+						description="MOD_PAYPLANS_SUBSCRIPTION_PARAM_NO_OF_SUBSCRIPTION_DESCRIPTION">
+				</field>
+				
+			</fieldset>
+		</fields>
+	</config>
+
+	<languages>
+		<!-- Any language files included with the module -->
+		<language tag="en-GB">en-GB.mod_payplans_subscription.ini</language>
+   	</languages>
+
+</extension>

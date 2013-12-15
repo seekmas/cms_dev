@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form>
+				<field name="title" type="text" label="COM_PAYPLANS_PLAN_EDIT_PLAN_TITLE"
+							size="40" default="" description="COM_PAYPLANS_PLAN_EDIT_PLAN_TITLE_DESC" 
+							required="true"
+						/>	
+						
+			<field 	name="type"
+				type="hidden"
+				default=""
+				readonly="true"/>
+		
+			<field 	name="app_id"
+				type="hidden"
+				default=""
+				readonly="true"/>
+						
+				<field name="published" type="radio"
+							label="COM_PAYPLANS_PLAN_EDIT_PUBLISHED"
+							description="COM_PAYPLANS_PLAN_EDIT_PUBLISHED_DESC"
+							class="btn-group"
+							size="1" default="1"
+							 >
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+				</field>
+				
+			<fields name="core_params">
+				   <fieldset name="core_params">
+							<field	name="applyAll" type="parammanipulator" default="0" label="COM_PAYPLANS_APP_EDIT_CORE_APPLY_ALL_LABEL" description="COM_PAYPLANS_APP_EDIT_CORE_APPLY_ALL_DESCRIPTION">
+									<option value="0" params="appplans">COM_PAYPLANS_NO</option>
+							        <option value="1">COM_PAYPLANS_YES</option>		
+							</field>	
+				   </fieldset>
+		   </fields>
+		   
+				<field name="description" type="textarea" label="COM_PAYPLANS_APP_EDIT_APP_DESCRIPTION"
+					size="40" default="" description="COM_PAYPLANS_APP_EDIT_APP_DESCRIPTION_DESC" 
+				/>	
+		
+  
+</form>

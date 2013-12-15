@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <name>Discount Coupons</name>
+    <author>JoomlaXi.com</author>
+    <description>
+    	The administrator can decide to provide discounts to customers on particular subscription plans.
+    	The duration and number of uses of the discount coupon can be controlled by the administrator.&lt;br/&gt;&lt;br/&gt; &lt;br/&gt;
+    	Reference Link: &lt;a href="http://www.jpayplans.com/app-ville/item/basic-discount.html?category_id=99" target="_blank" &gt; Discount Coupons  &lt;/a&gt;
+    	 
+    </description>
+	<icon>coupon.png</icon>
+    <tags>discount</tags>
+	<help>
+		<![CDATA[
+			<div style="text-align:center">
+			<iframe width="250" height="200"  src="http://www.youtube.com/embed/kmycF68oOsg" frameborder="0" allowfullscreen></iframe>
+			</div>
+		]]>
+	</help>
+	<fields name="app_params">
+	<fieldset name="app_params">
+		<field	name="coupon_code" 	
+				type="text" 	
+				size="12" 
+				label="COM_PAYPLANS_APP_DISCOUNT_COUPON_CODE"  
+				description="COM_PAYPLANS_APP_DISCOUNT_COUPON_CODE_DESC" 
+				class="required" 
+				/>
+				
+		<field	name="coupon_amount" 	
+				type="price" 	
+				size="12" 
+				label="COM_PAYPLANS_APP_DISCOUNT_COUPON_AMOUNT"  
+				description="COM_PAYPLANS_APP_DISCOUNT_COUPON_AMOUNT_DESC" 
+				class="required number" 
+				/>
+		
+		<field	name="coupon_amount_type" 	
+				type="radio" 	
+				label="COM_PAYPLANS_APP_DISCOUNT_COUPON_AMOUNT_TYPE"  
+				description="COM_PAYPLANS_APP_DISCOUNT_COUPON_AMOUNT_TYPE" 
+				class="required btn-group">
+				<option value="fixed">COM_PAYPLANS_APP_DISCOUNT_AMOUNT_TYPE_FIXED</option>
+				<option value="percentage">COM_PAYPLANS_APP_DISCOUNT_AMOUNT_TYPE_PERCENTAGE</option>
+		</field>
+		
+		<field  type="seperator" default="COM_PAYPLANS_APP_DISCOUNT_RESTRICT" />
+		
+		<field	name="allowed_quantity" 	
+				type="text" 	
+				size="12" 
+				label="COM_PAYPLANS_APP_DISCOUNT_ALLOWED_QUANTITY"  
+				description="COM_PAYPLANS_APP_DISCOUNT_ALLOWED_QUANTITY_DESC" 
+				class="number" 
+				/>
+		
+		<field	name="publish_start" 	
+				type="calendar" 	
+				label="COM_PAYPLANS_APP_DISCOUNT_PUBLISH_START"  
+				description="COM_PAYPLANS_APP_DISCOUNT_PUBLISH_START_DESC" 
+				/>
+				
+		<field	name="publish_end" 	
+				type="calendar" 	
+				label="COM_PAYPLANS_APP_DISCOUNT_PUBLISH_END"  
+				description="COM_PAYPLANS_APP_DISCOUNT_PUBLISH_END_DESC" 
+				/>
+		
+		<field	name="reusable" 	
+				type="radio" 	
+				label="COM_PAYPLANS_APP_DISCOUNT_REUSABLE"  
+				description="COM_PAYPLANS_APP_DISCOUNT_REUSABLE_DESC" 
+				default="yes" class="btn-group">
+				<option value="no">COM_PAYPLANS_APP_DISCOUNT_REUSABLE_NO</option>
+				<option value="yes">COM_PAYPLANS_APP_DISCOUNT_REUSABLE_YES</option>
+		</field>
+				
+		<field 	name="onlyFirstRecurringDiscount" 
+				default="1" 
+				type="radio" 
+				label="COM_PAYPLANS_APP_DISCOUNT_ONLY_FIRST_RECURRING_DISCOUNT"
+				description="COM_PAYPLANS_APP_DISCOUNT_ONLY_FIRST_RECURRING_DISCOUNT_DESC" class="btn-group">
+				<option value="0">COM_PAYPLANS_NO</option>
+			    <option value="1">COM_PAYPLANS_YES</option>
+		</field>
+		
+		<field name="totalUsage"
+			   default="0"
+			   type="text"
+			   class="readonly"
+			   label="COM_PAYPLANS_APP_DISCOUNT_EDIT_COUNTER"
+			   description="COM_PAYPLANS_APP_DISCOUNT_EDIT_COUNTER_DESC">
+		</field>
+
+		<field name="totalConsumption"
+			   default="0"
+			   type="text"
+			   class="readonly"
+			   label="COM_PAYPLANS_APP_DISCOUNT_EDIT_CONSUMPTION"
+			   description="COM_PAYPLANS_APP_DISCOUNT_EDIT_CONSUMPTION_DESC">
+		</field>
+	</fieldset>
+	</fields>
+</config>

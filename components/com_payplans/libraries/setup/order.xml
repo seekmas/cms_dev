@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules name="pluginorder">
+	<rule name="phpversion" />
+	<rule name="curl" />
+	<rule name="plugins" />
+	<rule name="registration" />
+	<rule name="payment" />
+	<rule name="plans"  />
+	<rule name="menus" />
+	<rule name="adminpay" />
+	<rule name="tax" />
+	<rule name="cron" />
+	<rule name="oneclickcheckout"/>
+	<rule name="upgradeapp"/>
+</rules>

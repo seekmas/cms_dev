@@ -1,0 +1,62 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Panel component
+ *
+ ========================================================================== */
+
+
+/* Component
+ ========================================================================== */
+
+
+/* Sub-object: `uk-panel-title`
+ ========================================================================== */
+
+.hook-panel-title() {}
+
+
+/* Sub-object: `uk-panel-badge`
+ ========================================================================== */
+
+.hook-panel-badge() { padding: 8px 16px!important; }
+
+
+/* Modifier: `uk-panel-box`
+ ========================================================================== */
+
+.hook-panel-box() {}
+
+.uk-panel-box .uk-nav-side { margin: 0; }
+
+/*
+ * Sub-modifier: `uk-panel-box-primary`
+ */
+
+.hook-panel-box-primary() {
+	> a:not([class]),
+	> :not([class*='uk-nav']) a:not([class]) { color: @theme_panel-box-primary-link-color; }
+	> a:not([class]):hover,
+	> :not([class*='uk-nav']) a:not([class]):hover { color: @theme_panel-box-primary-link-hover-color; }
+
+	.uk-button { 
+		background: @theme_panel-box-primary-button-background;
+		color: @theme_panel-box-primary-button-color;
+		text-shadow: none;
+	}
+}
+
+/*
+ * Sub-modifier: `uk-panel-box-secondary`
+ */
+
+.hook-panel-box-secondary() {
+ 	.uk-button:hover,
+	.uk-button:focus { background: @theme_panel-box-secondary-button-background; }
+}
+ 
+
+/* Modifier: `uk-panel-header`
+ ========================================================================== */
+
+.hook-panel-header() {}

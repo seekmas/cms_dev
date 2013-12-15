@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<name>User Preferences</name>
+	<author>JPayplans</author>
+	<authorEmail>shyam@joomlaxi.com</authorEmail>
+	<authorUrl>http://www.jpayplans.com</authorUrl>
+	<copyright>2009 JoomlaXi.com</copyright>
+	<description>
+		Payplans App for User preferences, allow user to add preferences from front-end.
+	</description>
+	<icon>userpreferences.png</icon>
+    <tags>integration</tags>
+	<help>
+	</help>
+	<params></params>
+</config>

@@ -1,0 +1,171 @@
+/**
+* @copyright	Copyright (C) 2009-2012 Ready Bytes Software Labs Pvt. Ltd. All rights reserved.
+* @license		GNU/GPL, see LICENSE.php
+* @package		PayPlans
+* @contact 		payplans@readybytes.in
+*/
+
+/*-------------------------------------------------------------------
+				 Toolbar Icons
+---------------------------------------------------------------------*/
+/* Icon class added for joomla 3.0 compatibility, merging with xi-ui.css creating issue */
+[class^="icon-"], [class*=" icon-"] {
+    background-image: url("../../../../../../../components/com_payplans/xiframework/media/css/images/glyphicons-halflings.png");
+    background-position: 14px 14px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    vertical-align: text-top;
+    width: 14px;
+}
+
+[class^="icon-"]:last-child, [class*=" icon-"]:last-child {
+}
+.icon-upgrade {
+	background-image: url(../images/icons/upgrade.png);
+}
+
+.icon-pprefresh {
+   background-position: -240px -24px;
+}
+
+.icon-assign {
+   background-position: -288px 0;
+}
+
+.icon-credential {
+ 	background-position: 0 -166px;
+}
+
+.icon-savenew {
+	background-image: url(../images/icons/savenew.png);
+}
+
+.icon-extend {
+	 background-position: -360px -96px;
+}
+
+.icon-wallet {
+	 background-position: -48px -166px;
+}
+
+.icon-search {
+	 background-position: -48px 0;
+}
+
+.icon-rebuildstats {
+	background-position: -432px 0;
+}
+.icon-refresh {
+	background-position: -216px -23px;
+}
+.icon-info-sign {
+	background-position: -120px -96px;
+}
+
+/*---------------------------------------------------
+	Consistency fixes : for J3.0 
+---------------------------------------------------- */	
+
+.payplans .radio.btn-group {
+	padding-left: 0;
+}
+
+.payplans .pp-statistics-numeric .pp-numeric-text{
+	margin-top: 10px;
+}
+
+.pp-admin-blankgrid .pp-message .pp-title {
+	font-size : 2.5em;
+}
+
+.pp-app-block-content-name {
+	font-color : #3396C3;
+	font-size : 1.4em;
+}
+
+.payplans .invalid {
+    color: red;
+    font-weight: bold;
+}
+
+.payplans .pp-rule a:link {
+    color: #025A8D;
+    outline: medium none;
+    text-decoration: none;
+}
+
+.pp-app-block-content-desc {	 
+	font-size : 0.85em;
+}
+
+.pp-app-block-content-type {
+	font-size : .8em;
+}
+
+.payplans .pp-appmanager-container {
+	line-height:16px;
+}
+
+.pp-filter-warp .pp-filter .pp-input label {
+  	font-size: 0.85em;
+}
+
+#appvillebanner {
+    border: none;	
+}
+
+.pp-dates-text .input-append {
+   float :left;
+   width: 32%;
+}
+
+/* For pdf invoice */
+#invoiceForm .input-append {
+   float :left;
+   width: 70%;
+	
+}
+
+#select-extend-time .pp-message {
+    font-size : 1.3em;	
+    line-height : 22px;
+}
+
+
+
+.payplans .pp-app-select a:link {
+    color: #025A8D;
+    outline: medium none;
+}
+
+.payplans .pp-app-select a:hover {
+    text-decoration: underline;
+}
+
+.pp-toolbarbutton {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #F5F5F5;
+    background-image: linear-gradient(to bottom, #FFFFFF, #E6E6E6);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #B3B3B3;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    border-radius: 3px 3px 3px 3px;
+    font-size: 11.9px;
+    padding: 2px 10px;
+}

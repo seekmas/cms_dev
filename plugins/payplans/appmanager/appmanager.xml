@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="payplans" method="upgrade">
+    <name>PayPlans-App Manager</name>
+    <version>3.0.6.4045</version>
+    <creationDate>Jan 2010</creationDate>
+    <author>Team JoomlaXi</author>
+    <authorEmail>payplans@reaybytes.in</authorEmail>
+    <authorUrl>http://www.jpayplans.com.com</authorUrl>
+    <copyright>2009-12 Ready Bytes Software Labs Pvt. Ltd.</copyright>
+    <license>GNU General Public License v2</license>
+    <description>PayPlans Manager : Payplans App Manager.</description>
+	<files>
+		<filename plugin="appmanager">appmanager.php</filename>
+		<folder>appmanager</folder>
+	</files>
+</extension>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset addpath="">
+		
+			<field name="title" type="text" label="COM_PAYPLANS_PLAN_EDIT_PLAN_TITLE"
+					size="40" default="" description="COM_PAYPLANS_PLAN_EDIT_PLAN_TITLE_DESC" 
+					required="true"
+				/>	
+				
+				<field 	name="plan_id"
+				type="hidden"
+				default="0"
+				readonly="true"/>
+				
+				
+			<field name="published" type="radio"
+						label="COM_PAYPLANS_PLAN_EDIT_PUBLISHED"
+						description="COM_PAYPLANS_PLAN_EDIT_PUBLISHED_DESC"
+						class="btn-group"
+						size="1" default="1"
+						 >
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+			</field>
+		
+			<field name="visible" type="radio"
+						label="COM_PAYPLANS_PLAN_EDIT_VISIBLE"
+						description="COM_PAYPLANS_PLAN_EDIT_VISIBLE_DESC"
+						class="btn-group"
+						size="1" default="1"
+						filter="integer" >
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+			</field>
+			
+		
+				
+			</fieldset>
+			<fields name="params">
+				<fieldset name="params">
+					<field name="teasertext" type="text" label="COM_PAYPLANS_PLAN_EDIT_PLAN_TEASER_TEXT_LABEL"
+							size="40" default="" description="COM_PAYPLANS_PLAN_EDIT_PLAN_TEASER_TEXT_DESC" 
+						/>
+					<field name="css_class" type="text" label="COM_PAYPLANS_PLAN_EDIT_PLAN_CSS_CLASS_LABEL"
+							size="40" default="" description="COM_PAYPLANS_PLAN_EDIT_PLAN_CSS_CLASS_TEXT_DESC" 
+						/>
+					<field name="redirecturl" type="text" label="COM_PAYPLANS_PLAN_EDIT_PLAN_REDIRECTURL_LABEL"
+							size="40" default="" description="COM_PAYPLANS_PLAN_EDIT_PLAN_REDIRECTURL_DESC" 
+						/>		
+	   			</fieldset>
+   			</fields>
+   			
+   				<fieldset>
+	   				<field name="description" type="editor" label="COM_PAYPLANS_APP_EDIT_APP_DESCRIPTION"
+						size="40" default="" description="COM_PAYPLANS_APP_EDIT_APP_DESCRIPTION_DESC" 
+					/>	
+				</fieldset>
+
+		<fields name="details">
+		
+			<fieldset name="details" addpath="/components/com_payplans/elements">
+				
+				<field	name="expirationtype"
+						type="parammanipulator" 
+						label="COM_PAYPLANS_PLAN_TIME_EXPIRATION_TYPE_LABEL"
+						description="COM_PAYPLANS_PLAN_TIME_EXPIRATION_TYPE_DESC"  
+						default="forever">
+						<option value="forever" params="price">COM_PAYPLANS_PLAN_TIME_EXPIRATION_FOREVER</option>
+						<option value="fixed" params="expiration,price">COM_PAYPLANS_PLAN_TIME_EXPIRATION_FIXED</option>
+						<option value="recurring" params="recurrence_count,recurrence_validation,expiration,price">COM_PAYPLANS_PLAN_TIME_EXPIRATION_RECURRING</option>
+						<option value="recurring_trial_1" params="trial_price_1,trial_time_1,recurrence_count,recurrence_validation,expiration,price">COM_PAYPLANS_PLAN_TIME_EXPIRATION_RECURRING_TRIAL_1</option>
+						<option value="recurring_trial_2" params="trial_price_1,trial_time_1,trial_price_2,trial_time_2,recurrence_count,recurrence_validation,expiration,price">COM_PAYPLANS_PLAN_TIME_EXPIRATION_RECURRING_TRIAL_2</option>
+				</field>
+				
+				<field			 
+					name="trial_price_1" 
+					label="COM_PAYPLANS_PLAN_TIME_TRIAL_PRICE_1_LABEL"
+					description="COM_PAYPLANS_PLAN_TIME_TRIAL_PRICE_1_DESC"			
+					type="text" 
+					default="0.00"
+					class="number"
+					/>
+					
+				<field			 
+					name="trial_time_1" 
+					label="COM_PAYPLANS_PLAN_TIME_TRIAL_TIME_1_LABEL"
+					description="COM_PAYPLANS_PLAN_TIME_TRIAL_TIME_1_DESC"
+					type="timer" 
+					size="30"
+					default="000000000000"		 
+					/>
+					
+				<field			 
+					name="trial_price_2" 
+					label="COM_PAYPLANS_PLAN_TIME_TRIAL_PRICE_2_LABEL"
+					description="COM_PAYPLANS_PLAN_TIME_TRIAL_PRICE_2_DESC"			
+					type="text" 
+					default="0.00"
+					class="number"
+					/>
+					
+				<field			 
+					name="trial_time_2" 
+					label="COM_PAYPLANS_PLAN_TIME_TRIAL_TIME_2_LABEL"
+					description="COM_PAYPLANS_PLAN_TIME_TRIAL_TIME_2_DESC"
+					type="timer" 
+					size="30"
+					default="000000000000"		 
+					/>
+					
+				<field							
+					name="price"		
+					label="COM_PAYPLANS_PLAN_PAYMENT_PRICE_LABEL"
+					description="COM_PAYPLANS_PLAN_PAYMENT_PRICE_DESC"
+					type="price"
+					default="0.0000"
+					class="number"
+					/>
+					
+				<field			 
+					name="expiration" 
+					label="COM_PAYPLANS_PLAN_TIME_EXPIRATION_LABEL"
+					description="COM_PAYPLANS_PLAN_TIME_EXPIRATION_DESC"
+					type="timer" 
+					size="30"
+					default="000000000000"		 
+					/>
+					
+					
+				<field			 
+					name="recurrence_count" 
+					label="COM_PAYPLANS_PLAN_TIME_RECURRENCE_COUNT_LABEL"
+					description="COM_PAYPLANS_PLAN_TIME_RECURRENCE_COUNT_DESC"			
+					type="text" 
+					default="0"
+					class="number" />
+					
+				<field			 
+					name="recurrence_validation" 
+					label="COM_PAYPLANS_PLAN_TIME_RECURRENCE_VALIDATION_LABEL"
+					description="COM_PAYPLANS_PLAN_TIME_RECURRENCE_VALIDATION_DESC"			
+					type="popup" 
+					url="index.php?option=com_payplans&amp;view=plan&amp;task=recurrenceValidation">
+					<option name="id" deault="0" />
+				</field>
+		</fieldset>
+	</fields>
+	
+	
+</form>

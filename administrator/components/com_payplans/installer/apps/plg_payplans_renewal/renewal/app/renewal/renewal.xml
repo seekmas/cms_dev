@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<name>Renewal</name>
+	<author>JoomlaXi.com</author>
+	<authorEmail>shyam@joomlaxi.com</authorEmail>
+	<authorUrl>http://www.jpayplans.com</authorUrl>
+	<copyright>2009 JoomlaXi.com</copyright>
+	<description>
+		Using renewal app admin can provide option to site users that they can renew their existing plan before and after expiration of their subscription.
+	</description>
+	<icon>renewal.png</icon>
+    <tags>integration</tags>
+	<help>
+	
+	</help>
+	<fields name ="app_params">
+		<fieldset name ="app_params">
+		
+	</fieldset>
+	</fields>
+</config>
+

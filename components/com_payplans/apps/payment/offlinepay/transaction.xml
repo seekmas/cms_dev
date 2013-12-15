@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<fields name="gateway_params">
+	<fieldset name="gateway_params">
+		<field	name="from"
+				type="parammanipulator" 
+				default="cash" 
+				label="COM_PAYPLANS_APP_OFFLINE_TRANSACTION_FROM_LABEL" 
+				description="COM_PAYPLANS_APP_OFFLINE_TRANSACTION_FROM_DESC">
+				<option value="cash" params="amount,currency">COM_PAYPLANS_Cash</option>
+				<option value="cheque" params="id,amount,currency">COM_PAYPLANS_Cheque</option>
+				<option value="dd" params="id,amount,currency">COM_PAYPLANS_Demand_Draft</option>
+		</field>
+			
+		<field	name="id"
+				type="text" 
+				size="20" 
+				default="" 
+				label="COM_PAYPLANS_APP_OFFLINE_TRANSACTION_ID_LABEL" 
+				description="COM_PAYPLANS_APP_OFFLINE_TRANSACTION_ID_DESC"
+				/>
+				
+		<field	name="amount"
+				type="price" 
+				size="20" 
+				default="0.0000" 
+				label="COM_PAYPLANS_APP_OFFLINE_TRANSACTION_AMOUNT_LABEL" 
+				description="COM_PAYPLANS_APP_OFFLINE_TRANSACTION_AMOUNT_DESC"
+				class="number required"
+				/>
+				
+		<field	
+				name="currency"		
+				label="COM_PAYPLANS_APP_OFFLINE_TRANSACTION_CURRENCY_LABEL"
+				description="COM_PAYPLANS_APP_OFFLINE_TRANSACTION_CURRENCY_DESC"
+				type="currency"
+				default="USD"
+				readonly="true"
+				/>
+	</fieldset>
+</fields>
+</config>

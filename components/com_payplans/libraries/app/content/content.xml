@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <name>Content</name>
+    <author>JoomlaXi.com</author>
+    <icon>content.png</icon>
+    <description>
+    	This app can be used to show your own content (texts, images, videos and many more) 
+    	on the selected web pages of PayPlans.
+    	&lt;br/&gt; &lt;br/&gt;	
+    	Reference Link:&lt;a href="http://www.jpayplans.com/app-ville/item/content-app.html?category_id=96" target="_blank" &gt; Content  &lt;/a&gt;
+    	
+    </description>
+    <tags>content</tags>
+	<help>
+	<![CDATA[
+	Do not add Subscription, Invoice,Order, Payment and Transaction tokens on <b>Dashboard</b> and <b>Plan Subscribe</b> screen, as multiple entries can be there of each entity.
+	Adding its token on <b>Dashboard</b> will not replace and it will show the string as it is. 
+	]]>
+	</help>
+	<fields name="app_params">
+	
+	<fieldset name="app_params">
+		<field	name="defined_locations" 	
+				type="parammanipulator"
+				label="COM_PAYPLANS_APP_CONTENT_DEFINED_LOCATIONS"  
+				description="COM_PAYPLANS_APP_CONTENT_DEFINED_LOCATIONS_DESC">
+				<option value="0">COM_PAYPLANS_APP_CONTENT_NONE</option>
+				<option value="view=dashboard&amp;task=frontview">COM_PAYPLANS_APP_CONTENT_DASHBOARD</option>
+				<option value="view=dashboard&amp;task=noaccess">COM_PAYPLANS_APP_CONTENT_DASHBOARD_NO_ACCESS</option>
+				<option value="view=plan&amp;task=subscribe" params="group_id">COM_PAYPLANS_APP_CONTENT_PLAN_SUBSCRIBE</option>
+				<option value="view=plan&amp;task=login">COM_PAYPLANS_APP_CONTENT_LOGIN</option>
+				<option value="view=invoice&amp;task=confirm">COM_PAYPLANS_APP_CONTENT_INVOICE_CONFIRM</option>
+				<option value="view=payment&amp;task=pay">COM_PAYPLANS_APP_CONTENT_INVOICE_PAYMENT</option>
+				<option value="view=invoice&amp;task=thanks&amp;invoice_key=RANDOM">COM_PAYPLANS_APP_CONTENT_INVOICE_THANKS</option>
+				<option value="view=invoice&amp;task=display&amp;invoice_key=RANDOM">COM_PAYPLANS_APP_CONTENT_INVOICE_DISPLAY</option>
+				<option value="view=payment&amp;task=complete&amp;action=cancel">COM_PAYPLANS_APP_CONTENT_PAYMENT_CANCEL</option>
+				<option value="view=payment&amp;task=complete&amp;action=error">COM_PAYPLANS_APP_CONTENT_PAYMENT_COMPLETE_BUT_ERROR_IN_PAYMENT</option>
+				<option value="view=subscription&amp;task=display&amp;subscription_key=RANDOM">COM_PAYPLANS_APP_CONTENT_INDIVIDUAL_SUBSCRIPTION</option>
+				<option value="view=invoice&amp;task=display&amp;invoice_key=RANDOM">COM_PAYPLANS_APP_CONTENT_INDIVIDUAL_INVOICE</option>
+		</field>
+		
+<!--		<field	name="custom_locations"-->
+<!--				type="textarea"-->
+<!--				rows="5"-->
+<!--				cols="52"-->
+<!--				label="COM_PAYPLANS_APP_CONTENT_CUSTOM_LOCATIONS"  -->
+<!--				description="COM_PAYPLANS_APP_CONTENT_CUSTOM_LOCATIONS_DESC" -->
+<!--				/>-->
+
+		<field	name="position"
+				type="list" 
+				label="COM_PAYPLANS_APP_CONTENT_POSITION"  
+				description="COM_PAYPLANS_APP_CONTENT_POSITION_DESC"
+				default="prefix">
+				<option value="prefix">COM_PAYPLANS_APP_CONTENT_PREFIX</option>
+				<option value="suffix">COM_PAYPLANS_APP_CONTENT_SUFFIX</option>
+				<option value="replace">COM_PAYPLANS_APP_CONTENT_REPLACE</option>
+		</field>
+		
+		<field	name="filter"
+				type="parammanipulator" 
+				label="COM_PAYPLANS_APP_CONTENT_FILTER"  
+				description="COM_PAYPLANS_APP_CONTENT_FILTER_DESC"
+				default="custom_content">
+				<option value="custom_content" params="custom_content,rewriter">COM_PAYPLANS_APP_CONTENT_CUSTOM_CONTENT</option>
+				<option value="joomla_article" params="joomla_article">COM_PAYPLANS_APP_CONTENT_JOOMLA_ARTICLE</option>
+		</field>
+		
+		<field	name="joomla_article"
+				type="xijarticle"
+				label="COM_PAYPLANS_APP_CONTENT_JOOMLA_ARTICLE"  
+				description="COM_PAYPLANS_APP_CONTENT_JOOMLA_ARTICLE_DESC"
+				/>
+		
+<!--		<field	name="id"-->
+<!--				type="item"-->
+<!--				label="COM_PAYPLANS_APP_K2_ARTICLE"  -->
+<!--				description="COM_PAYPLANS_APP_K2_ARTICLE_DESC"-->
+<!--				/>-->
+		
+		<field	name="custom_content" 
+				width="300" 
+				height="150"
+				type="xieditor" 
+				label="COM_PAYPLANS_APP_CONTENT_CUSTOM_CONTENT"  
+				description="COM_PAYPLANS_APP_CONTENT_CUSTOM_CONTENT_DESC" 
+				/>
+				
+		<field  name="rewriter" 
+				type="rewriter" 
+				label="COM_PAYPLANS_APP_CONTENT_REWRITER_LABEL"
+				description="COM_PAYPLANS_APP_CONTENT_REWRITER_DESC" />
+
+		<field  name="group_id"
+				default="0"
+				type="xigroup"
+				multiple="true"
+				label="COM_PAYPLANS_APP_CONTENT_GROUP_ID"
+				Description="COM_PAYPLANS_APP_CONTENT_GROUP_ID_DESC">
+				</field>
+	</fieldset>
+	</fields>
+</config>

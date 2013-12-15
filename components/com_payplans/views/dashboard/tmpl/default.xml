@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: metadata.xml 8178 2009-11-17 02:00:47Z Team JoomlaXi $ -->
+<metadata>
+	<!-- Joomla 1.6 -->
+	<layout title="COM_PAYPLANS_DASHBOARD_VIEW_DEFAULT_TITLE" option="com_payplans_dashboard_view_default_option">
+		<message><![CDATA[COM_PAYPLANS_DASHBOARD_DEFAULT_LAYOUT_MESSAGE]]></message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request" addfieldpath="/components/com_payplans/elements" label="Basic Parameters">
+			<field label="COM_PAYPLANS_DASHOBOARD_DEFAULT_LAYOUT_TASK" name="task" type="list">
+				<option value="frontview" >COM_PAYPLANS_DASHOBOARD_DEFAULT_LAYOUT_TASK_OPTION_DEFAULT</option>
+				<option value="noaccess" >COM_PAYPLANS_DASHOBOARD_DEFAULT_LAYOUT_TASK_OPTION_NOACCESS</option>
+			</field>
+		</fieldset>
+	</fields>
+	<!-- joomla 1.6 -->
+	
+	<!-- Joomla 1.5 -->
+	<state>
+		<name>COM_PAYPLANS_DASHOBOARD_DEFAULT_LAYOUT_TITLE</name>
+		<description>COM_PAYPLANS_DASHOBOARD_DEFAULT_LAYOUT_MESSAGE</description>
+		<url addpath="/components/com_payplans/elements">
+			<param name="task" type="list" default=" ">
+			<option value="frontview" >COM_PAYPLANS_DASHOBOARD_DEFAULT_LAYOUT_TASK_OPTION_DEFAULT</option>
+				<option value="noaccess" >COM_PAYPLANS_DASHOBOARD_DEFAULT_LAYOUT_TASK_OPTION_NOACCESS</option>
+			</param>
+		</url>
+	</state>
+	<!-- Joomla 1.5 -->
+</metadata>

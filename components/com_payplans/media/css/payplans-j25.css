@@ -1,0 +1,19 @@
+/**
+* @copyright	Copyright (C) 2009-2012 Ready Bytes Software Labs Pvt. Ltd. All rights reserved.
+* @license		GNU/GPL, see LICENSE.php
+* @package		PayPlans
+* @contact 		payplans@readybytes.in
+*/
+
+.payplans input:not(.noxiui),
+.payplans textarea:not(.noxiui),
+.payplans select:not(.noxiui){
+	font-size: 1em;
+}
+
+/* CSS override for radio button*/
+.btn-group label:nth-child(2)
+{
+	border-bottom-left-radius: 4px !important;
+	border-top-left-radius: 4px !important;
+}

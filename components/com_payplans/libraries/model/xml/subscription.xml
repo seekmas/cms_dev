@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+	    <fieldset name="params">			
+		<field
+			name="notes"
+			type="textarea"
+			label="COM_PAYPLANS_SUBSCRIPTION_PARAM_NOTES_LABEL"
+			description="COM_PAYPLANS_SUBSCRIPTION_PARAM_NOTES_DESC"
+			default=""
+			cols="40"
+			rows="5"
+			/>
+			
+		<field	name="expirationtype"
+			type="hidden" 
+			default="forever" />
+		
+		<field name="trial_price_1"
+			type="hidden" 
+			default="0.00" />
+			
+		<field name="trial_time_1"
+			type="hidden" 
+			default="000000000000" />
+			
+		<field	name="trial_price_2"
+			type="hidden" 
+			default="0.00" />
+			
+		<field	name="trial_time_2"
+			type="hidden" 
+			default="000000000000" />
+		
+		<field	name="price"
+			type="hidden" 
+			default="0.0000" />
+			
+		<field	name="expiration"
+			type="hidden" 
+			default="000000000000" />
+			
+		<field	name="currency"
+			type="hidden" 
+			default="" />
+		
+		<field	name="recurrence_count"
+			type="hidden" 
+			default="0" />
+	   </fieldset>
+	</fields>
+	
+	<fieldset name="hidden">
+		<field type="hidden" name="subscription_id" default="0"/>
+		<field type="hidden" name="user_id" default="0"/>
+		<field type="hidden" name="order_id" default="0"/>
+	</fieldset>
+</form>

@@ -1,0 +1,250 @@
+.pp-space_1,
+.pp-space_2,
+.pp-space_3,
+.pp-space_4,
+.pp-space_5,
+.pp-space_6,
+.pp-space_12,
+.pp-grid_1,
+.pp-grid_2,
+.pp-grid_3,
+.pp-grid_4,
+.pp-grid_5,
+.pp-grid_6,
+.pp-grid_7,
+.pp-grid_8,
+.pp-grid_9,
+.pp-grid_10,
+.pp-grid_11,
+.pp-grid_12 {
+	float: right !important;
+}
+
+/* Used beacause we have to algin available plan screen according to RTL */
+.payplans .pp-component .pp-plan.pp-vertical .pp-details{
+	float: left;
+    text-align: center;
+    width: 29.9%;
+}
+
+.payplans .pp-component .pp-plan.pp-vertical .pp-subscribebutton{
+	text-align : left !important;
+	float: left;
+}
+
+.payplans .pp-component .pp-plan.pp-vertical .pp-title {
+	text-align: right !important;
+	padding-right : 10px;
+}
+
+/* Used for Giving Space at Wallet on My Dashboard*/
+.payplans .pp-dashboard-widget .pp-title {
+    padding-right: 0.5em;
+    text-align: left;
+}
+
+.payplans .pp-alpha {
+	margin-right: 0;
+}
+
+.payplans .pp-omega {
+	margin-left: 0;
+}
+
+.payplans .pp-prefix_5 {
+	padding-right:41.667%;
+}
+
+/* Push Space >> 12 Columns
+--------------------------------------------------------------------------*/
+
+
+.payplans .pp-push_1 {
+	right:8.333%;
+}
+
+.payplans .pp-push_2 {
+	right:16.667%;
+}
+
+.payplans .pp-push_3 {
+	right:25.0%;
+}
+
+.payplans .pp-push_4 {
+	right:33.333%;
+}
+
+.payplans .pp-push_5 {
+	right:41.667%;
+}
+
+.payplans .pp-push_6 {
+	right:50.0%;
+}
+
+.payplans .pp-push_7 {
+	right:58.333%;
+}
+
+.payplans .pp-push_8 {
+	right:66.667%;
+}
+
+.payplans .pp-push_9 {
+	right:75.0%;
+}
+
+.payplans .pp-push_10 {
+	right:83.333%;
+}
+
+.payplans .pp-push_11 {
+	right:91.667%;
+}
+
+
+
+/* Pull Space >> 12 Columns
+--------------------------------------------------------------------------*/
+
+
+.payplans .pp-pull_1 {
+	right:-8.333%;
+}
+
+.payplans .pp-pull_2 {
+	right:-16.667%;
+}
+
+.payplans .pp-pull_3 {
+	right:-25.0%;
+}
+
+.payplans .pp-pull_4 {
+	right:-33.333%;
+}
+
+.payplans .pp-pull_5 {
+	right:-41.667%;
+}
+
+.payplans .pp-pull_6 {
+	right:-50.0%;
+}
+
+.payplans .pp-pull_7 {
+	right:-58.333%;
+}
+
+.payplans .pp-pull_8 {
+	right:-66.667%;
+}
+
+.payplans .pp-pull_9 {
+	right:-75.0%;
+}
+
+.payplans .pp-pull_10 {
+	right:-83.333%;
+}
+
+.payplans .pp-pull_11 {
+	right:-91.667%;
+}
+
+
+
+
+
+.payplans span.pp-error{
+	float: right;
+}
+
+.payplans span.pp-error.invalid{
+    float: right;
+}
+
+
+.payplans .pp-left{
+	text-align: right !important;
+}
+
+.payplans .pp-right{
+	text-align: left !important;
+}
+
+.payplans .pp-float-left{
+	float: right !important;
+}
+
+.payplans .pp-float-right{
+	float: left !important;
+}
+
+.payplans .pp-rtl-float-left{
+	float: right !important;
+}
+
+.payplans .pp-rtl-float-right{
+	float: left !important;
+}
+
+.payplans fieldset{
+    text-align: right;
+}
+
+
+.payplans .pp-parameter .pp-row pp-description,
+.payplans .pp-parameter.pp-row .pp-description
+{
+	text-align	: right !important ;
+}
+
+.payplans .pp-parameter .pp-col.pp-label,
+.payplans .pp-parameter .pp-col pp-label
+{
+	text-align : left !important;
+	float: right !important;
+}
+
+.payplans .pp-parameter .pp-col pp-input,
+.payplans .pp-parameter .pp-col.pp-input
+{
+	text-align: right !important;
+    float: right;
+}
+
+
+.payplans .pp-label.required:after{
+	margin-right: 0px;
+}
+
+.pp-invoice-confirm .pp-invoice-calculation label{
+	text-align : left;
+}
+
+/*---------------------------------------------------
+	Consistency fixes : for J2.5 
+---------------------------------------------------- */	
+.payplans .pp-parameter .pp-label label{
+	text-align : left !important;
+}
+
+.payplans .pp-parameter .pp-input label{
+	float: right !important;
+}
+
+.payplans h2,
+.payplans h3{
+	text-align: right;
+}	
+
+.payplans .pp-dashboard-widget .pp-title{
+	text-align: right !important;
+}	
+
+
+.payplans .pp-app-userdetail .pp-label {
+    text-align: left;
+} 

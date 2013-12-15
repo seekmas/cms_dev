@@ -1,0 +1,129 @@
+#appvillebanner
+{
+	overflow		:	hidden;
+	margin-bottom	:	20px;
+}
+
+.pp-description{
+	line-height	:	1.5; 
+	font-size	:	15px;
+}
+
+.pp-appmanager-container {
+	max-width	:	900px;
+	margin		:	auto;
+}
+
+.pp-app-block {
+	width			:	280px;
+	height			:	160px;
+	position		:	relative;
+	overflow		:	hidden;
+	float			:	left;	
+	border			:	1px solid #CCCCCC;
+	border-radius	:	5px;
+	box-shadow		:	0 1px 4px rgba(0, 0, 0, 0.067);
+	margin			:	0px 9px 16px 9px; 
+}
+
+.pp-app-block:hover{
+	border			:	1px solid #3396C3;
+	border-radius	:	5px;
+}
+
+.pp-app-block-content{
+	width			:	100%;
+	height			:	100%;
+	position		:	absolute;
+	top				:	0; 
+	left			:	0;
+}
+
+
+.pp-app-block-content.pp-app-block-back{
+//	opacity			:	0;
+	top				:	300px; 
+	left			:	0px;
+}
+
+.pp-app-block-content-top {
+	height			:	100px;
+	padding			:	10px;
+	overflow		:	hidden;
+}
+
+.pp-app-block-content-top img{
+	height			:	80px;
+	align			:	left;
+}
+
+.pp-app-block-content-bottom {	
+	background-color:	#F1F1F1;
+	height			:	40px;
+	padding			:	5px;
+}
+
+
+.pp-app-block-content-type{
+	font-color		:	#3396C3;
+}
+
+.pp-app-block-content-desc{	 
+	margin-top		:	10px;
+	font-color		:	#3396C3;
+}
+
+.pp-previous-rating{
+    background-attachment	: scroll;
+    background-clip			: border-box;
+    background-color		: transparent;
+    background-image		: url("../images/stars.png");
+    background-position		: 0 0px;
+    background-repeat		: repeat-x;
+    background-size			: auto auto;
+    height					: 20px;
+    width					: 100px;
+    overflow				: hidden;
+}
+
+.pp-rating {
+    background-attachment	: scroll;
+    background-clip			: border-box;
+    background-color		: transparent;
+    background-image		: url("../images/stars.png");
+    background-origin		: padding-box;
+    background-position		: 0 -20px;
+    background-repeat		: repeat-x;
+    background-size			: auto auto;
+    height					: 20px;
+    overflow				: hidden;
+}
+
+.pp-rating-center{
+	margin-left	:	80px;
+}
+
+.pp-badge{
+
+    border			:	1px solid;
+    color			:	#fff;
+    font-size		:	1em;
+    letter-spacing	:	1px;
+    margin			:	0.05em 0;
+    text-align		:	center;
+    position		:	absolute;
+    left			:	202px;
+    top				:	21px;
+
+   -moz-transform	:	rotate(45deg);
+   -webkit-transform:	rotate(45deg);
+    transform		:	rotate(45deg);
+   
+   -moz-box-shadow	:	4px 1px 4px black;
+   -webkit-box-shadow:	4px 1px 4px black;
+    box-shadow		:	4px 1px 4px black;
+
+  	width			:	98px;
+  	height			:	15px;
+	
+}

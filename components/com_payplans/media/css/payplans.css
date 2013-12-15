@@ -1,0 +1,314 @@
+/**
+* @copyright	Copyright (C) 2009-2012 Ready Bytes Software Labs Pvt. Ltd. All rights reserved.
+* @license		GNU/GPL, see LICENSE.php
+* @package		PayPlans
+* @contact 		shyam@readybytes.in
+*/
+
+/* Instructions :
+==================================================
+1. Every output from payplans must be packed via two div 
+	a) one with class payplans-wrap 
+	b) second with class payplans and pp-PURPOSE (replace purpose with purpose) + pp-view + pp-task
+
+	<div class="payplans-wrap">  				<-- always wrap with this div and ONLY class
+		<div class="payplans {pp-site pp-plan}">  <-- always wrap with this div, with additional classes
+			<div class="pp-component">			<-- always wrap with this div
+				------------------------
+				--------YOUR------------
+				--------HTML------------
+				--------HERE------------
+				------------------------
+			<div>
+		</div>
+	</div>
+ 
+2. No class should use payplans in name, use pp- instead.
+
+3. No underscores in class names, use dash
+
+4. Do not use id's for css styling
+
+5. Responsive design, layout should be isolated from themeing
+   Should support multiple layouts - 
+	(a) extra-wide	~ 1440 px - 1236px
+	(b) wide	~ 1235 px - 986px
+	(c) normal 	~ 985  px - 720px
+	(d) tablet  	~ 719  px - 480px
+	(e) mobile	< 479  px
+
+7.  Write CSS comments in C-Style only 
+
+8.  payplans rule nomenclature for component output
+	 page  class =>  pp-{view}-{task}
+	 block class =>  pp-{block}-{purpose}
+	 item  class =>  pp-{purpose}
+	 
+	 write rules as -
+	 page  => .payplans .pp-component .pp-{view}-{task} 
+	 block => .pp-component .pp-{view}-{task} .pp-{block}-{purpose}
+	 item  => .pp-component .pp-{block}-{purpose} .pp-{purpose}
+	 
+*/
+
+
+/* Resets Styles
+==================================================*/
+.payplans-wrap dl,
+.payplans-wrap dt,
+.payplans-wrap dd,
+.payplans-wrap h1,
+.payplans-wrap h2,
+.payplans-wrap h3,
+.payplans-wrap h4,
+.payplans-wrap h5,
+.payplans-wrap h6,
+.payplans-wrap pre,
+.payplans-wrap form,
+.payplans-wrap fieldset,
+.payplans-wrap input,
+.payplans-wrap textarea,
+.payplans-wrap p,
+.payplans-wrap blockquote,
+.payplans-wrap th,
+.payplans-wrap td
+{
+	/* 
+	Honour Template settings, 
+	do not just overwrite them
+	margin: 0;
+	padding: 0;
+	*/
+}
+
+/*every output will be wrapped with this class*/
+.payplans {
+}
+
+/*component will be wrapped with this class*/
+.pp-component{
+}
+
+/*modules will be wrapped with this class*/
+.pp-module{
+}
+
+/*dialog will be wrapped with this class*/
+.pp-dialog{
+
+}
+
+
+/*=============================================================================
+	Variable Grid System (Fluid Version).
+	Learn more ~ http://www.spry-soft.com/grids/
+	Based on 960 Grid System - http://960.gs/ & 960 Fluid - 
+	http://www.designinfluences.com/
+	Licensed under GPL and MIT. 
+=============================================================================*/
+
+
+/* Containers
+-----------------------------------------------------------------------------*/
+.pp-component {
+	margin-bottom: 10px;
+    margin-left: 4%;
+    margin-right: 4%;
+	width: 92%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Clear Floated Elements
+--------------------------------------------------------------------------*/
+/* http://sonspring.com/journal/clearing-floats */
+
+.payplans .clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
+.payplans .clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.payplans .clearfix {
+	display: inline-block;
+}
+
+.payplans * html .clearfix {
+	height: 1%;
+}
+
+.payplans .clearfix {
+	display: block;
+}
+
+/*---------------------------------------------------
+	Common CSS tips & Tricks 
+---------------------------------------------------- */	
+.payplans .loading:after{
+	content : url('../images/loading16x16.gif');
+}
+
+.payplans span.pp-error{
+	display:none;
+	float: left;
+}
+
+.payplans span.pp-error.invalid{
+	display:inline-block;
+    float: left;
+	color: red;
+}
+
+
+
+.payplans .show{
+	display:inline-block;
+}
+
+.payplans .pp-underline{
+	text-decoration: underline;
+}
+
+.payplans .hide{
+	display:none;
+}
+
+.payplans .pp-appealing-message{
+}
+
+.pp-appealing-message .pp-message{
+	color: #aaa;
+}
+
+.pp-appealing-message .pp-message .pp-title{
+	margin-top: 20px;
+	font-size : 1.5em;
+	font-weight: bold;
+	line-height: 1.4em;
+}
+
+.pp-appealing-message .pp-message .pp-description{
+	margin-top: 10px;
+	font-size : 1.0em;
+	line-height : 1.1em;
+}
+
+.payplans .pp-highlight{
+	background: #FFDFDF;
+}
+
+
+.payplans .pp-gap-top05{
+	 margin-top: 0.5em;
+}
+
+.payplans .pp-gap-top10{
+	 margin-top: 1.0em;
+}
+
+.payplans .pp-gap-top15{
+	 margin-top: 1.5em;
+}
+
+.payplans .pp-gap-top20{
+	 margin-top: 2.0em;
+}
+
+.payplans .pp-gap-top25{
+	 margin-top: 2.5em;
+}
+
+.payplans .pp-gap-top30{
+	 margin-top: 3.0em;
+}
+
+.payplans .pp-gap-top35{
+	 margin-top: 3.5em;
+}
+
+.payplans .pp-gap-top40{
+	 margin-top: 4.0em;
+}
+
+.payplans .pp-gap-top60{
+	 margin-top: 6.0em;
+}
+
+.payplans .pp-mouse-pointer {
+	cursor: pointer;
+}
+
+.pp-notice{
+	color:red; 
+	font-size:8px;
+}
+
+/*
+ We need to add this class into this file because we have to change
+poperties of this class in case of RTL support.
+
+If we add this class into site.css then changes in rtl.css will not
+refelect
+*/
+.pp-invoice-confirm .pp-invoice-calculation label{
+	text-align : right;
+}
+
+.payplans .pp-gap-bottom05{
+	 margin-bottom: 0.5em;
+}
+
+.payplans .btn {
+	padding: 4px 6px;
+}
+
+.payplans .btn-group > .btn,
+.btn-group > .dropdown-menu {
+	font-size: 11px;
+}
+
+/*
+needed when using placeholder
+*/
+.payplans textarea.inactive,
+.payplans input.inactive[type="text"]{
+    color: #999999;
+    font-style: italic;
+}
+
+/* CSS override for subscription details show on order-complete page */
+.payplans #subscriptiondetail .pp-parameter .pp-col pp-input, .payplans #userdetail .pp-parameter .pp-col.pp-label, .payplans .pp-parameter .pp-col.pp-input {
+    margin-left: 2%;
+    width: 42%;
+}
+
+.payplans #subscriptiondetail .pp-parameter .pp-col.pp-label,.payplans #userdetail .pp-parameter .pp-col.pp-input, .payplans .pp-parameter .pp-col pp-label {
+    width: 48%;
+}
+
+.payplans .pp-highlight {
+	background-color 	: #F2DEDE;
+	overflow			: hidden;
+}

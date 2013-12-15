@@ -1,0 +1,117 @@
+div#payplans .pp-primary.pp-color {
+	color: #0095cd;
+}
+div#payplans .pp-primary.pp-border {
+	border-color: #0095cd;
+}
+div#payplans .pp-primary.pp-background {
+	background: transparent;
+}
+
+div#payplans .pp-primary.pp-light.pp-color {}
+div#payplans .pp-primary.pp-light.pp-border {}
+div#payplans .pp-primary.pp-light.pp-background {}
+
+div#payplans .pp-primary.pp-dark {}
+div#payplans .pp-primary.pp-dark.pp-border {}
+div#payplans .pp-primary.pp-dark.pp-background {}
+
+div#payplans .pp-secondary.pp-color {
+	color: #A1A1A1;
+}
+div#payplans .pp-secondary.pp-border {
+	border-color: #333333 !important;
+}
+div#payplans .pp-secondary.pp-background {
+	background: transparent;
+}
+
+div#payplans .pp-secondary.pp-light.pp-color {}
+div#payplans .pp-secondary.pp-light.pp-border {}
+div#payplans .pp-secondary.pp-light.pp-background {}
+div#payplans .pp-secondary.pp-dark.pp-color {}
+div#payplans .pp-secondary.pp-dark.pp-border {}
+div#payplans .pp-secondary.pp-dark.pp-background {}
+
+
+
+
+div#payplans .pp-primary.pp-reverse.pp-color{
+ 	color: #999999;
+}
+div#payplans .pp-primary.pp-reverse.pp-border{
+	border-color: #0095cd;
+}
+div#payplans .pp-primary.pp-reverse.pp-background{
+	background: transparent;
+}
+
+div#payplans .pp-primary.pp-reverse.pp-light.pp-color{
+	color: #A1A1A1;
+}
+div#payplans .pp-primary.pp-reverse.pp-light.pp-border{
+	border-color: #333333;
+}
+div#payplans .pp-primary.pp-reverse.pp-light.pp-background{
+	background: transparent;
+	background: rgba(255,255,255,0.2);
+}
+
+div#payplans .pp-secondary.pp-reverse.pp-color{}
+div#payplans .pp-secondary.pp-reverse.pp-border{}
+div#payplans .pp-secondary.pp-reverse.pp-background{
+	background: #e9e9e9; /* Old browsers */
+   	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.1);
+}
+
+div#payplans .pp-primary.pp-reverse.pp-dark.pp-color{}
+div#payplans .pp-primary.pp-reverse.pp-dark.pp-border{}
+div#payplans .pp-primary.pp-reverse.pp-dark.pp-background{}
+
+div#payplans  .pp-error {
+color: #ff0000;
+}
+div#payplans .pp-mouse-hover:hover{
+	background: transparent;
+	background: rgba(255,255,255,0.2);
+}
+
+div#payplans .pp-loading {
+	background: transparent url('blue_dark.gif') no-repeat center top;
+}
+
+/*---------- Buttons ----------*/
+div#payplans .pp-xi-button {
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+/*---------- Buttons Color Style----------*/
+/*--------- Color Style For Themes ----------*/
+div#payplans .pp-button-color {
+	color: #d9eef7 !important;
+	border: #0076a3 !important;
+	background: #007ead !important;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e)) !important;
+	background: -moz-linear-gradient(top,  #0095cc,  #00678e) !important;
+	filter:  progid:DXImageTransform.Microsoft.gradient(
+			startColorstr='#0095cc', endColorstr='#00678e');
+}
+
+div#payplans .pp-button-color:hover {
+	background: #0095cd !important;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5)) !important;
+	background: -moz-linear-gradient(top,  #00adee,  #0078a5) !important;
+	filter:  progid:DXImageTransform.Microsoft.gradient(
+			startColorstr='#00adee', endColorstr='#0078a5');
+}
+
+div#payplans .pp-button-color:active {
+	color: #80bed6 !important;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee)) !important;
+	background: -moz-linear-gradient(top,  #0078a5,  #00adee) !important;
+	filter:  progid:DXImageTransform.Microsoft.gradient(
+			startColorstr='#0078a5', endColorstr='#00adee');
+}

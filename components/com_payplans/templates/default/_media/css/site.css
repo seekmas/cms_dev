@@ -1,0 +1,646 @@
+
+/*---------------------------------------------------------
+	CSS overriding for joomla templates
+---------------------------------------------------------*/
+.pp-component .componentheading {
+	border-bottom: 1px solid;
+	line-height: 28px;
+}
+
+.pp-component .contentheading {
+	line-height: 20px;
+	font-size: 16px;
+}
+
+.payplans fieldset{
+    background-color: transparent !important;
+}
+/*---------------------------------------------------------
+		Plan Selection Screen 
+---------------------------------------------------------*/
+.pp-component .pp-plan-subscribe{}
+
+.pp-component .pp-plan-subscribe .pp-backlink{
+	font-size: 0.75em;
+	text-decoration: none;
+}
+
+.payplans .pp-no-plan{
+	font-size: 1.25em;
+    line-height: 3em;
+    min-height: 200px !important;
+}
+
+.payplans .pp-plan-details{
+	border:6px solid #f9f8f8;
+}
+
+.payplans .pp-plan-border{
+	border: 1px solid #e5e4e3;
+}
+
+.payplans .pp-plan-price{
+	border-bottom: 1px solid #e5e4e3;
+}
+
+.payplans .pp-plan-subscribebutton,
+.payplans .pp-plan-price{
+	border-top: 1px solid #e5e4e3;
+	background-color:#f9f8f8;
+}
+
+.payplans .pp-plan-teaser{
+	font-size: 12px;
+	padding-bottom: 3%;
+}
+	
+.payplans .pp-plan-price{
+	padding: 5%;
+}
+
+.payplans .pp-plan-description,
+.payplans .pp-plan-subscribebutton{
+	padding: 8%;
+}
+
+.payplans .pp-plan-border h4 {
+	padding: 2%;
+}
+
+.payplans .pp-plan {
+	position:relative;
+}
+
+.payplans .pp-plan-row .popular{	
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.67);
+	transform:scale(1.02);
+	z-index: 1;
+	-moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.67);
+	-moz-transform: scale(1.02);
+	-webkit-transform: scale(1.02);
+	-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.67);
+}
+
+.payplans .pp-plan-subscribe .row-fluid [class*="span"] {
+    margin-left:1%;
+}
+
+/*-------- Plan Vertical Layout --------- */
+
+.payplans .pp-plan.pp-vertical .pp-plan-description {
+	padding: 5%;
+}
+
+.pp-plan.pp-vertical .pp-plan-price{
+	background-color:#fff;
+	border-top: 1px solid #e5e4e3;
+	border-bottom: 0;
+	clear:both;
+}
+
+.pp-plan.pp-vertical .pp-plan-subscribebutton{
+	padding:3%;
+	clear:both;
+}
+
+.payplans .pp-plan.pp-vertical .pp-plan-price, 
+.payplans .pp-plan.pp-vertical .pp-plan-teaser,
+.payplans .pp-plan.pp-vertical .pp-plan-title{
+	padding:1% 0 4% 0;
+}
+
+
+@media (max-width: 480px) {
+	.payplans .pp-plan.pp-vertical .pp-plan-basic 
+	{
+		min-width: 100%;
+	}
+	
+	.payplans .pp-plan-description
+	{
+		display:none;
+	}
+}
+
+@media (max-width: 767px), (min-width: 1200px){
+	.payplans .pp-plan.pp-vertical .pp-plan-basic 
+	{   
+		float: left;
+		width: 35%;
+	}
+	
+	.payplans .pp-plan.pp-vertical .pp-plan-description 
+	{   
+		width:55%;
+    	float: left;
+	}
+}
+
+/*---------------------------------------------------------
+	Plan badges
+---------------------------------------------------------*/
+
+.pp-component .pp-badge{
+	background: url("images/badge.png") no-repeat;
+	position: absolute;
+	top:-5px;
+	right:-5px;
+	width:50px;
+	height:50px;
+	background-position: 50px 50px;
+}
+
+.pp-component .hot .pp-badge{
+	background-position: 0 0;
+}
+
+.pp-component .new .pp-badge{
+	background-position: 0 -50px;
+}
+
+.pp-component .free .pp-badge{
+	background-position: 0 -100px;
+}
+
+.pp-component .popular .pp-badge{
+	background-position: 0 -150px;
+}
+
+.pp-component .featured .pp-badge{
+	background-position: 0 -200px;
+}
+
+.pp-component .top .pp-badge{
+	background-position: 0 -250px;
+}
+
+/*--------------------------------------------------------------------
+	Login Screen
+--------------------------------------------------------------------*/
+.pp-selected-plan .pp-plan .pp-badge{
+	display:none;
+}
+
+.pp-selected-plan .pp-plan .pp-plan-subscribebutton{
+	display:none;
+}
+
+/*--------------------------------------------------------------------
+	Payment Page
+--------------------------------------------------------------------*/
+
+.pp-component .pp-payment-pay {}
+
+/*--------------------------------------------------------------------
+	Order Complete Page Success/Cancel/Error
+--------------------------------------------------------------------*/
+
+.pp-component .pp-order-complete {}
+
+.pp-component .pp-order-complete-success {}
+
+.pp-order-complete .pp-message{
+	text-align : center !important;
+	margin-bottom : 20px; /* not required, will need to fix button to remove it*/
+}
+
+.pp-order-complete .pp-message .pp-title{
+	font-size     : 1.5em;
+	margin-top    : 30px;
+	margin-bottom : 10px;
+}
+
+/*--------------------------------------------------------------------
+		pp-widget-order 
+--------------------------------------------------------------------*/
+.payplans .pp-widget-order .pp-parameter .pp-col pp-input, 
+.payplans .pp-widget-order .pp-parameter .pp-col.pp-input {
+    width: 55%;
+}
+
+.payplans .pp-widget-order .pp-parameter .pp-col.pp-label,
+.payplans .pp-widget-order  .pp-parameter .pp-col pp-label {
+    width: 33%;
+}
+
+.payplans .pp-widget-order{
+	font-size: 12px;
+}
+
+/*--------------------------------------------------------------------
+		pp-payment-authorize-arb
+--------------------------------------------------------------------*/
+.payplans .pp-payment-authorize-arb .pp-parameter .pp-col pp-input, 
+.payplans .pp-payment-authorize-arb .pp-parameter .pp-col.pp-input {
+    width: 72%;
+}
+/*
+.payplans .pp-dashboard-header{
+	border-bottom : 1px solid;
+	overflow:hidden;
+}
+
+.payplans .pp-dashboard-heading{
+	font-size : 16px;
+}
+*/
+/*
+.payplans .pp-dashboard-noaccess{
+	min-height: 300px !important;
+	margin-top: 100px;
+	font-size: 2.50em;
+	line-height: 1.0em;
+}
+.payplans .pp-dashboard-noaccess .pp-noaccess-message{
+	font-size: 0.45em;
+	color: #989898;
+}	
+*/
+/*
+.payplans .pp-dashboard-widget .pp-title{
+	background-color: #DADADA;
+    font-size: 16px;
+    text-align: left;
+    line-height: 2em;
+    padding-left: .5em;
+}
+*/
+/*
+.payplans .pp-dashboard-widget .pp-content{
+    font-size: 0.8em;
+    text-align: center;
+    border-radius: 0 0 3px 3px;
+    line-height: 2em;
+}
+*/
+.payplans .pp-wallet-widget-balance .pp-wallet-balance-amount{
+	font-size: 1.45em;
+}
+
+.payplans .pp-wallet-widget-balance .pp-wallet-balance-message{
+	font-size: 0.9em;
+	color: #989898;
+}
+
+/*
+.payplans .pp-dashboard-alert {
+/*   border: 0.5px solid #E1E1E8;* /
+   border-radius: 4px 4px 4px 4px;
+   margin-bottom: 18px;
+/*   padding: 8px 35px 8px 14px;* /
+   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+   position: relative;
+/*   right: 8px;* /
+/*   top: -2px;* /
+}
+
+.payplans  .pp-dashboard-alert-detail {
+   background-color: #D9EDF7;
+   border-color: #BCE8F1;
+   color: #3A87AD;
+}
+
+.payplans  .pp-dashboard-alert-error {
+   background-color: #F2DEDE;
+   border-color: #EED3D7;
+   color: #B94A48;
+}
+
+.payplans  .pp-dashboard-alert-success {
+    background-color: #DFF0D8;
+    border-color: #D6E9C6;
+    color: #468847;
+}
+
+.payplans .pp-mouse-grey-hover:hover{
+	background: transparent;
+	background-color: #F4F4F4;
+}
+
+*/
+
+
+/*--------------------------------------------------------------------
+		pp-order-invoices (order screen of dashboard) 
+--------------------------------------------------------------------*/
+.payplans .pp-order-invoices{
+	line-height: 4em;
+}
+
+.payplans .pp-order-transactions{
+	line-height: 1.8em;
+}
+
+.payplans .pp-order-invoices .ui-state-default{
+	width: 75px;
+	height: 20px;
+	font-size: 0.8em;
+	text-align: center;
+	border-radius: 4px;
+	line-height: 2.0em;
+	margin-top: 5px;
+}
+
+.payplans .pp-order-action .ui-state-default{
+	width: 80px;
+	height: 25px;
+	font-size: 0.8em;
+	text-align: center;
+	border-radius: 5px;
+	line-height: 2.5em;
+	margin-top: 5px;
+}
+
+.payplans .pp-order-sub-details{
+	border: 1px solid;
+	font-size: 11px;
+}
+
+.payplans .pp-order-sub-heading{
+	text-align:center; 
+	border-bottom:1px solid; 
+	font-size:15px; 
+	line-height:2em;
+}
+
+
+/*--------------------------------------------------------------------
+		pp-invoices (partial of invoices) 
+--------------------------------------------------------------------*/
+.payplans .pp-invoices-values{
+	color: #989898;
+	font-size: 1em;
+}
+
+.payplans .pp-invoices-values:hover{
+	background-color: #DADADA;
+	color: #000000; 
+}
+
+.payplans .pp-invoices-headings{
+	border-bottom: 1px solid;
+	width: 98%;
+	line-height: 2em;
+}
+
+.payplans .pp-invoice-thanks .pp-font{
+	font-size: 0.75em;
+}	
+
+.payplans .pp-invoice .pp-invoice-primary{
+	width: 50%;
+}
+
+
+/*--------------------------------------------------------------------
+		pp-invoice (print invoice layout) 
+--------------------------------------------------------------------*/
+.payplans .pp-company-name{
+	font-size : 1.7em;
+	font-weight: bold;
+}
+
+.payplans .pp-invoice-total{
+	border-top:1px solid; 
+	line-height:3em;
+}
+
+.payplans .pp-invoice-notes{
+	min-height:120px; 
+	max-height: 150px; 
+	overflow: auto;
+	width:100%;
+	padding-top:10px;
+}	
+
+.payplans .pp-invoice-extrainfo{
+	min-height:130px; 
+}
+
+.payplans .pp-invoice-details{
+	border-bottom: 1px solid !important;
+}
+
+.payplans .pp-invoice .pp-margin-top{
+	margin-top: -15px;
+}
+
+.payplans .pp-invoice .pp-parameter .pp-col pp-input, 
+.payplans .pp-invoice .pp-parameter .pp-col.pp-input {
+    width: 73%;
+}
+
+.payplans .pp-invoice .pp-parameter .pp-col.pp-label,
+.payplans .pp-invoice  .pp-parameter .pp-col pp-label {
+    width: 20%;
+}
+
+#pp-invoice-modifier table{
+	border: 0px none !important;
+	width: 100%;
+	line-height: 2.5em;
+	border-collapse:collapse;
+}
+
+#pp-invoice-modifier td{
+	border: 0px none !important;
+}
+
+#pp-invoice-modifier tr{
+	border: 0px;
+	border-bottom: 1px solid !important;
+}
+
+/*--------------------------------------------------------------------
+		pp-payment-pay-process (redirecting for payment) 
+--------------------------------------------------------------------*/
+
+.payplans .pp-payment-pay-process{
+	text-align : center !important;
+	line-height: 8em;
+}	
+	
+.payplans .pp-payment-pay-process .pp-message{
+	font-size: 1.5em;
+}
+
+/*--------- Color Style For Themes ----------*/
+.payplans .pp-button-color {
+	border: 1px solid;
+}
+
+.payplans .pp-recharge-popup{
+	line-height: 2.5em;
+}
+
+.payplans .pp-recharge-msg{
+	font-weight: bold; 
+	font-size:0.95em;
+}
+
+/*--------- for line separation ----------*/
+.payplans .pp-separator{
+	align:center;
+	width: 75%;
+}
+
+
+
+/*-------------------------------------------------------------------
+                      Dashboard Div CSS
+-------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------
+                   Frontend dashboard Div CSS
+--------------------------------------------------------------------*/
+.payplans .pp-show-date{
+	height:70px; 
+	 width:100px;
+        border:1px solid;
+}
+
+.payplans .pp-registration-and-login .pp-parameter .pp-row{
+	line-height: 1em;
+}
+
+.pp-login-link {
+	font-size: 0.9em;
+	text-decoration: none;	 
+	font-weight: normal;
+	color:#095197;
+}
+
+.pp-login-link:hover{
+	cursor:pointer;
+	text-decoration:underline;
+}
+
+.payplans input, 
+.payplans textarea, 
+.payplans select {
+	border: 1px solid silver;
+}
+
+.payplans .pp-all-details .pp-parameter .pp-col.pp-label,
+.payplans .pp-all-details .pp-parameter .pp-col pp-label
+{
+	font-weight: normal;
+	width: 30%;
+}
+
+.payplans .pp-all-details .pp-parameter .pp-col pp-input,
+.payplans .pp-all-details .pp-parameter .pp-col.pp-input
+{
+	width: 54%;
+	margin-left:3%;
+}
+
+.payplans .pp-login .pp-parameter .pp-col.pp-label,
+.payplans .pp-login .pp-parameter .pp-col pp-label
+{
+	width:34%;
+}
+
+.payplans .pp-login .pp-parameter .pp-col pp-input,
+.payplans .pp-login .pp-parameter .pp-col.pp-input
+{
+	margin-left: 2%;
+	width: 50%;
+}	
+
+.payplans .pp-registration .pp-parameter .pp-col.pp-label,
+.payplans .pp-registration .pp-parameter .pp-col pp-label 
+{
+    width: 34%;
+}
+
+.payplans .pp-registration .pp-parameter .pp-col pp-input,
+.payplans .pp-registration .pp-parameter .pp-col.pp-input 
+{
+    margin-left: 2%;
+    width: 50%;
+}
+
+.payplans .pp-goto-dashboard
+{
+	margin-top: 5px;
+	margin-right:8px;
+}
+
+/* We need this for invoive paid screen's column width of table */
+.payplans .pp-invoice-description
+{
+	width : 80%
+}
+
+.payplans .pp-invoice-amount
+{
+	width : 20%
+}
+
+.payplans .pp-invoice-total-amount
+{
+	width: 10%;
+}
+
+.payplans .pp-captcha-padding
+{
+padding:10px;
+}
+
+.payplans .donation-link
+{
+font-size:16px;
+}
+
+/* CSS added for Login+Subscribe pop-up */
+.payplans .msg-box {
+    background-color: #F5F5F5;
+    border-radius: 11px 11px 11px 11px;
+    border: 2px solid #E3E3E3;
+    margin: 3% 0 3% 14%;
+    padding: 1.3%;
+    text-align: center;
+    width: 70%;
+}
+
+.payplans .border {
+   border: 1px solid #E3E3E3;
+   width:90%;
+   margin-left: 40%;
+   padding:20px;
+}
+
+/********************************************
+* Newly addded for payplans3.0
+*********************************************/
+.pp-payment-header-price {
+	font-size	:	1.5em;	
+}
+
+.pp-payment-header-price2 {
+	font-size	:	1.2em;
+}
+
+.pp-checkout {
+	position	:	absolute !important;
+	top		:	40%;
+	left		:	48%;
+	
+}
+
+.pp-pricing-footer {
+	position	:	relative !important;
+}
+
+#payplans-order-confirm {
+	font-size	:	1.1em;
+	height		: 	40px;
+    width		:	120px;
+}
+
+.payplans-wrap .word-wrap
+{
+	word-wrap: break-word;
+}

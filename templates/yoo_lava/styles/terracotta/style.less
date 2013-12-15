@@ -1,0 +1,112 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Text
+ */
+
+@global-color:									#85878d;
+@global-link-color:								#cca388;
+@theme_global-color:							@global-color;
+
+/*
+ * Border and background colors
+ */
+
+@global-primary-background:						#65adcf;
+@theme_global-body-style: 						terracotta;
+@theme_global-default-background:				#cca388;
+
+/*
+ * Base
+ */
+
+@base-ins-background:							lighten(@theme_global-default-background, 28%);
+@base-mark-background:							@base-ins-background;
+@base-pre-background:							@theme_global-light-background;
+@theme_pre-border:								darken(@theme_global-light-background, 5%);
+
+/*
+ * Panel
+ */
+
+@panel-box-secondary-color:						@theme_global-color;
+@panel-box-secondary-title-color:				lighten(@theme_global-color, 25%);
+
+/*
+ * Comment
+ */
+
+@theme_comment-header-background: 				@theme_global-light-background;
+
+/*
+ * Nav
+ */
+
+@nav-side-active-color:							@theme_global-color;
+@nav-side-header-color:							lighten(@theme_global-color, 10%);
+@nav-side-nested-color: 						@theme_global-color;
+@nav-dropdown-color:							@theme_global-color;
+@nav-dropdown-header-color:						lighten(@theme_global-color, 10%);
+@nav-dropdown-nested-color:						@theme_global-color;
+@nav-navbar-color:								@theme_global-color;
+@nav-navbar-header-color:						lighten(@theme_global-color, 10%);
+@nav-navbar-nested-color:						@theme_global-color;
+@nav-search-color: 								@theme_global-color;
+@nav-search-active-background:					rgba(0,0,0,0.1);
+@nav-offcanvas-color:							@theme_global-color;
+@nav-offcanvas-header-color:					lighten(@theme_global-color, 10%);
+@nav-offcanvas-hover-background:				@theme_global-default-background;
+@theme_nav-dropdown-active-background:			@theme_global-light-background;
+@theme_nav-dropdown-open-background:			@theme_global-default-background;
+@theme_nav-navbar-active-background:			@theme_global-light-background;
+@theme_nav-navbar-open-background:				@theme_global-light-background;
+@theme_nav-search-open-background:				@theme_global-light-background;
+
+/*
+ * Navbar
+ */
+
+@navbar-background:								#fff;
+@navbar-color:									@theme_global-color;
+@navbar-nav-color:								@theme_global-color;
+@navbar-nav-active-background:					transparent;
+@navbar-brand-color:							@theme_global-default-background;
+@navbar-brand-hover-color:						darken(@navbar-brand-color, 10%);
+@theme_navbar-brand-background:					#fff;
+
+/*
+ * Tab
+ */
+
+@theme_tab-dropdown-background:					@theme_global-light-background;
+
+/*
+ * Table
+ */
+
+@table-striped-background:						lighten(@theme_global-light-background, 10%);
+@table-hover-background:						darken(@theme_global-light-background, 20%);
+
+/*
+ * Form
+ */
+
+@form-disabled-background:						fadeout(@theme_global-light-background, 20%);
+
+/*
+ * Button
+ */
+#yt-ln{
+  position: absolute;
+  top: 0px;
+  left: -5500px;
+  }
+@button-active-background:						darken(@button-hover-background, 12%);
+
+/*
+ * Search
+ */
+
+@search-color:									@theme_global-color;
+@search-icon-color:								@theme_global-color;
+@search-close-color:							@theme_global-color;

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <name>Dashboard Widget</name>
+    <author>Team Payplans</author>
+    <icon>dashboards.png</icon>
+    <description>This app allows administrator to show different widgets* on the selected apps.
+    The users will be able to view the widgets on their dashboard. The administrator can bound accessibility of widgets by categorizing them according to the plans subscribed by the users.
+    &lt;br/&gt;&lt;br/&gt;
+    Reference Link:&lt;a href="http://www.jpayplans.com/app-ville/item/dashboard-widget.html?category_id=96"&gt;Dashboard Widget&lt;/a&gt;
+    
+    &lt;br/&gt;&lt;br/&gt;
+    *Widget: An application of an interface for users.
+
+    </description>
+    <tags>Widget</tags>
+	<help>
+		&lt;span style="color:red"&gt; For proper working of this App make this App a Core App. &lt;/span&gt;
+	</help>
+
+	<fields name="app_params">
+	<fieldset name="app_params">
+	
+	     <field name="app_type" type="xiapptype" label="COM_PAYPLANS_APP_CORE_WIDGET_SELECT_APP" description="COM_PAYPLANS_APP_CORE_WIDGET_SELECT_APP_DESC"/>
+     
+        <field name="widget_title" type="text" label="COM_PAYPLANS_APP_CORE_WIDGET_TITLE_LABEL" description="COM_PAYPLANS_APP_CORE_WIDGET_TITLE_LABEL_DESC"/>
+ 		
+        <field name="widget_position" type="xiwidgetposition" label="COM_PAYPLANS_APP_CORE_WIDGET_TITLE_POSITION_LABEL" description="COM_PAYPLANS_APP_CORE_WIDGET_TITLE_POSITION_LABEL_DESC"> 
+		       <option value="payplans-dashboard-right">COM_PAYPLANS_APP_CORE_WIDGET_TITLE_POSITION_RIGHT</option>
+		       <option value="payplans-dashboard-footer">COM_PAYPLANS_APP_CORE_WIDGET_TITLE_POSITION_FOOTER</option>
+	    </field>
+	
+	<field name="widget_class_suffix" type="text" label="COM_PAYPLANS_APP_CORE_WIDGET_CLASS_SUFFIX_LABEL" description="COM_PAYPLANS_APP_CORE_WIDGET_CLASS_SUFFIX_LABEL_DESC"/>
+
+	</fieldset>
+	</fields>
+</config>

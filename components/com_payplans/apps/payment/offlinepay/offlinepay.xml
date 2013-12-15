@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <name>Offline Payment</name>
+    <version>0.0.101</version>
+    <creationDate>Sep 2010</creationDate>
+    <author>JoomlaXi.com</author>
+    <authorEmail>shyam@joomlaxi.com</authorEmail>
+    <authorUrl>http://www.joomlaxi.com</authorUrl>
+    <copyright>2009 JoomlaXi.com</copyright>
+    <copyrightHolder>JoomlaXi.com</copyrightHolder>
+    <license>GNU General Public License v2</license>
+    <icon>offlinepay.png</icon>
+    <tags>payment</tags>
+    <description>
+		This app is beneficial to use when its user wants to perform transactions via either of these modes:-
+&lt;br/&gt;+ Payment by cheque
+&lt;br/&gt;+ Payment by demand draft
+&lt;br/&gt;+ Payment by cash
+&lt;br/&gt;&lt;br/&gt;
+Reference Link:&lt;a href="http://www.jpayplans.com/app-ville/item/offline-payment.html?category_id=103"&gt;Offline Pay&lt;/a&gt;
+	</description>
+	<help>
+		<![CDATA[
+		For Executing Recurring subscriptions with Offline Payment App,</br>
+		<b>Option 1.</b> User is required to maintain amount in his wallet (using wallet recharge), so that future recurring payments will be deducted from his wallet automatically.</br>
+		<b>Option 2.</b> User will continue paying in the bank account for recurring subscription and admin will create an equivalent transaction in PayPlans everytime when payment is successfully received by admin.</br></br>
+		You can opt any one from the above options.</br>
+		You can set Pre-Expiry email so as to notify your users for further payment.
+		
+		]]>
+	</help>
+	<fields name="app_params">
+     <fieldset name="app_params">
+     
+		<field	name="bankname"
+				type="text" 
+				size="50"
+				default="" 
+				label="COM_PAYPLANS_APP_OFFLINE_BANK_NAME_LABEL" 
+				description="COM_PAYPLANS_APP_OFFLINE_BANK_NAME_DESC"
+				/>
+				
+		<field	name="account_number"
+				type="text" 
+				size="50" 
+				default="" 
+				label="COM_PAYPLANS_APP_OFFLINE_ACCOUNT_NUBMER_LABEL" 
+				description="COM_PAYPLANS_APP_OFFLINE_ACCOUNT_NUBMER_DESC"
+				/>
+				
+		<field  name="allow_recurring_cancel" 
+        		type="radio" 
+        		default="0" 
+        		class="btn-group"
+        		label="COM_PAYPLANS_APP_OFFLINE_ALLOW_RECURRING_CANCEL" 
+        		description="COM_PAYPLANS_APP_OFFLINE_ALLOW_RECURRING_CANCEL_DESC">
+		          <option value="0">COM_PAYPLANS_NO</option>
+		          <option value="1">COM_PAYPLANS_YES</option>
+        </field>
+	   </fieldset>		
+	</fields>
+
+</config>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<name>Joomlaxi Profile Type (JSPT)</name>
+	<version>0.0.101</version>
+	<creationDate>Sep 2010</creationDate>
+	<author>JoomlaXi.com</author>
+	<authorEmail>shyam@joomlaxi.com</authorEmail>
+	<authorUrl>http://www.joomlaxi.com</authorUrl>
+	<copyright>2009 JoomlaXi.com</copyright>
+	<copyrightHolder>JoomlaXi.com</copyrightHolder>
+	<license>GNU General Public License v2</license>
+	<description>
+		This is a PayPlans App for Controlling Jomsocial Profile Type.
+		It will integrate JSPT to Payplans. You can assign any 
+		JSPT Profile type to related Subscription Plan depending upon the staus of the subscription (Active, Hold or Expire).
+		&lt;br/&gt;
+		&lt;br/&gt;
+		Reference Link:&lt;a href="http://www.jpayplans.com/app-ville/item/joomlaxi-profile-type.html?category_id=104" target="_blank" &gt; Joomlaxi Profile Type &lt;/a&gt;&lt;br/&gt;&lt;br/&gt;
+	</description>
+	<icon>xiprofiletypes.png</icon>
+    <tags>integration</tags>
+	<help>
+		<![CDATA[
+			<div style="text-align:center">
+			<iframe width="250" height="200"  src="http://www.youtube.com/embed/TLrTx7D6YJ4" frameborder="0" allowfullscreen></iframe>
+			</div>
+	]]>
+	</help>
+	<fields name="app_params">
+	
+	<fieldset name="app_params" addfieldpath="/components/com_payplans/elements">
+				
+		<!-- On Subscription active -->
+		<field type="xispacer" default="COM_PAYPLANS_APP_XIPROFILETYPE_ON_STATUS_ACTIVE_DESC"/>
+		
+		<field name="xiprofiletypeOnActive" 
+			   type="xiprofiletype" 
+			   label="COM_PAYPLANS_APP_XIPROFILETYPE_SET_PROFILETYPE_LABEL"
+			   default="" description="COM_PAYPLANS_APP_XIPROFILETYPE_SET_PROFILETYPE_ON_ACTIVE_DESC" 
+			   />
+	
+	<!-- On Subscription hold -->
+		<field type="xispacer" default="COM_PAYPLANS_APP_XIPROFILETYPE_ON_STATUS_HOLD_DESC"/>
+		
+		<field name="xiprofiletypeOnHold" 
+			   type="xiprofiletype" 
+			   label="COM_PAYPLANS_APP_XIPROFILETYPE_SET_PROFILETYPE_LABEL"
+			   default="" description="COM_PAYPLANS_APP_XIPROFILETYPE_SET_PROFILETYPE_ON_HOLD_DESC" 
+			   />
+	
+	
+		<!-- On Subscription expire -->
+		<field type="xispacer" default="COM_PAYPLANS_APP_XIPROFILETYPE_ON_STATUS_EXPIRE_DESC"/>
+		
+		<field name="xiprofiletypeOnExpire" 
+			   type="xiprofiletype" 
+			   label="COM_PAYPLANS_APP_XIPROFILETYPE_SET_PROFILETYPE_LABEL"
+			   default="" description="COM_PAYPLANS_APP_XIPROFILETYPE_SET_PROFILETYPE_ON_EXPIRE_DESC" 
+				/>
+			
+		<field  name="block_ptype_change" 
+				type="radio" 
+				label="COM_PAYPLANS_APP_XIPROFILETYPE_BLOCK_PTYPE_CHANGE_LABEL"
+				default="1" 
+				description="COM_PAYPLANS_APP_XIPROFILETYPE_BLOCK_PTYPE_CHANGE_DESC" class="btn-group">
+				  <option value="0">COM_PAYPLANS_NO</option>
+		          <option value="1">COM_PAYPLANS_YES</option>
+		</field>
+
+	 </fieldset>
+	</fields>
+</config>

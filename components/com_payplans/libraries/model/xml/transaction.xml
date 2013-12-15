@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>	
+	<fieldset name="details">
+				
+		<field  name="invoice_id" type="text"
+				label="COM_PAYPLANS_TRANSACTION_EDIT_INVOICE_ID" 
+				description="COM_PAYPLANS_TRANSACTION_EDIT_TOOLTIP_INVOICE_ID" />
+	
+		<field  name="amount" type="text"
+				label="COM_PAYPLANS_TRANSACTION_EDIT_AMOUNT" 
+				description="COM_PAYPLANS_TRANSACTION_EDIT_TOOLTIP_AMOUNT" />
+				
+		<field  name="gateway_txn_id" type="text"
+				label="COM_PAYPLANS_TRANSACTION_EDIT_GATEWAY_TRANSACTION_ID" 
+				description="COM_PAYPLANS_TRANSACTION_EDIT_TOOLTIP_GATEWAY_TRANSACTION_ID" />
+		
+		<field  name="gateway_parent_txn" type="text"
+				label="COM_PAYPLANS_TRANSACTION_EDIT_GATEWAY_PARENT_TRANSACTION" 
+				description="COM_PAYPLANS_TRANSACTION_EDIT_TOOLTIP_GATEWAY_PARENT_TRANSACTION" />
+		
+		<field  name="gateway_subscr_id" type="text"
+				label="COM_PAYPLANS_TRANSACTION_EDIT_GATEWAY_SUBSCRIPTION_ID" 
+				description="COM_PAYPLANS_TRANSACTION_EDIT_TOOLTIP_GATEWAY_SUBSCRIPTION_ID" />
+		
+		<field  name="transaction_id"
+				type="hidden"
+				default="0" />
+		
+		<field  name="payment_id"
+				type="hidden"
+				default="0" />
+		
+		<field  name="user_id"
+				type="hidden"
+				default="0" />
+	</fieldset>
+	
+	<fieldset>
+		<field  name="created_date" type="text"
+				label="COM_PAYPLANS_TRANSACTION_EDIT_CREATED_DATE" 
+				description="COM_PAYPLANS_TRANSACTION_EDIT_TOOLTIP_CREATED_DATE" />
+		
+		<field  name="message" type="textarea"
+				label="COM_PAYPLANS_TRANSACTION_EDIT_MESSAGE" 
+				description="COM_PAYPLANS_TRANSACTION_EDIT_TOOLTIP_MESSAGE" />
+				
+	</fieldset>
+</form>

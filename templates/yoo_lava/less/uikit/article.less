@@ -1,0 +1,47 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Article component
+ *
+ ========================================================================== */
+
+
+/* Component
+ ========================================================================== */
+
+
+/* Sub-object `uk-article-title`
+ ========================================================================== */
+
+.hook-article-title() {}
+
+
+/* Sub-object `uk-article-meta`
+ ========================================================================== */
+
+.hook-article-meta() { text-transform: uppercase; }
+
+
+/* Sub-object `uk-article-lead`
+ ========================================================================== */
+
+.hook-article-lead() {
+	margin-top: @theme_article-lead-margin-top;
+	margin-bottom: @theme_article-lead-margin-bottom;
+}
+
+/* Only phone screens */
+@media (min-width: @breakpoint-medium) {
+
+	.uk-article-lead {
+		margin-top: @theme_article-lead-margin-top * 2;
+		margin-bottom: @theme_article-lead-margin-bottom * 2;
+	}
+
+}
+
+
+/* Sub-object `uk-article-divider`
+ ========================================================================== */
+
+.hook-article-divider() { border-width: @theme_article-divider-height; }

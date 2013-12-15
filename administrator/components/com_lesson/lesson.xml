@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1" method="upgrade">
+	<name>课程组件</name>
+	<author>mot Project</author>
+	<creationDate>Sep 2013</creationDate>
+	<copyright>(C) 2013 Open Source Matters. All rights reserved.	</copyright>
+	<license>GNU General Public License version 2 or later; see	LICENSE.txt</license>
+	<authorEmail>446146366@qq.com</authorEmail>
+	<authorUrl>www.onlinelean.com</authorUrl>
+	<version>3.0.0</version>
+	<description>COM_LESSON_XML_DESCRIPTION</description>
+
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>lesson.xml</filename>
+		<filename>lesson.php</filename>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+	<administration>
+		<menu img="class:newsfeeds">LessonManege</menu>
+		<files folder="admin">
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>newsfeeds.php</filename>
+			<folder>controllers</folder>
+			<folder>elements</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+	</administration>
+
+</extension>

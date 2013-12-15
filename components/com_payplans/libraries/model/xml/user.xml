@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="addressdetails">
+		<field name="address" type="textarea" label="COM_PAYPLANS_USER_EDIT_USER_ADDRESS" />
+		<field name="state" type="text" label="COM_PAYPLANS_USER_EDIT_USER_STATE" />
+		<field name="city" type="text" label="COM_PAYPLANS_USER_EDIT_USER_CITY" />
+		<field name="country" type="xicountry" label="COM_PAYPLANS_USER_EDIT_USER_COUNTRY" />
+		<field name="zipcode" type="text" label="COM_PAYPLANS_USER_EDIT_USER_ZIPCODE" />
+	</fieldset>
+ <fields name="params">
+	<fieldset name="params">
+		<field					
+			name="user_notes"	
+			label="COM_PAYPLANS_USER_PREFERENCE_NOTES_LABEL"
+			description="COM_PAYPLANS_USER_PREFERENCE_NOTES_DESC"
+			type="textarea"
+			rows="3" cols="30"
+			default=""
+			/>
+
+	</fieldset>
+ </fields>
+</form>

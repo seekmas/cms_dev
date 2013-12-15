@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<name>Upgrade</name>
+	<author>JoomlaXi.com</author>
+	<authorEmail>shyam@joomlaxi.com</authorEmail>
+	<authorUrl>http://www.joomlaxi.com</authorUrl>
+	<copyright>2009 JoomlaXi.com</copyright>
+	<description>This app can be used to upgrade the current plan(s) of the user to 
+	some other higher plan(s).&lt;br/&gt; &lt;br/&gt;
+	Reference Link: &lt;a href="http://www.jpayplans.com/app-ville/item/upgrade.html?category_id=96" target="_blank" &gt; Upgrade  &lt;/a&gt;</description>
+	<icon>upgrade.png</icon>
+    <tags>core</tags>
+	<help>
+	</help>
+	<fields name="app_params">
+	<fieldset name="app_params">
+		<field name="upgrade_to" type="plans" label="COM_PAYPLANS_APP_UPGRADE_UPGRADE_TO_LABEL"
+			default="" description="COM_PAYPLANS_APP_UPGRADE_UPGRADE_TO_DESC" multiple="true"/>
+		<field 	name="willTrialApply" 
+				default="always" 
+				type="radio" 
+				class="btn-group"
+				label="COM_PAYPLANS_APP_UPGRADE_IS_TRIAL_ALLOWED_LABEL"
+				description="COM_PAYPLANS_APP_DISCOUNT_IS_TRIAL_ALLOWED_DESC">
+				<option value="always">COM_PAYPLANS_APP_UPGRADE_ALWAYS_ALLOWED</option>
+			    <option value="never">COM_PAYPLANS_APP_UPGRADE_NEVER_ALLOWED</option>
+		</field>
+		
+		</fieldset>
+		</fields>
+</config>

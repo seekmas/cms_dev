@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<form>
+<!-- <fields name="settings">-->
+	<fieldset name="features">
+		<field	
+			name="registrationType"		
+			label="COM_PAYPLANS_REGISTRATION_TYPE_LABEL"
+			description="COM_PAYPLANS_REGISTRATION_TYPE_DESC"
+			type="registrationtype"
+			default="auto"
+			size="40"
+			/>
+		
+		<field name="accessLoginBlock" default="1" type="radio" label="COM_PAYPLANS_CONFIG_ACCESS_BLOCK_NON_SUBSCRIBERS"
+			description="COM_PAYPLANS_CONFIG_ACCESS_BLOCK_NON_SUBSCRIBERS_DESC" class="btn-group">
+			<option value="0">COM_PAYPLANS_NO</option>
+		    <option value="1">COM_PAYPLANS_YES</option>
+		</field>
+		
+		<field 	name="useGroupsForPlan" 
+				default="0" 
+				type="radio" 
+				label="COM_PAYPLANS_CONFIG_USE_GROUPS_FOR_PLAN"
+				description="COM_PAYPLANS_CONFIG_USE_GROUPS_FOR_PLAN_DESC" class="btn-group">
+				<option value="0">COM_PAYPLANS_NO</option>
+			    <option value="1">COM_PAYPLANS_YES</option>
+		</field>
+		
+		<field 	name="walletRechargeAllowed" 
+				default="0" 
+				type="radio" 
+				label="COM_PAYPLANS_CONFIG_WALLET_WALLET_RECHARGE_ALLOWED"
+				description="COM_PAYPLANS_CONFIG_WALLET_WALLET_RECHARGE_ALLOWED_DESC" class="btn-group">
+				<option value="0">COM_PAYPLANS_NO</option>
+			    <option value="1">COM_PAYPLANS_YES</option>
+		</field>
+
+		<field	name="enableDiscount" 	
+				default="1" 
+				type="radio"  
+				label="COM_PAYPLANS_CONFIG_ENABLE_DISCOUNT"  
+				description="COM_PAYPLANS_CONFIG_ENABLE_DISCOUNT_DESC" class="btn-group">
+				<option value="0">COM_PAYPLANS_NO</option>
+			    <option value="1">COM_PAYPLANS_YES</option>
+	   	</field>
+	</fieldset>
+
+	<fieldset name="localization">
+	
+		<field	
+			name="date_format"	
+			label="COM_PAYPLANS_DATE_FORMAT_LABEL"
+			description="COM_PAYPLANS_DATE_FORMAT_LABEL_DESC"
+			type="list"
+			>
+				   <option value="%Y-%m-%d"></option>
+				   
+				   <option value="%m/%d/%Y"></option>
+				   <option value="%m-%d-%Y"></option>
+				   
+				   	<option value="%d/%m/%Y"></option>
+					<option value="%d-%m-%Y"></option>
+					
+					<option value="%d %B %y"></option>
+					<option value="%d %B %Y"></option>
+					
+					<option value="%B %d, %y"></option>
+					<option value="%B %d, %Y"></option>
+					
+		</field>
+			
+		<field	
+			name="currency"		
+			label="COM_PAYPLANS_CONFIG_CURRENCY_LABEL"
+			description="COM_PAYPLANS_CONFIG_CURRENCY_DESC"
+			type="currency"
+			default="USD"
+			/>
+			
+		<field	
+			name="show_currency_as"		
+			label="COM_PAYPLANS_CONFIG_SHOW_CURRENCY_AS_LABEL"
+			description="COM_PAYPLANS_CONFIG_SHOW_CURRENCY_AS_DESC"
+			type="radio"
+			default="fullname" class="btn-group">
+			<option value="fullname">COM_PAYPLANS_CONFIG_SHOW_CURRENCY_AS_FULLNAME</option>
+			<option value="isocode">COM_PAYPLANS_CONFIG_SHOW_CURRENCY_AS_ISOCODE</option>
+			<option value="symbol">COM_PAYPLANS_CONFIG_SHOW_CURRENCY_AS_SYMBOL</option>
+		</field>
+		
+		<field	
+			name="show_currency_at"		
+			label="COM_PAYPLANS_CONFIG_SHOW_CURRENCY_AT_LABEL"
+			description="COM_PAYPLANS_CONFIG_SHOW_CURRENCY_AT_DESC"
+			type="radio"
+			default="before" class="btn-group">
+			<option value="before">COM_PAYPLANS_CONFIG_SHOW_CURRENCY_AS_BEFORE</option>
+			<option value="after">COM_PAYPLANS_CONFIG_SHOW_CURRENCY_AT_AFTER</option>
+		</field>
+		
+		<field	
+			name="price_decimal_separator"		
+			label="COM_PAYPLANS_CONFIG_AMOUNT_DECIMAL_SEPARATOR_LABEL"
+			description="COM_PAYPLANS_CONFIG_AMOUNT_DECIMAL_SEPARATOR_DESC"
+			type="radio"
+			default="." class="btn-group">
+			<option value=".">COM_PAYPLANS_CONFIG_AMOUNT_DECIMAL_SEPARATOR_DOT</option>
+			<option value=",">COM_PAYPLANS_CONFIG_AMOUNT_DECIMAL_SEPARATOR_COMMA</option>
+		</field>
+	
+		<field name="fractionDigitCount" default="2" type="list" label="COM_PAYPLANS_CONFIG_FRACTION_DIGIT_COUNT"
+			description="COM_PAYPLANS_CONFIG_FRACTION_DIGIT_COUNT_DESC">
+			<option value="0">COM_PAYPLANS_CONFIG_FRACTION_DIGIT_COUNT_ZERO</option>
+			<option value="1">COM_PAYPLANS_CONFIG_FRACTION_DIGIT_COUNT_ONE</option>
+			<option value="2">COM_PAYPLANS_CONFIG_FRACTION_DIGIT_COUNT_TWO</option>
+			<option value="3">COM_PAYPLANS_CONFIG_FRACTION_DIGIT_COUNT_THREE</option>
+			<option value="4">COM_PAYPLANS_CONFIG_FRACTION_DIGIT_COUNT_FOUR</option>
+			<option value="5">COM_PAYPLANS_CONFIG_FRACTION_DIGIT_COUNT_FIVE</option>
+ 		</field>
+	</fieldset>
+	
+	<fieldset name="advance">
+	    <field	name="allowedMaxPercentDiscount" 	
+				type="text" 	
+				size="10" 
+				default="100"
+				label="COM_PAYPLANS_CONFIG_ALLOWED_MAXIMUM_PERCENT_DISCOUNT"  
+				description="COM_PAYPLANS_CONFIG_ALLOWED_MAXIMUM_PERCENT_DISCOUNT_DESC" 
+				class="number">
+		</field>
+		
+		<field name="https" default="0" type="radio" label="COM_PAYPLANS_CONFIG_HTTPS"
+			description="COM_PAYPLANS_CONFIG_HTTPS_DESC" class="btn-group">
+			<option value="0">COM_PAYPLANS_NO</option>
+		    <option value="1">COM_PAYPLANS_YES</option>
+		</field>
+		
+		<field name="microsubscription" default="0" type="radio" label="COM_PAYPLANS_CONFIG_MICROSUBSCRIPTION"
+			description="COM_PAYPLANS_CONFIG_MICROSUBSCRIPTION_DESC" class="btn-group">
+			<option value="0">COM_PAYPLANS_NO</option>
+		    <option value="1">COM_PAYPLANS_YES</option>
+		</field>
+		
+		<field  name="displayExistingSubscribedPlans"
+		        default="1" 
+				type="radio" 
+				label="COM_PAYPLANS_CONFIG_DISPLAY_EXISTING_SUBSCRIBED_PLANS"
+				description="COM_PAYPLANS_CONFIG_DISPLAY_EXISTING_SUBSCRIBED_PLANS_DESC" class="btn-group">
+				<option value="0">COM_PAYPLANS_NO</option>
+			    <option value="1">COM_PAYPLANS_YES</option>
+		</field>
+		
+		<field	name="multipleDiscount" 	
+				type="radio" 	
+				label="COM_PAYPLANS_CONFIG_MULTIPLE_DISCOUNT_ON_INVOICE"  
+				description="COM_PAYPLANS_CONFIG_MULTIPLE_DISCOUNT_ON_INVOICE_DESC" 
+				default="0" class="btn-group">
+				<option value="0">COM_PAYPLANS_NO</option>
+				<option value="1">COM_PAYPLANS_YES</option>
+	   	</field>
+
+		<field 	name="walletUtilizationAllowed" 
+				default="0" 
+				type="radio" 
+				label="COM_PAYPLANS_CONFIG_WALLET_USE_WALLET_FOR_PAYMENT"
+				description="COM_PAYPLANS_CONFIG_WALLET_USE_WALLET_FOR_PAYMENT_DESC" class="btn-group">
+				<option value="0">COM_PAYPLANS_NO</option>
+			    <option value="1">COM_PAYPLANS_YES</option>
+		</field>
+		
+		<field 	name="walletForRecurringAllowed" 
+				default="0" 
+				type="radio" 
+				label="COM_PAYPLANS_CONFIG_WALLET_WALLET_UTILIZATION_FOR_RECURRING_ALLOWED"
+				description="COM_PAYPLANS_CONFIG_WALLET_WALLET_UTILIZATION_FOR_RECURRING_ALLOWED_DESC" class="btn-group">
+				<option value="0">COM_PAYPLANS_NO</option>
+			    <option value="1">COM_PAYPLANS_YES</option>
+		</field>
+	</fieldset>
+
+	<fieldset name="expert">
+		<field name="cronFrequency" type="radio" default="900"
+			label="COM_PAYPLANS_CONFIG_CRON_FREQUENCY_LABEL" description="COM_PAYPLANS_CONFIG_CRON_FREQUENCY_DESC" class="btn-group">
+			<option value="3600">COM_PAYPLANS_CONFIG_CRON_FREQUENCY_LOWEST</option>
+			<option value="1800">COM_PAYPLANS_CONFIG_CRON_FREQUENCY_LOW</option>
+			<option value="900">COM_PAYPLANS_CONFIG_CRON_FREQUENCY_NORMAL</option>
+			<option value="300">COM_PAYPLANS_CONFIG_CRON_FREQUENCY_HIGH</option>
+		</field>
+		<field name="cronAcessTime" type="hidden" default="0"
+			label="COM_PAYPLANS_CONFIG_CRON_ACCESSTIME_LABEL" description="COM_PAYPLANS_CONFIG_CRON_ACCESSTIME_DESC">
+		</field>
+		
+		<field	name="expert_encryption_key"	
+				label="COM_PAYPLANS_CONFIG_ENCRYPTION_KEY_LABEL" 
+				description="COM_PAYPLANS_CONFIG_ENCRYPTION_KEY_DESC"
+				type="text" size="40"
+				default="AABBCCDD" />
+		
+		
+		
+				
+		<field name="blockLogging" 
+			   type="xifbselect" 
+			   label="COM_PAYPLANS_CONFIG_BLOCK_LOGGING_LABEL" 
+			   description="COM_PAYPLANS_CONFIG_BLOCK_LOGGING_DESC"
+                           multiple="true"
+			   default="">
+			<option value="plan">COM_PAYPLANS_CONFIG_BLOCK_LOGGING_FOR_PLAN</option>
+			<option value="order">COM_PAYPLANS_CONFIG_BLOCK_LOGGING_FOR_ORDER</option>
+			<option value="subscription">COM_PAYPLANS_CONFIG_BLOCK_LOGGING_FOR_SUBSCRIPTION</option>
+			<option value="payment">COM_PAYPLANS_CONFIG_BLOCK_LOGGING_FOR_PAYMENT</option>
+			<option value="app">COM_PAYPLANS_CONFIG_BLOCK_LOGGING_FOR_APP</option>
+			<option value="config">COM_PAYPLANS_CONFIG_BLOCK_LOGGING_FOR_CONFIG</option>
+			<option value="cron">COM_PAYPLANS_CONFIG_BLOCK_LOGGING_FOR_CRON</option>
+			<option value="group">COM_PAYPLANS_CONFIG_BLOCK_LOGGING_FOR_GROUP</option>
+		</field>
+	
+		<field	name="expert_use_jquery"   label="COM_PAYPLANS_CONFIG_SYSTEM_USE_JQUERY_LABEL" description="COM_PAYPLANS_CONFIG_SYSTEM_USE_JQUERY_DESC"
+				type="radio" default="1" class="btn-group">
+					<option value="0">COM_PAYPLANS_NO</option>
+		          	<option value="1">COM_PAYPLANS_YES</option>
+		</field>
+			
+		<field	name="expert_use_bootstrap_jquery"	label="COM_PAYPLANS_CONFIG_SYSTEM_USE_BOOTSTRAP_JQUERY_LABEL" description="COM_PAYPLANS_CONFIG_SYSTEM_USE_BOOTSTRAP_JQUERY_DESC"
+				type="radio" default="1" class="btn-group">
+					<option value="0">COM_PAYPLANS_NO</option>
+		          	<option value="1">COM_PAYPLANS_YES</option>
+		</field>
+		
+		<field	name="expert_use_bootstrap_css"	label="COM_PAYPLANS_CONFIG_SYSTEM_USE_BOOTSTRAP_CSS_LABEL" description="COM_PAYPLANS_CONFIG_SYSTEM_USE_BOOTSTRAP_CSS_DESC"
+				type="radio" default="1" class="btn-group">
+					<option value="0">COM_PAYPLANS_NO</option>
+		          	<option value="1">COM_PAYPLANS_YES</option>
+		</field>
+		
+		<field	name="expert_useminjs"	label="COM_PAYPLANS_CONFIG_SYSTEM_USE_MINIFIED_JS_LABEL" description="COM_PAYPLANS_CONFIG_SYSTEM_USE_MINIFIED_JS_DESC"
+				type="radio" default="0" class="btn-group">
+					<option value="0">COM_PAYPLANS_NO</option>
+		          	<option value="1">COM_PAYPLANS_YES</option>
+			</field>	
+				
+		<field	name="expert_run_automatic_cron"	
+				label="COM_PAYPLANS_CONFIG_RUN_AUTOMATIC_CRON_LABEL" 
+				description="COM_PAYPLANS_CONFIG_RUN_AUTOMATIC_CRON_DESC"
+				type="radio" default="1" class="btn-group">
+				<option value="0">COM_PAYPLANS_NO</option>
+		        <option value="1">COM_PAYPLANS_YES</option>
+		</field>
+		
+		<field	name="expert_wait_for_payment"	
+				label="COM_PAYPLANS_CONFIG_WAIT_FOR_PAYMENT_LABEL" 
+				description="COM_PAYPLANS_CONFIG_WAIT_FOR_PAYMENT_DESC"
+				type="timer" 
+				default="000001000000" />
+			
+		<field name="expert_auto_delete"
+				label="COM_PAYPLANS_CONFIG_AUTO_DELETE_DUMMY_LABEL"
+				description="COM_PAYPLANS_CONFIG_AUTO_DELETE_DUMMY_DESC"
+				type="list"
+				default="NEVER">
+				<option value="NEVER">COM_PAYPLANS_CONFIG_AUTO_DELETE_DUMMY_OPTION_Never</option>
+				<option value="000001000000">COM_PAYPLANS_CONFIG_AUTO_DELETE_DUMMY_OPTION_ONE_DAY</option>
+				<option value="000003000000">COM_PAYPLANS_CONFIG_AUTO_DELETE_DUMMY_OPTION_THREE_DAYS</option>
+				<option value="000007000000">COM_PAYPLANS_CONFIG_AUTO_DELETE_DUMMY_OPTION_SEVEN_DAYS</option>
+				<option value="000015000000">COM_PAYPLANS_CONFIG_AUTO_DELETE_DUMMY_OPTION_FIFTEEN_DAYS</option>
+				<option value="000100000000">COM_PAYPLANS_CONFIG_AUTO_DELETE_DUMMY_OPTION_ONE_MONTH</option>
+				<option value="000200000000">COM_PAYPLANS_CONFIG_AUTO_DELETE_DUMMY_OPTION_TWO_MONTH</option>
+				<option value="000300000000">COM_PAYPLANS_CONFIG_AUTO_DELETE_DUMMY_OPTION_THREE_MONTH</option>
+				<option value="000600000000">COM_PAYPLANS_CONFIG_AUTO_DELETE_DUMMY_OPTION_SIX_MONTH</option>
+				<option value="010000000000">COM_PAYPLANS_CONFIG_AUTO_DELETE_DUMMY_OPTION_ONE_YEAR</option>
+		</field>
+	</fieldset>
+<!--  </fields>-->
+
+<!--  <fields name="customization">-->
+	<fieldset name="template">	
+			
+			<field
+				name="rtl_support" label="COM_PAYPLANS_CONFIG_CUSTOMIZATION_RTL_SUPPORT_LABEL"
+				description="COM_PAYPLANS_CONFIG_CUSTOMIZATION_RTL_SUPPORT_DESC"
+				type="radio" default="0" class="btn-group">
+				<option value="0">COM_PAYPLANS_NO</option>
+				<option value="1">COM_PAYPLANS_YES</option>
+			</field>
+			
+			<field 
+				name="layout" label="COM_PAYPLANS_CONFIG_CUSTOMIZATION_TEMPLATE_LAYOUT_LABEL"
+				description="COM_PAYPLANS_CONFIG_CUSTOMIZATION_TEMPLATE_LAYOUT_DESC" 
+				type="parammanipulator" 
+				default="horizontal">
+		    <option value="horizontal" params="row_plan_counter">COM_PAYPLANS_CONFIG_CUSTOMIZATION_TEMPLATE_LAYOUT_HORIZONTAL</option>
+			<option value="vertical">COM_PAYPLANS_CONFIG_CUSTOMIZATION_TEMPLATE_LAYOUT_VERTICAL</option>
+ 			</field>
+ 			
+ 			<field name="row_plan_counter" type="text" default="3" 
+ 			label="COM_PAYPLANS_CONFIG_CUSTOMIZATION_PLAN_ROW_LABEL" description="COM_PAYPLANS_CONFIG_CUSTOMIZATION_PLAN_ROW_DESC"
+			/>
+		</fieldset>
+	
+	<fieldset name="invoice">
+		<field	
+			name="companyName"		
+			label="COM_PAYPLANS_CONFIG_CUSTOMIZATION_INVOICE_COMPANY_NAME_LABEL"
+			description="COM_PAYPLANS_CONFIG_CUSTOMIZATION_INVOICE_COMPANY_NAME_DESC"
+			type="text"
+			size="40"
+			/>	
+			
+		<field	
+			name="companyAddress"		
+			label="COM_PAYPLANS_CONFIG_CUSTOMIZATION_INVOICE_COMPANY_ADDRESS_LABEL"
+			description="COM_PAYPLANS_CONFIG_CUSTOMIZATION_INVOICE_COMPANY_ADDRESS_DESC"
+			type="text"
+			size="40"
+			/>	
+			
+		<field	
+			name="companyCityCountry"		
+			label="COM_PAYPLANS_CONFIG_CUSTOMIZATION_INVOICE_COMPANY_CITY_COUNTRY_LABEL"
+			description="COM_PAYPLANS_CONFIG_CUSTOMIZATION_INVOICE_COMPANY_CITY_COUNTRY_DESC"
+			type="text"
+			size="40"
+			/>	
+
+		<field	
+			name="companyPhone"		
+			label="COM_PAYPLANS_CONFIG_CUSTOMIZATION_INVOICE_COMPANY_PHONE_LABEL"
+			description="COM_PAYPLANS_CONFIG_CUSTOMIZATION_INVOICE_COMPANY_PHONE_DESC"
+			type="text"
+			size="40"
+			/>
+		
+		
+		<field name="add_token"
+			type="textarea"
+			label="COM_PAYPLANS_CONFIG_CUSTOMIZATION_ADD_TOKEN_LABEL"
+			description="COM_PAYPLANS_CONFIG_CUSTOMIZATION_ADD_TOKEN_DESC"
+			row="8"
+			cols="55"
+			/>
+			
+		<field  name="rewriter" 
+				type="rewriter" 
+				label="COM_PAYPLANS_CONFIG_CUSTOMIZATION_SELECT_TOKEN_LABEL"
+				description="COM_PAYPLANS_CONFIG_CUSTOMIZATION_SELECT_TOKEN_DESC" />
+		
+		<field	
+			name="companyLogo"		
+			label="COM_PAYPLANS_CONFIG_CUSTOMIZATION_INVOICE_COMPANY_LOGO_LABEL"
+			description="COM_PAYPLANS_CONFIG_CUSTOMIZATION_INVOICE_COMPANY_LOGO_DESC"
+			type="xiuploadfile"
+			/>
+		
+		<field	
+			name="note"		
+			label="COM_PAYPLANS_CONFIG_CUSTOMIZATION_INVOICE_NOTE"
+			description="COM_PAYPLANS_CONFIG_CUSTOMIZATION_INVOICE_NOTE_DESC"
+			type="textarea"
+			rows="2"
+			cols="60"
+			/>
+	</fieldset>
+		
+	<fieldset name="dashboard">
+			<field	
+				name="walletWidget"		
+				label="COM_PAYPLANS_CONFIG_CUSTOMIZATION_DASHBOARD_DISPLAY_WALLET_AMOUNT"
+				description="COM_PAYPLANS_CONFIG_CUSTOMIZATION_DASHBOARD_DISPLAY_WALLET_AMOUNT_DESC"
+				type="radio"
+				default="1" class="btn-group">
+				<option value="0">COM_PAYPLANS_NO</option>
+		        <option value="1">COM_PAYPLANS_YES</option>		
+			</field>
+			
+			<field name="subscription_status" label="COM_PAYPLANS_CONFIG_CUSTOMIZATION_DASHBOARD_ORDER_STATUS" 
+			description="COM_PAYPLANS_CONFIG_CUSTOMIZATION_DASHBOARD_ORDER_STATUS_DESC" type="xistatus" entity="subscription" multiple="true" default="0|1601|1602|1603"/>	
+	</fieldset>
+<!--   </fields>-->
+</form>
+</config>

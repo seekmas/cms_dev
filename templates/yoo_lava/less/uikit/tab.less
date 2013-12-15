@@ -1,0 +1,64 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Tab component
+ *
+ ========================================================================== */
+
+
+/* Component
+ ========================================================================== */
+
+/*
+ * Items
+ */
+
+.hook-tab() {
+	border-top-left-radius: @theme_global-small-border-radius;
+	border-top-right-radius: @theme_global-small-border-radius;
+}
+
+/* Hover */
+.hook-tab-hover() {}
+
+/* Active */
+.hook-tab-active() {}
+
+/* Disabled */
+.hook-tab-disabled() {}
+
+/*
+ * Tab Dropdown
+ */
+
+.uk-tab .uk-dropdown { 
+	margin-top: @theme_tab-dropdown-margin-top;
+	background: @theme_tab-dropdown-background;
+}
+
+
+/* Modifier: `uk-tab-bottom'
+ ========================================================================== */
+
+.uk-tab-bottom > li > a { border-radius: 0 0 @theme_global-small-border-radius @theme_global-small-border-radius; }
+
+
+/* Modifier: `uk-tab-left', `uk-tab-right'
+ ========================================================================== */
+
+/* Only tablets and desktops */
+@media (min-width: @breakpoint-small) {
+
+	/*
+	 * Modifier: `uk-tab-left'
+	 */
+
+	.uk-tab-left > li > a { border-radius: @theme_global-small-border-radius 0 0 @theme_global-small-border-radius; }
+
+	/*
+	 * Modifier: `uk-tab-right'
+	 */
+
+	.uk-tab-right > li > a { border-radius: 0 @theme_global-small-border-radius @theme_global-small-border-radius 0; }
+
+}

@@ -1,0 +1,1065 @@
+/**
+* @copyright	Copyright (C) 2009-2012 Ready Bytes Software Labs Pvt. Ltd. All rights reserved.
+* @license		GNU/GPL, see LICENSE.php
+* @package		PayPlans
+* @contact 		shyam@readybytes.in
+*/
+
+/* Overrided payplans.css styles */
+.payplans .pp-component{
+	width: 100%;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+
+.payplans .pp-mouse-hover:hover{
+	background: transparent;
+	background: #F0F0EE;
+}
+
+.payplans .pp-cssbutton {
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	vertical-align: baseline;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.payplans .pp-cssbutton a {
+	color: #606060;
+	text-decoration: none;
+}
+
+.payplans .pp-cssbutton:hover {
+	text-decoration: none;
+}
+
+.payplans .pp-cssbutton:active {
+	position: relative;
+	top: 1px;
+}
+
+.payplans .pp-cssbutton.white {
+	color: #606060;
+	border: solid 1px #b7b7b7;
+	background: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff),to(#ededed) );
+	background: -moz-linear-gradient(top, #fff, #ededed);
+	filter: progid : DXImageTransform.Microsoft.gradient( startColorstr = '#ffffff', endColorstr =   '#ededed' );
+}
+
+.payplans .pp-cssbutton:hover {
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff),to(#dcdcdc) );
+	background: -moz-linear-gradient(top, #fff, #dcdcdc);
+	filter: progid :   DXImageTransform.Microsoft.gradient (startColorstr= '#ffffff', endColorstr =   '#dcdcdc' );
+}
+
+.payplans .pp-cssbutton:active {
+	color: #999;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed),to(#fff) );
+	background: -moz-linear-gradient(top, #ededed, #fff);
+	filter: progid :   DXImageTransform.Microsoft.gradient (   startColorstr= '#ededed', endColorstr =   '#ffffff' );
+}
+
+/*---------------------------------------------------
+	All pages : Blank grid
+	pp-component > pp-admin-blankgrid
+---------------------------------------------------- */
+.payplans .pp-admin-blankgrid{
+}
+
+.pp-admin-blankgrid .pp-message{
+	color: #aaa;
+	min-height: 200px;
+	padding-left: 20px;
+}
+
+.pp-admin-blankgrid .pp-message .pp-title{
+	margin-top: 50px;
+	font-weight: bold;
+}
+
+.pp-admin-blankgrid .pp-message .pp-description{
+	margin-top: 10px;
+	font-size : 1.3em;
+	line-height : 1.5em;
+}
+
+	/* Blank right panes */
+.payplans .pp-admin-blankpane {
+	text-align: center;
+	color: #333333;
+}
+
+.pp-admin-blankpane .pp-title{
+	margin-top: 5px;
+	font-size : 1.2em;
+}
+
+.pp-admin-blankpane .pp-description{
+	margin-top: 2px;
+	font-size : 0.9em;
+}
+
+/*---------------------------------------------------
+	Dashboard : 
+	pp-component > pp-dashboard-display
+---------------------------------------------------- */
+.pp-dashboard-display .pp-left{
+    overflow: hidden;
+}
+
+
+.pp-dashboard-display .pp-right {
+	overflow: hidden;
+}
+
+
+/*---------------------------------------------------
+	SEARCH Popup : module drop down
+	payplans > pp-admin-search
+	- button is displayed by joomla
+	- html is displayed by module
+	- search output is returned by component 	
+---------------------------------------------------- */
+
+.pp-admin-search .pp-inner{
+	margin: 5px;
+	background-color:#EEEEEE;
+    z-index:100;
+   	padding: 18px;
+    color:#789;
+    
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	-moz-box-shadow: 0 2px 5px #AAAAAA; /* FF3.5+ */
+	-webkit-box-shadow: 0 2px 5px #AAAAAA; /* Saf3.0+, Chrome */
+	box-shadow: 0 2px 5px #AAAAAA; 		/* Opera 10.5, IE 9.0 */
+}
+
+.pp-admin-search .pp-inner input[type=text]{
+    display:block;
+    font-size:13px;
+    padding:5px;
+    width: 60% !important;
+        
+    border:1px solid #ACE;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius: 4px;
+}
+
+	/* search results */
+.pp-admin-search .pp-search-results .pp-result {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-radius: 5px 5px 5px 5px;
+    color: #606060;
+    float: left;
+    line-height: 20px;
+    margin: 0 2px 2px 0;
+}
+
+.pp-admin-search .pp-search-results .pp-result a:hover {
+	background: #515153;
+	color	:#ffffff;
+}
+
+	/* search message */
+.pp-admin-search .pp-search-results .pp-message{
+	float: left;
+	font: 13px/100% Arial, Helvetica, sans-serif;
+}
+
+/*---------------------------------------------------
+	App Screen : 
+	payplans > pp-app-select
+	payplans > pp-app-edit
+---------------------------------------------------- */
+.payplans .pp-app-select{
+
+}
+
+.pp-app-select .image-app{
+    height: 48px;
+	display :inline-block;
+ 	vertical-align: middle;
+}
+
+ 
+.pp-app-select .button-app{
+    float: left;
+    height: 48px;
+    width: 220px;
+	font-size: 14px;
+	display :inline-block;
+}
+
+.pp-app-select .pp-app{
+	margin-top:2px;
+	margin-bottom: 2px;
+}
+
+.pp-app-select .pp-app img.pp-icon{
+	width : 48px;
+	height: 48px;
+    float: left;
+    margin-right: 2px;
+   	display: table-cell;
+ 	vertical-align: middle; 
+}
+
+.pp-app-select  .pp-app .pp-name {
+	float:left;
+	width:160px;
+	text-align: left;
+	padding-left : 10px;
+}
+
+.pp-app-select .pp-app .pp-name td{
+	vertical-align:middle;
+	height: 48px;
+}
+
+.pp-app-select .pp-appdetails {
+	margin-top: 5px;
+}
+
+/*---------------------------------------------------
+	Dashboard Setup Rules module 
+---------------------------------------------------- */
+
+.mod-setup {
+	line-height: 150%;
+}
+
+.mod-setup .pp-rule {
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	line-height: 2em;
+}
+
+.mod-setup .pp-error.pp-done,
+.mod-setup .pp-warning.pp-done,
+.mod-setup .pp-information.pp-done{
+	background-image: url(../images/setup/right.png);
+}
+
+.mod-setup .pp-error.pp-required {
+	background-image: url(../images/setup/error.png);
+}
+
+.mod-setup .pp-warning.pp-required {
+	background-image: url(../images/setup/warn.png);
+}
+
+.mod-setup .pp-information.pp-required {
+	background-image: url(../images/setup/info.png);
+}
+
+/*---------------------------------------------------
+	Dashboard Migration Module & Process 
+	module : .pp-module-migration
+---------------------------------------------------- */
+.pp-module-migration .pp-icon {
+	float: left;
+	height: 70px;
+	width: 60px;
+}
+
+.pp-module-migration .pp-icon img {
+	width: 48px;
+	height: 48px;
+}
+
+.payplans .pp-migrate-pre {
+}
+
+.payplans .pp-migrate-pre-warning {
+	font-size: 16px;
+	text-align: center;
+	color: #ff0000;
+	margin-top: 30px;
+	line-height: 20px;
+}
+
+.payplans .pp-pre-instruction {
+    margin-left: 60px;
+    min-height:100px;
+}
+
+.payplans .pp-migrate-pre-estimated-records,
+.payplans .pp-migrate-pre-estimated-time,
+.payplans .pp-migrate-started {
+	font-size: 12px;
+	color: #666;
+}
+
+.payplans .pp-migrate-progress-message {
+	text-align: center;
+	font-size: 12px;
+	margin-bottom: 10px;
+	color: #666;
+}
+
+.payplans .pp-migrate-progress-count {
+	text-align: center;
+	margin-top: 15px;
+	font-size: 14px;
+	color: #00343F;
+}
+
+.payplans .pp-migrate-post-thanks {
+	font-size: 16px;
+	color: #00343f;
+	text-align: center;
+	margin-top: 50px;
+}
+
+
+/*---------------------------------------------------
+	Plan Edit page
+---------------------------------------------------- */
+.payplans .core-app-param-value-wrapper {
+	margin-top		: 1px;
+	overflow		: hidden;
+	background-color: #FFFFFF;
+    border			: 1px solid #CCCCCC;
+}
+
+.payplans .core-app-param-value {
+
+    border					: 1px solid #F0F0F0;
+    border-radius			: 16px;
+    -moz-border-radius		: 16px;
+	-webkit-border-radius	: 16px;
+    color					: #000000;
+    background-color		: #F9F9F9;
+    cursor		: default;
+    float		: left;
+    overflow	: hidden;
+	font-family	: "Helvetica Neue",Helvetica,Arial,sans-serif;   
+    font-size	: 11px;
+    height		: auto !important;
+    margin		: 3px;
+    padding		: 1px 10px;
+}
+
+
+/*---------------------------------------------------
+	Subscription page
+	.pp-subscription-extend
+---------------------------------------------------- */
+.payplans .pp-subscription-extend{
+
+}
+
+.payplans .pp-subscription-extend .pp-message{
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #999;
+}
+
+.payplans .pp-subscription-extend .pp-message ul{
+	font-size: 0.8em;
+	font-weight: normal;
+}
+
+/*.payplans .pp-subscription-extend .pp-message ul li{*/
+/*	margin-top: 5px;*/
+/*}*/
+
+.payplans .pp-subscription-extend .pp-time{
+	margin-left: 10px;;
+}
+
+
+
+
+
+
+/** Order Screen */
+span.order-grid-add-subscription-selector {
+	padding: 5px;
+	margin-top: 2px;
+	color: #000;
+	max-width: 145px;
+	text-align: center;
+}
+
+div.order-edit-add-subscription,div.order-edit-add-payment {
+	float: right;
+	margin-bottom: 3px;
+}
+
+div.order-grid-add-subscription a,div.order-grid-add-payment a,div.order-edit-add-subscription a,div.order-edit-add-payment a
+	{
+	color: #000;
+}
+
+div.order-edit-display-payment,.order-edit-display-subscription, .pp-order-edit-invoice ,.pp-invoice-edit-transaction {
+	clear: both;
+}
+
+/** Progress Bar **/
+/* progress bar base */
+.progress-bar {
+	width: 80%;
+	height: 24px;
+	padding: 4px;
+	margin: auto;
+	background-color: #191919;
+	box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+	-webkit-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+	-moz-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+}
+
+/* code for the inner (colorful) part of the bar */
+.progress-bar-inner {
+	display: block;
+	width: 1%;
+	height: 24px;
+	background: #999;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+}
+
+.orange {
+	background: #f90;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f90), to(#f60) );
+	background: -moz-linear-gradient(top, #f90, #f60);
+}
+
+/*----------------------------------------------------------
+	user plan selection pop up layout
+----------------------------------------------------------*/
+.payplans .pp-user-selectplan .pp-user-selectplan-message{
+	font-size: 1.4em;
+	font-style: italic;
+}
+
+/*---------- Migration Module ----------*/
+
+/* logs & recurrence*/
+
+.payplans .pp-recurr-validation .pp-recurr-validation-value
+{
+	border-top: 1px solid #CFCFCF;
+}	
+
+#payplans .logs-grid-detail {
+	background: url("./images/log_detail.png") no-repeat;
+	width:16px;
+	height: 16px;
+}
+
+#payplans .logs-grid-detail:hover {
+	text-decoration: none;
+}
+
+ 
+/* mod-payplans-chart*/
+#payplans .mod-payplans-chart-form
+{
+	border : 1px dashed #ccc;
+	clear: both;
+	background : #eee;
+	margin: 6px 2px 2px 2px;	
+    overflow: hidden;
+    padding: 5px;
+    width:98%;
+}
+
+#payplans .mod-payplans-chart-global
+{
+	float:left;
+}
+
+#payplans .mod-payplans-chart-specific
+{
+	float:right;
+}
+
+#payplans .mod-payplans-chart-filter
+{
+	float:left;
+}
+
+#payplans .chart-filter-title{
+	font-weight: bold;
+}
+
+
+/* Installation Success Screen */
+
+.payplans .pp-install-success .installnote {
+	width: 92%;
+	margin: 6px 24px;
+}
+
+.payplans .pp-install-success .installnote h3 {
+	padding: 0 12px;
+	text-align:center;
+}
+
+.payplans .pp-install-success .installnote p {
+	padding: 0 50px;
+}
+
+.payplans .pp-install-success a{
+background: none repeat scroll 0 0;
+border: 0px solid #E05F26;
+padding: 5px;
+line-height:20px;
+cursor:pointer;
+letter-spacing:1px;
+text-decoration:none;
+}
+
+
+.payplans .pp-install-success .pplogo{
+background: transparent url("./images/install/payplans-dark.png") no-repeat scroll 50% 50%;
+width:100%;
+height: 68px;
+}
+
+.payplans .pp-install-success .joomla-logo{
+background: url("./images/install/joomla-logo.png") no-repeat scroll 33% 0 transparent;
+height: 14px;
+}
+
+.payplans .pp-install-success .intro-video-iframe {
+width: 375px;
+height: 300px;
+margin: 10px 40px 10px 40px;
+}
+
+
+#install-sample-data-msg{
+font-weight:bold;
+border:1px solid #ffc98f;
+padding:3px;
+background:#FFC98F;
+display:none;
+}
+/* End Installation Success Screen */
+
+/* Payplans Dashboard Statistics */
+
+.payplans .mod-payplans-statistics-global{
+	border-radius: 15px;
+	background: #E1E1E1;
+    height: 100px;
+    font-family: verdana;
+}
+
+.payplans .mod-payplans-statistics-parent{
+	width:33%;
+}
+
+.payplans .mod-payplans-statistics-child-one{
+	font-size: 18px;
+}
+
+.payplans .mod-payplans-statistics-child-two{
+	font-size: 14px;
+	color:#A1A1A1;	
+}
+
+.payplans .mod-payplans-statistics-border{
+	border-left:2px double #CCCCCC;
+	margin-bottom: 5px;
+	height: 90px;
+}
+
+/* End Payplans Dashboard Statistics */
+
+/*-------------------------------------------------------------------
+	Powered by
+---------------------------------------------------------------------*/
+
+.payplans .powered-by{
+	color: #aaa;
+    background-color: #F6F6F6;
+    border-top: 1px dashed #DDDDDD;
+    
+    color: #B0B0B0;
+	background-color: #FAFAFA;
+	border-top: 1px dashed #D6D6D6;
+	
+    clear: both;
+    line-height: 18px;
+    margin-top: 5px;
+    overflow: hidden;
+    text-align: right;
+    padding-right: 5px;
+    
+   	-webkit-border-radius:  0px 0px 5px 5px;
+	-moz-border-radius:    0px 0px 5px 5px;
+	border-radius:    0px 0px 5px 5px;
+}
+
+.payplans .powered-by a{
+	color: #aaa;
+	text-decoration: underline;
+}
+
+.payplans .powered-by a:hover{
+	color: #5598c6;
+}
+
+/*---------------------------------------------------
+	Consistency fixes : for J2.5 
+---------------------------------------------------- */	
+#submenu a:hover, 
+#submenu a.active, 
+#submenu span.nolink.active {
+	background: transparent !important;
+	text-decoration:underline !important;
+}
+		
+.payplans .pp-parameter,
+#element-box div.m {
+    background-color: transparent !important;
+}
+
+.payplans .jgrid span.state {
+	width: 12px;
+	height: 12px;
+}
+
+/* Adminlist grids */
+
+.payplans table.adminlist {
+    background-color: #fff;
+    color: #666;
+    border-spacing: 0px;
+}
+
+.payplans table.adminlist thead {
+    border-bottom: 1px solid #CCC;
+}
+
+
+.payplans table.adminlist thead th {
+    background: #fff;
+    color: #666;
+    border-bottom: 1px solid #CCC;
+    border-left: 0px solid #fff;
+    text-align: left;
+}
+
+.payplans table.adminlist tbody th {
+    font-weight: bold;
+    font-size : 1.0em;
+}
+
+.payplans table.adminlist tbody tr {
+    background-color: #fff;
+}
+
+.payplans table.adminlist tbody tr td {
+    background: #fff;
+    border: 0px solid #fff;
+    height:22px;
+}
+
+.payplans table.adminlist tbody tr.row0:hover td,
+.payplans table.adminlist tbody tr.row1:hover td  {
+    background-color: #F5F5F5;
+}
+
+
+
+.payplans table.adminlist tbody tr.row1 td {
+    background: #F9F9F9;
+    border-top: 0px solid #FFF;
+}
+
+.payplans table.adminlist tfoot tr,
+.payplans table.adminlist tfoot tr td {
+	padding-top : 4px;
+    color: #333;
+}
+
+.payplans table.adminlist tfoot tr td select{
+	float: none !important;
+}
+
+.payplans table.adminlist tfoot td,table.adminlist tfoot th {
+    background-color: #fff;
+    border-top: 1px solid #999;
+}
+
+.payplans table.adminlist td.order {
+    white-space: nowrap;
+    width: 200px;
+}
+
+.payplans table.adminlist td.order span {
+    width: 20px;
+    height: 13px;
+}
+
+.payplans table.adminlist .pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.payplans .default-grid-sno{
+	width : 42px;
+}
+
+.default-grid-chkbox {
+	width: 20px;
+}
+
+.payplans table.adminlist td, 
+.payplans table.adminlist th{
+	padding: 4px;
+}
+
+  /* joomla box-wrapper removed */
+#element-box div.t,
+#element-box div.m,
+#element-box div.b{
+	background:none !important;
+	border : 0px solid  #fff !important;
+}
+
+.payplans .theme-preview-link {
+	cursor: pointer;
+}
+
+.payplans .pp-upgrade-success-msg{
+    text-align:		justify;
+    margin-top:		60px;
+    font-weight:	bold; 
+    width:			100%; 
+    font-size:		1.20em;
+    color: 			#A0A0A3;
+}
+
+
+ .pp-logs-view .pp-parameter a,
+ .pp-logs-view .pp-parameter a:link
+ {
+	color : #404040 !important;
+}
+
+
+/*-------------------------------------------------------------------
+			Backend Dashboard
+---------------------------------------------------------------------*/
+
+.payplans .pp-dashboard-onhover {
+    color: #8A8A8A !important;
+    text-decoration: none;
+}
+
+.payplans .pp-dashboard-onhover:hover {
+ 	color:#0B55C4;
+}
+
+.payplans .pp-invoice-status {
+	background-image: url("images/help.png");
+	width:16px;
+	height: 16px;
+}
+
+.pp-dashboard-changelog-button{
+	 background-image: -moz-linear-gradient(center top , #FFFFFF, #FFFFFF 25%, #E6E6E6);
+    border-color: #CCCCCC #CCCCCC #BBBBBB;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    font-size: 13px;
+    overflow: visible;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	padding: 3px 0 3px 0;
+    text-align: center;
+    border-radius:4px;
+    font-size:11px;
+}
+
+/*
+========================================================
+*/
+
+.payplans .pp-statistics-numeric{
+	border: 1px solid #e4e4e4; 
+	text-align:center;
+	float: left !important; /*required to stop overriding*/
+    margin-left : 0px !important;
+    margin-right : 1% !important;
+    margin-bottom: 10px !important;
+    max-width: 45% !important; 
+    min-width: 125px !important;
+}
+
+.payplans .pp-statistics-numeric .pp-numeric-value{
+	font-size:4em;
+   	color:#808080;
+}
+
+.payplans .pp-statistics-numeric .pp-numeric-image{
+	padding-top: 1.5em;
+	height:90px;
+}	
+
+.payplans .pp-statistics-numeric .pp-numeric-text{
+	color:#BCBABA;
+}
+
+.payplans .pp-statistics-numeric .pp-numeric-stats-column{
+	border-left: 1px solid #e4e4e4; 
+	
+}
+
+svg.pp-linechart-draw{
+	height: 220px;
+	width: 95%;
+}
+
+.payplans .pp-statistics-linechart .pp-linechart-head{
+	border: 1px solid #E4E4E4;
+	border-radius: 6px 6px 0px 0px;
+	height: 250px;
+}
+
+.payplans .pp-statistics-charts{
+	border: 1px solid #E4E4E4;
+	border-radius: 6px 6px 0px 0px;
+}
+
+.payplans .pp-statistics-title{
+	border-bottom: 1px solid #E4E4E4;
+	border-radius: 6px 6px 0px 0px;
+	height:40px;
+	background-color:#f4f4f4;
+}	
+	
+.payplans .pp-statistics-title-text{
+	font-size: 1.4em;
+	margin-top: 0.75em;
+	text-shadow: 0px 1px 1px #999;
+	margin-left: 5px;
+}
+
+.payplans .pp-resource-subscription
+{
+	max-width:180px;
+	word-wrap: break-word;
+}
+
+/*  Dashboard Icons */
+.payplans .pp-statistics-title-icon{
+	width: 25px;
+	margin-left: 10px;
+	height: 25px;
+	margin-top: 0.75em;
+}
+
+.payplans .pp-gap-charts{
+	height:30px; 
+	clear:both;
+}
+
+.payplans .pp-color-black{
+	color: #000;
+	font-size: 1.25em;
+}
+
+.payplans .pp-statistics-block {
+	min-height: 200px;
+	position: relative;
+	overflow: hidden; 
+}
+
+.payplans .pp-statistics-block-content{
+	width : 100%;
+	position: absolute;
+}
+
+.pp-statistics-dates img.calendar{
+	position:absolute;
+	margin: 4px;
+}
+
+.payplans .pp-statistics-dates{
+	margin-top: -16px;	
+}
+
+.payplans .pp-dates-label{
+	font-size: 1.35em; 
+	color: #BAB6B8;
+}
+
+/* For pdf invoice */
+#invoiceForm .pp-gap-bottom05 {
+   margin-bottom: 1.0em;
+}
+
+/*-------------------------------------------------------------------
+				 Toolbar Icons
+---------------------------------------------------------------------*/
+.icon-48-favicon {
+	background-image: url(../images/icons/48/payplans.png);
+}
+
+.icon-48-payplans {
+	background-image: url(../images/icons/48/payplans.png);
+}
+
+.icon-48-xi-dashboard {
+	background-image: url(../images/icons/48/dashboard.png);
+}
+
+.icon-48-xi-config {
+	background-image: url(../images/icons/48/config.png);
+}
+
+.icon-48-xi-plan {
+	background-image: url(../images/icons/48/plan.png);
+}
+
+.icon-48-xi-subscription {
+	background-image: url(../images/icons/48/subscription.png);
+}
+
+.icon-48-xi-app {
+	background-image: url(../images/icons/48/app.png);
+}
+
+.icon-48-xi-order {
+	background-image: url(../images/icons/48/order.png);
+}
+
+.icon-48-xi-payment {
+	background-image: url(../images/icons/48/payment.png);
+}
+
+.icon-48-xi-invoice {
+	background-image: url(../images/icons/48/invoice.png);
+}
+
+.icon-48-xi-modifier {
+	background-image: url(../images/icons/48/modifier.png);
+}
+
+.icon-48-xi-resource {
+	background-image: url(../images/icons/48/resource.png);
+}
+
+.icon-48-xi-transaction {
+	background-image: url(../images/icons/48/transaction.png);
+}
+
+.icon-48-xi-wallet {
+	background-image: url(../images/icons/48/wallet.png);
+}
+
+.icon-48-xi-user {
+	background-image: url(../images/icons/48/user.png);
+}
+
+.icon-48-xi-log {
+	background-image: url(../images/icons/48/log.png);
+}
+
+.icon-48-xi-support {
+	background-image: url(../images/icons/48/support.png);
+}
+
+.icon-48-xi-installation-complete {
+	background-image: url(../images/icons/48/installation-complete.png);
+}
+
+.icon-48-xi-group {
+	background-image: url(../images/icons/48/group.png);
+}
+
+.icon-48-xi-prodiscount {
+	background-image: url(../images/icons/48/prodiscount.png);
+}
+
+.icon-48-xi-reports {
+	background-image: url(../images/icons/48/reports.png);
+}
+
+.icon-48-xi-appmanager {
+	background-image: url(../images/icons/48/appmanager.png);
+}
+
+.icon-48-xi-usedtimemonitor {
+	background-image: url(../images/icons/48/used_time_monitor.png);
+}
+
+.payplans .pp-statistics-errorlog-msg{
+	white-space: nowrap;
+	width: 98%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/*
+.row-fluid [class*="span"] {
+    margin-left: 2.12766%;
+}
+*/
+
+.payplans .row-fluid [class*="span"] {
+    margin-left: 2.12766%;
+}
+
+.payplans select{
+	width:auto ;
+}
+
+.payplans table{
+	width: 100%;
+}
+
+.payplans #area-chart-sales 
+{
+	min-height: 400px;
+}
+
+@media (max-width: 767px) {
+	.payplans #area-chart-revenue 
+	{
+		min-height: 400px;
+	}
+}
+
+/*-----------------------------------------------------------------
+					PayPlans 3.0 Filters
+-------------------------------------------------------------------*/
+
+.payplans .pp-filter-width {
+	width : 90% ! important;
+}
+
+.payplans .pp-filter-gap-top{
+	margin-top : 5px;
+}
+
+.payplans .pp-word-wrap {
+ 	word-wrap: break-word;
+ } 

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<name>Docman</name>
+	<author>JoomlaXi.com</author>
+	<authorEmail>shyam@joomlaxi.com</authorEmail>
+	<authorUrl>http://www.joomlaxi.com</authorUrl>
+	<copyright>2009 JoomlaXi.com</copyright>
+	<description>
+		This app can be used to manage the accessibility of docman groups to the subscribed users based on their subscription status (active, hold and expire).
+		&lt;br/&gt;&lt;br/&gt;
+		Reference Link:&lt;a href="http://www.jpayplans.com/app-ville/item/docman.html?category_id=104" target="_blank" &gt; Docman &lt;/a&gt; 
+	</description>
+	<icon>docman.png</icon>
+    <tags>integration</tags>
+	<help>
+	<![CDATA[
+			<div style="text-align:center">
+			<iframe width="250" height="200"  src="http://www.youtube.com/embed/dVoIxsgT468" frameborder="0" allowfullscreen></iframe>
+			</div>
+	]]>
+	</help>
+	<fields name="app_params">
+	
+	<fieldset name="app_params" addfieldpath="/components/com_payplans/libraries/app/docman/elements">
+	
+		<!-- On Subscription active -->
+		<field type="xispacer" default="COM_PAYPLANS_APP_DOCMAN_ON_STATUS_ACTIVE_DESC"/>
+		
+		<field name="addToGroupOnActive" type="docmangroups" label="COM_PAYPLANS_APP_DOCMAN_ADDTOGROUP_LABEL"
+			default="" description="COM_PAYPLANS_APP_DOCMAN_ADDTOGROUP_DESC" multiple="true"/>
+	
+	
+		<!-- On Subscription hold -->
+		<field  type="xispacer" default="COM_PAYPLANS_APP_DOCMAN_ON_STATUS_HOLD_DESC"/>
+		
+		<field name="addToGroupOnHold" type="docmangroups" label="COM_PAYPLANS_APP_DOCMAN_ADDTOGROUP_LABEL"
+			default="" description="COM_PAYPLANS_APP_DOCMAN_ADDTOGROUP_DESC" multiple="true"/>
+	
+	
+		<!-- On Subscription expire -->
+		<field  type="xispacer" default="COM_PAYPLANS_APP_DOCMAN_ON_STATUS_EXPIRE_DESC"/>
+		
+		<field name="addToGroupOnExpire" type="docmangroups" label="COM_PAYPLANS_APP_DOCMAN_ADDTOGROUP_LABEL"
+			default="" description="COM_PAYPLANS_APP_DOCMAN_ADDTOGROUP_DESC" multiple="true"/>
+	
+	</fieldset>
+</fields>
+</config>

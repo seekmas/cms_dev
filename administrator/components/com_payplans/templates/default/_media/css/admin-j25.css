@@ -1,0 +1,79 @@
+/**
+* @copyright	Copyright (C) 2009-2012 Ready Bytes Software Labs Pvt. Ltd. All rights reserved.
+* @license		GNU/GPL, see LICENSE.php
+* @package		PayPlans
+* @contact 		payplans@readybytes.in
+*/
+
+.payplans .pp-filter-warp input,
+.payplans .pp-filter-warp textarea,
+.payplans .pp-filter-warp select{
+	font-size: 1em;
+
+}
+
+.pp-filter-warp .pp-filter .pp-input label {
+  	font-size: 1em;
+}
+
+/*-------------------------------------------------------------------
+				 Toolbar Icons
+---------------------------------------------------------------------*/
+.icon-32-savenew {
+	background-image: url(../images/icons/savenew.png);
+}
+
+.icon-32-extend {
+	background-image: url(../images/icons/extend.png);
+}
+
+.icon-32-search {
+	background-image: url(../images/icons/search.png);
+}
+
+.icon-16-config{
+	background: url("../images/icons/16/config.png") no-repeat scroll 0 0 transparent !important;
+}
+
+.icon-16-user{
+	background: url("../images/icons/16/user.png") no-repeat scroll 0 0 transparent !important;
+}
+
+.icon-32-upgrade {
+	background-image: url(../images/icons/upgrade.png);
+}
+
+.icon-32-pprefresh {
+	background-image: url(../images/icons/pprefresh.png);
+}
+
+.icon-32-cog {
+	background-image: url(../images/icons/cog.png);
+}
+
+.icon-32-credential {
+	background-image: url(../images/icons/credential.png);
+}
+
+.pp-admin-blankgrid .pp-message .pp-title {
+	font-size : 3.0em;
+}
+
+.pp-app-block-content-name {
+	font-color : #3396C3;
+	font-size : 1.5em;
+}
+
+.pp-app-block-content-type{
+	font-size : .9em;
+}
+
+.pp-app-block-content-desc {
+	font-size : 1em;
+}
+
+.payplans-wrap fieldset label
+{
+	float:none !important;
+}
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <name>Paypal</name>
+    <version>0.0.101</version>
+    <creationDate>Sep 2010</creationDate>
+    <author>JoomlaXi.com</author>
+    <authorEmail>shyam@joomlaxi.com</authorEmail>
+    <authorUrl>http://www.joomlaxi.com</authorUrl>
+    <copyright>2009 JoomlaXi.com</copyright>
+    <copyrightHolder>JoomlaXi.com</copyrightHolder>
+    <license>GNU General Public License v2</license>
+    <icon>paypal.png</icon>
+    <tags>payment</tags>
+    <description>
+    	PayPal acts like a digital wallet where you can securely store all your payment &lt;br/&gt; 
+    	options, such as your bank account and credit card. When you want to make a &lt;br/&gt;
+    	payment, you don't have to pull out your credit card or type your billing info 
+    	every time.&lt;br/&gt; &lt;br/&gt;
+    Reference Link 1: &lt;a href="https://www.paypal.com/" target="_blank" &gt; PayPal  &lt;/a&gt; &lt;br/&gt;
+    Reference Link 2: &lt;a href="http://www.jpayplans.com/app-ville/item/paypal.html?category_id=103" target="_blank" &gt; PayPal on APP VILLE  &lt;/a&gt;
+    </description>
+	<help>Maximum allowable Recurrence Time in Paypal :&lt;br/&gt;
+      &lt;ul&gt;
+      &lt;li&gt;D – for days allowable range  is 1 to 90&lt;/li&gt;
+      &lt;li&gt;W – for weeks allowable range is 1 to 52&lt;/li&gt;
+      &lt;li&gt;M – for months allowable range is 1 to 24&lt;/li&gt;
+      &lt;li&gt;Y – for years allowable range is 1 to 5&lt;/li&gt;
+      &lt;/ul&gt;
+      Number of times that subscription payments recur should be greater than 1 and less than 50, if you set it to 0 it means it will charge for forever, until cancellation.
+      <![CDATA[
+      		<BR /> <BR />
+      		<div style="text-align:center">
+			<iframe width="250" height="200" src="http://www.youtube.com/embed/1vleH2Ry3XQ" frameborder="0" allowfullscreen></iframe>
+			</div>
+		]]>
+		</help>
+	<fields name="app_params">
+     <fieldset name="app_params">
+		<field	name="merchant_email" 	
+				default="" 		
+				type="text" 	
+				size="50" 
+				label="COM_PAYPLANS_APP_PAYPAL_MERCHANT_EMAIL"  
+				description="COM_PAYPLANS_APP_PAYPAL_EMAIL_MERCHANT_DESC" 
+				class="email"
+				/>
+				
+<!--		<param	name="merchant_id" 		-->
+<!--				default="" 		-->
+<!--				type="text" 	-->
+<!--				size="50" -->
+<!--				label="COM_PAYPLANS_APP_PAYPAL_MERCHANT_ID"  -->
+<!--				description="COM_PAYPLANS_APP_PAYPAL_MERCHANT_DESC" -->
+<!--				/>		-->
+					
+<!--		<param  name="currency" 		-->
+<!--				default="USD" 	-->
+<!--				type="currency" -->
+<!--				size="10" -->
+<!--				label="COM_PAYPLANS_APP_PAYPAL_PAYPAL_CURRENCY" -->
+<!--				description="COM_PAYPLANS_APP_PAYPAL_PAYPAL_CURRENCY_DESC" -->
+<!--				global="true"-->
+<!--				/>-->
+				
+		<field  type="xispacer" 
+		  		default="COM_PAYPLANS_APP_PAYPAL_SANDBOX_TESTING" 
+		  		/>
+		  		
+        <field  name="sandbox" 
+        		type="radio" 
+        		default="0" 
+        		label="COM_PAYPLANS_APP_PAYPAL_PAYPAL_SANDBOX" 
+        		class="btn-group"
+        		description="COM_PAYPLANS_APP_PAYPAL_PAYPAL_SANDBOX_DESC">
+		          <option value="0">COM_PAYPLANS_NO</option>
+		          <option value="1">COM_PAYPLANS_YES</option>
+        		</field>
+        		
+        <field  name="sandbox_merchant_email" 
+        		type="text" 
+        		size="50" 
+        		default="" 
+        		label="COM_PAYPLANS_APP_PAYPAL_SANDBOX_MERCHANT_EMAIL" 
+        		description="COM_PAYPLANS_APP_PAYPAL_SANDBOX_MERCHANT_EMAIL_DESC" 
+        		class="email"
+        		/>
+        </fieldset>		
+	</fields>
+</config>

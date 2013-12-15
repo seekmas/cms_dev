@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+body #mod-subscription {
+	padding: 0 10px;
+}
+
+body #mod-subscription ul{
+	list-style: none !important; 
+	list-style-type: none !important;
+}
+
+body #mod-subscription .item{
+	margin-top: 10px;
+}
+
+body #mod-subscription .renew{
+	float:right;
+}
+
+body #mod-subscription .plan{
+	font: italic small-caps bolder 12px/1.4 Georgia, serif;	
+}
+
+body #mod-subscription .timeago{
+ margin-bottom: 15px;
+ text-align: left;
+}
+
+.latestnews:hover {
+    background-color: #DDDDDD;
+    color: #095197;
+}

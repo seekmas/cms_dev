@@ -1,0 +1,80 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Navbar component
+ *
+ ========================================================================== */
+
+
+/* Component
+ ========================================================================== */
+
+.hook-navbar() { padding: @theme_navbar-padding; }
+
+
+/* Sub-object: `uk-navbar-nav`
+ ========================================================================== */
+
+.hook-navbar-nav() {
+	margin-left: @theme_navbar-nav-margin-left;
+	border-radius: @theme_global-small-border-radius;
+	background-color: @theme_navbar-nav-background;
+	-webkit-transition: background-color .4s ease-in-out;
+	transition: background-color .4s ease-in-out;
+}
+
+.uk-navbar-nav + .uk-navbar-nav { margin-left: @theme_navbar-nav-margin-left; }
+
+.uk-navbar-nav > li:first-child > a { margin-left: 0; }
+
+/* Hover */ 
+.hook-navbar-nav-hover() {}
+
+.uk-navbar-nav > .uk-active > a:hover {
+	background: @theme_navbar-nav-active-hover-background;
+	color: @theme_navbar-nav-active-hover-color;
+}
+
+/* OnClick */  
+.hook-navbar-nav-onclick() {}
+
+/* Active */ 
+.hook-navbar-nav-active() {}
+
+/* Open */
+.uk-navbar-nav .uk-open:before {
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -@dropdown-navbar-margin;
+    margin-left: -@theme_navbar-nav-open-arrow-width + (@theme_navbar-nav-margin-left/2);
+    border-right: @theme_navbar-nav-open-arrow-width solid transparent;
+    border-bottom: @theme_navbar-nav-open-arrow-height solid @theme_global-dark-background;
+    border-left: @theme_navbar-nav-open-arrow-width solid transparent;
+    -webkit-animation: @dropdown-animation 0.2s ease-in-out;
+	animation: @dropdown-animation 0.2s ease-in-out;
+    z-index: 10;
+}
+
+.uk-navbar-nav > li:first-child.uk-open:before { margin-left: -@theme_navbar-nav-open-arrow-width; };
+
+/* Sub-object: `uk-navbar-content`
+ ========================================================================== */
+
+.hook-navbar-content() {}
+
+
+ /* Sub-object: `uk-navbar-brand`
+ ========================================================================== */
+
+.uk-navbar-brand { 
+	height: @navbar-nav-height + (@theme_navbar-padding * 2);
+	margin: -@theme_navbar-padding @theme_navbar-padding -@theme_navbar-padding -@theme_navbar-padding;
+	padding: 0 @theme_navbar-brand-padding-horizontal;
+	background: @theme_navbar-brand-background;
+}
+
+/* Sub-objects: `uk-navbar-toggle`
+ ========================================================================== */
+
+.uk-navbar-toggle {}

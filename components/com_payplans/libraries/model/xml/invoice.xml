@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+		
+	<fields name="params">
+		
+		<fieldset name="params">
+			<field  name="title"
+					type="text"
+					label="COM_PAYPLANS_PLAN_EDIT_PLAN_TITLE"
+					description="COM_PAYPLANS_PLAN_EDIT_PLAN_TITLE_DESC"  
+					default="" />
+		
+			<field	name="expirationtype"
+					type="parammanipulator" 
+					label="COM_PAYPLANS_PLAN_TIME_EXPIRATION_TYPE_LABEL"
+					description="COM_PAYPLANS_PLAN_TIME_EXPIRATION_TYPE_DESC"  
+					default="forever" labelclass="control-label">
+					<option value="forever" params="price">COM_PAYPLANS_PLAN_TIME_EXPIRATION_FOREVER</option>
+					<option value="fixed" params="expiration,price">COM_PAYPLANS_PLAN_TIME_EXPIRATION_FIXED</option>
+					<option value="recurring" params="recurrence_count,recurrence_validation,expiration,price">COM_PAYPLANS_PLAN_TIME_EXPIRATION_RECURRING</option>
+					<option value="recurring_trial_1" params="trial_price_1,trial_time_1,recurrence_count,recurrence_validation,expiration,price">COM_PAYPLANS_PLAN_TIME_EXPIRATION_RECURRING_TRIAL_1</option>
+					<option value="recurring_trial_2" params="trial_price_1,trial_time_1,trial_price_2,trial_time_2,recurrence_count,recurrence_validation,expiration,price">COM_PAYPLANS_PLAN_TIME_EXPIRATION_RECURRING_TRIAL_2</option>
+			</field>
+			
+			<field			 
+				name="trial_price_1" 
+				label="COM_PAYPLANS_PLAN_TIME_TRIAL_PRICE_1_LABEL"
+				description="COM_PAYPLANS_PLAN_TIME_TRIAL_PRICE_1_DESC"			
+				type="text" 
+				default="0.00"
+				class="number"
+				/>
+				
+			<field			 
+				name="trial_time_1" 
+				label="COM_PAYPLANS_PLAN_TIME_TRIAL_TIME_1_LABEL"
+				description="COM_PAYPLANS_PLAN_TIME_TRIAL_TIME_1_DESC"
+				type="timer" 
+				size="30"
+				default="000000000000"		 
+				/>
+				
+			<field			 
+				name="trial_price_2" 
+				label="COM_PAYPLANS_PLAN_TIME_TRIAL_PRICE_2_LABEL"
+				description="COM_PAYPLANS_PLAN_TIME_TRIAL_PRICE_2_DESC"			
+				type="text" 
+				default="0.00"
+				class="number"
+				/>
+				
+			<field			 
+				name="trial_time_2" 
+				label="COM_PAYPLANS_PLAN_TIME_TRIAL_TIME_2_LABEL"
+				description="COM_PAYPLANS_PLAN_TIME_TRIAL_TIME_2_DESC"
+				type="timer" 
+				size="30"
+				default="000000000000"		 
+				/>
+				
+			<field							
+				name="price"		
+				label="COM_PAYPLANS_PLAN_PAYMENT_PRICE_LABEL"
+				description="COM_PAYPLANS_PLAN_PAYMENT_PRICE_DESC"
+				type="price"
+				default="0.0000"
+				class="number"
+				/>
+				
+			<field			 
+				name="expiration" 
+				label="COM_PAYPLANS_PLAN_TIME_EXPIRATION_LABEL"
+				description="COM_PAYPLANS_PLAN_TIME_EXPIRATION_DESC"
+				type="timer" 
+				size="30"
+				default="000000000000"		 
+				/>
+		
+			<field			 
+				name="recurrence_count" 
+				label="COM_PAYPLANS_PLAN_TIME_RECURRENCE_COUNT_LABEL"
+				description="COM_PAYPLANS_PLAN_TIME_RECURRENCE_COUNT_DESC"			
+				type="text" 
+				default="0"
+				class="number" />
+	</fieldset>	
+ </fields>
+ <fieldset name="hidden">
+		<field name="invoice_id" type="hidden" default="0"/>
+	</fieldset>
+</form>

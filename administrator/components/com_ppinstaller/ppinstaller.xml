@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>ppinstaller</name>	
+	<version>3.0.6.4045</version>
+	<creationDate>Feb 2011</creationDate>
+	<author>Team JoomlaXi</author>
+	<authorEmail>shyam@joomlaxi.com</authorEmail>
+	<authorUrl>http://www.joomlaxi.com</authorUrl>
+	<copyright>2009-11 Ready Bytes Software Labs Pvt. Ltd.</copyright>
+	<license>GNU General Public License v2</license>
+	<description>PayPlans Installer is used to handling PayPlans installation and migration with older versions.</description>
+	<administration>
+		<menu img="components/com_ppinstaller/assets/images/payplans.png">PayPlans Installer</menu>
+		<files folder="admin">
+			<filename>controller.php</filename>
+			<filename>defines.php</filename>			
+			<filename>index.html</filename>
+			<filename>ppinstaller.php</filename>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>extension</folder>
+			<folder>assets</folder>
+		</files>
+		
+		<languages>
+			<language tag="en-GB">languages/admin/en-GB.com_ppinstaller.ini</language>
+		</languages>
+	</administration>
+	
+	<scriptfile>script.ppinstaller.php</scriptfile>
+
+</extension>

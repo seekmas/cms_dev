@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<name>JomSocial Multiprofile</name>
+	<version>0.0.101</version>
+	<creationDate>Sep 2010</creationDate>
+	<author>JoomlaXi.com</author>
+	<authorEmail>shyam@joomlaxi.com</authorEmail>
+	<authorUrl>http://www.joomlaxi.com</authorUrl>
+	<copyright>2009 JoomlaXi.com</copyright>
+	<copyrightHolder>JoomlaXi.com</copyrightHolder>
+	<license>GNU General Public License v2</license>
+	<description>
+		This app can be used to	assign JomSocial Multiprofiles to subscribed users on the basis of their subscription 
+		status.
+		&lt;br/&gt;
+		&lt;br/&gt;
+		Reference Link:&lt;a href="http://www.jpayplans.com/app-ville/item/jom-social-paid-profiletypes.html?category_id=104" target="_blank" &gt; JomSocial Multiprofile &lt;/a&gt;&lt;br/&gt;&lt;br/&gt;
+	</description>
+	<icon>jomsocial.png</icon>
+    <tags>integration</tags>
+	<help>
+	
+	<![CDATA[
+			<div style="text-align:center">
+			<iframe width="250" height="200"  src="http://www.youtube.com/embed/xPmTMrIMfbY" frameborder="0" allowfullscreen></iframe>
+			</div>
+	]]>
+	</help>
+	<fields name="app_params">
+	
+	<fieldset name="app_params" addfieldpath="/components/com_payplans/elements">
+
+		<!-- On Subscription active -->
+		<field type="xispacer" default="COM_PAYPLANS_APP_JSPROFILETYPE_ON_STATUS_ACTIVE_DESC"/>
+		
+		<field name="jsmultiprofileOnActive" 
+			   type="jsmultiprofile" 
+			   label="COM_PAYPLANS_APP_JSPROFILETYPE_SET_PROFILETYPE_LABEL"
+			   default="" description="COM_PAYPLANS_APP_JSPROFILETYPE_SET_PROFILETYPE_ON_ACTIVE_DESC" 
+			   />
+	
+	<!-- On Subscription hold -->
+		<field type="xispacer" default="COM_PAYPLANS_APP_JSPROFILETYPE_ON_STATUS_HOLD_DESC"/>
+		
+		<field name="jsmultiprofileOnHold" 
+			   type="jsmultiprofile" 
+			   label="COM_PAYPLANS_APP_JSPROFILETYPE_SET_PROFILETYPE_LABEL"
+			   default="" description="COM_PAYPLANS_APP_JSPROFILETYPE_SET_PROFILETYPE_ON_HOLD_DESC" 
+			   />
+	
+	
+		<!-- On Subscription expire -->
+		<field type="xispacer" default="COM_PAYPLANS_APP_JSPROFILETYPE_ON_STATUS_EXPIRE_DESC"/>
+		
+		<field name="jsmultiprofileOnExpire" 
+			   type="jsmultiprofile" 
+			   label="COM_PAYPLANS_APP_JSPROFILETYPE_SET_PROFILETYPE_LABEL"
+			   default="" description="COM_PAYPLANS_APP_JSPROFILETYPE_SET_PROFILETYPE_ON_EXPIRE_DESC" 
+				/>
+
+		<field  name="block_ptype_change" 
+				type="radio" 
+				label="COM_PAYPLANS_APP_JSPROFILETYPE_BLOCK_PTYPE_CHANGE_LABEL"
+				default="1" 
+				description="COM_PAYPLANS_APP_JSPROFILETYPE_BLOCK_PTYPE_CHANGE_DESC" class="btn-group">
+				  <option value="0">COM_PAYPLANS_NO</option>
+		          <option value="1">COM_PAYPLANS_YES</option>
+		</field>
+			
+	 </fieldset>
+	</fields>
+</config>
