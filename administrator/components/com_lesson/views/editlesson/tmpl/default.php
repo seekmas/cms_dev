@@ -1,8 +1,26 @@
+<?php 
+require_once('../vendor/upyun/upyun.class.php');
+
+$upyun = new UpYun('site-file-36lean', 'mot', 'wujiayao123');
+
+try {
+	
+	$list = $upyun->getList('/lesson_cover');
+
+	$units = $upyun->getList('/unit_cover');
+	
+}catch(Exception $e) {
+    echo $e->getCode();
+    echo $e->getMessage();
+}
+?>
+
 <div class="btn-group">
 	<a href="<?php echo JURI::base() . 'index.php?option=com_lesson&view=generatelesson';?>" class="btn btn-primary">新建课程</a>
 	<a href="<?php echo JURI::base() . 'index.php?option=com_lesson';?>" class="btn btn-primary">总览</a>
     <a href="#" class="btn btn-primary active">管理课程</a>
     <a href="#" class="btn btn-primary">管理单元</a>
+    <a href="<?php echo JURI::base() . 'index.php?option=com_lesson&view=upyun';?>" class="btn btn-primary">又拍云管理</a>
 </div>
 <hr/>
 
@@ -46,7 +64,7 @@
 				  id=""
 				  cols=""
 			      rows=""
-				  style="width: 100%; height: 200px;"
+				  style="width: 80%; height: 200px;"
 				  class="mce_editable"><?php echo $this->info['description'];?></textarea>
 		</div>
 	</div>
@@ -81,8 +99,12 @@
 		<div class="controls">
 			<select name="cover">
 				<option value="0">从又拍云选择封面图片</option>
+				<?php foreach ($list as $file) { ?>
+				<option value="<?php echo $file['name'];?>"><?php echo $file['name'];?></option>
+				<?php }?>
 			</select>
 		</div>
+		<p><img src="<?php echo 'http://upload.36lean.com/lesson_cover/'.$this->info['cover'];?>" width="280px"></p>
 	</div>
 
 	</div>
@@ -105,6 +127,7 @@
 	<td class="span3">视频文件</td>
 	<td class="span1">字幕A</td>
 	<td class="span1">字幕B</td>
+	<td class="span1">封面</td>
 	<td class="span1">时长</td>
 	<td class="span1">语音</td>
 	<td class="span1">更多</td>
@@ -119,6 +142,14 @@
 		<td><input class="span12" type="text" name="file" value="" /></td>
 		<td><input class="span12" type="text" name="caption_a" value="" /></td>
 		<td><input class="span12" type="text" name="caption_b" value="" /></td>
+		<td>
+			<select class="span12" name="cover">
+				<option value="0">选择视频封面</option>
+				<?php foreach ($units as $u) { ?>
+				<option value="<?php echo $u['name'];?>"><?php echo $u['name'];?></option>
+				<?php }?>
+			</select>
+		</td>
 		<td><input class="span12" type="text" name="time" value="" /></td>
 		<td>
 
@@ -143,6 +174,15 @@
 		<td><input class="span12" type="text" name="<?php echo $value[0];?>_file" value="<?php echo $value[4];?>" /></td>
 		<td><input class="span12" type="text" name="<?php echo $value[0];?>_caption_a" value="<?php echo $value[6];?>" /></td>
 		<td><input class="span12" type="text" name="<?php echo $value[0];?>_caption_b" value="<?php echo $value[7];?>" /></td>
+		<td>
+			<select class="span12" name="<?php echo $value[0];?>_cover">
+				<option value="0">选择视频封面</option>
+				<?php foreach ($units as $u) { ?>
+				<option <?php if( $value[5] === $u['name']){?>selected="selected"<?php }?> value="<?php echo $u['name'];?>"><?php echo $u['name'];?></option>
+				<?php }?>
+			</select>
+		</td>
+
 		<td><input class="span12" type="text" name="<?php echo $value[0];?>_time" value="<?php echo $value[8];?>" /></td>
 		<td>
 

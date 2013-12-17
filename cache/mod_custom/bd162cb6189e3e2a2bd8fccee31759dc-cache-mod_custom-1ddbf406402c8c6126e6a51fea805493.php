@@ -1,6 +1,6 @@
-<?php die("Access Denied"); ?>#x#a:2:{s:6:"output";a:2:{s:4:"body";s:0:"";s:4:"head";a:0:{}}s:6:"result";s:3286:"
+<?php die("Access Denied"); ?>#x#a:2:{s:6:"output";a:2:{s:4:"body";s:0:"";s:4:"head";a:0:{}}s:6:"result";s:3304:"
 	<div style="overflow:hidden;/* 1px bugfix*/"><div style="width:100.1%;">
-<div id="slideshow-55-52ad80db10e32" class="wk-slideshow wk-slideshow-lava" data-widgetkit="slideshow" data-options='{"style":"lava","autoplay":0,"interval":5000,"width":"auto","height":"auto","duration":500,"index":0,"order":"default","navigation":1,"buttons":0,"slices":20,"animated":"fade","caption_animation_duration":500}'>
+<div id="slideshow-55-52afe2b9f2ee8" class="wk-slideshow wk-slideshow-lava" data-widgetkit="slideshow" data-options='{"style":"lava","autoplay":0,"interval":5000,"width":"auto","height":"auto","duration":500,"index":0,"order":"default","navigation":1,"buttons":0,"slices":20,"animated":"fade","caption_animation_duration":500}'>
 	<div>
 		<ul class="slides">
 

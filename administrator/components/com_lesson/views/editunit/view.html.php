@@ -9,6 +9,12 @@ class LessonViewEditunit extends JViewLegacy
 
 		$get = $request->get();
 
+		if( isset( $get['update_unit']))
+		{
+			unset( $get['update_unit']);
+			$this->getModel()->updateUnitById( $get);
+		}
+		
 		$info = $this->getModel('editunit')->getUnitById( intval( $get['id'] ) );
 
 		if( isset( $get['remove']))
@@ -18,6 +24,8 @@ class LessonViewEditunit extends JViewLegacy
 
 			JFactory::getApplication()->redirect( JURI::base() . 'index.php?option=com_lesson&view=editlesson&id='.$info['parent_id']);
 		}
+
+
 
 		
 		$voice = $this->getModel('editunit')->getVoice();

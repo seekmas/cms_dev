@@ -13,7 +13,7 @@ if (!empty($_FILES)) {
 
 	$upyun = new UpYun('site-file-36lean', 'mot', 'wujiayao123');
 
-	$filename = date('Ymdhis').$_FILES['Filedata']['name'];
+	$filename = $_FILES['Filedata']['name'];
 
 	//var_dump( move_uploaded_file( $_FILES['Filedata']['tmp_name'] , './cache/' . $filename) );
 	

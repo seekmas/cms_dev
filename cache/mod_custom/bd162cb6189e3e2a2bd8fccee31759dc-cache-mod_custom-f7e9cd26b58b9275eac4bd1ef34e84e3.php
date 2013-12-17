@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:2:{s:6:"output";a:2:{s:4:"body";s:0:"";s:4:"head";a:0:{}}s:6:"result";s:1060:"
+<?php die("Access Denied"); ?>#x#a:2:{s:6:"output";a:2:{s:4:"body";s:0:"";s:4:"head";a:0:{}}s:6:"result";s:1061:"
 	<div class="uk-text-center uk-align-center">
   
   <h1 class="uk-heading-large">Start Your Journey With Our<br class="uk-hidden-small">Warp Framework</h1>

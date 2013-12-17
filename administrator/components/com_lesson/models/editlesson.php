@@ -112,10 +112,7 @@ class LessonModelEditlesson extends JModelLegacy {
 
 	public function updateLesson( $lesson)
 	{	
-
-
 		$db = JFactory::getDBO();
-
 		$query = $db->getQuery();
 		$query->clear()
  			  ->update('#__lessons')
@@ -124,7 +121,7 @@ class LessonModelEditlesson extends JModelLegacy {
  			  ->set('description = ' . trim( $db->quote( $lesson['description'])))
  			  ->set('free = ' . $lesson['free'])	
  			  ->set('visible = ' . $lesson['visible'])
- 			  ->set('cover = '. $lesson['cover'])
+ 			  ->set('cover = '. $db->quote($lesson['cover']) )
  			  ->set('createdtime = ' . time())
  			  ->where( 'id = ' . $lesson['id']);
  		$db->setQuery( $query);

@@ -33,7 +33,11 @@ $catalogue_number = count($catalogue);
 		<td><?php echo $value[0];?></td>
 		<td><h4><?php echo $value[1];?></h4></td>
 		<td><?php echo $value[2];?></td>
-		<td><img src="<?php echo JURI::root() . 'images/uploads/' . $value[3];?>" width="200px" /> </td>
+		<td>
+			
+			<img src="<?php echo 'http://upload.36lean.com/lesson_cover/' . $value[3];?>" width="200px" /> 
+
+		</td>
 		<td><?php echo $value[4] ? date('Y-m-d h:i' , $value[4]) : 'None';?></td>
 		<td>
 			<a href="<?php echo JURI::base() . 'index.php?option=com_lesson&view=editlesson&id=' . $value[0];?>" class="btn btn-primary">Edit</a>

@@ -31,6 +31,7 @@ class LessonViewEditlesson extends JViewLegacy
         $unit = $this->getModel()->getUnitByCatalogueId( $id);
         $voice = $this->getModel()->getVoice();
 
+
         $this->assignRef( 'info' , $info );
         $this->assignRef( 'unit' , $unit );
 
